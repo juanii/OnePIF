@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FolderName_BankAccounts" xml:space="preserve">
+    <value>银行账户</value>
+  </data>
+  <data name="FolderName_CreditCards" xml:space="preserve">
+    <value>信用卡</value>
+  </data>
+  <data name="FolderName_Databases" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="FolderName_DriverLicenses" xml:space="preserve">
+    <value>驾驶执照</value>
+  </data>
+  <data name="FolderName_EmailAccounts" xml:space="preserve">
+    <value>电子邮件帐户</value>
+  </data>
+  <data name="FolderName_Identities" xml:space="preserve">
+    <value>身份标识</value>
+  </data>
+  <data name="FolderName_Memberships" xml:space="preserve">
+    <value>会员信息</value>
+  </data>
+  <data name="FolderName_OutdoorLicenses" xml:space="preserve">
+    <value>户外许可证</value>
+  </data>
+  <data name="FolderName_Passports" xml:space="preserve">
+    <value>护照</value>
+  </data>
+  <data name="FolderName_RewardPrograms" xml:space="preserve">
+    <value>奖励活动</value>
+  </data>
+  <data name="FolderName_WirelessRouters" xml:space="preserve">
+    <value>无线路由器</value>
+  </data>
+  <data name="FolderName_Servers" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="FolderName_SocialSecurityNumbers" xml:space="preserve">
+    <value>社会保险号码</value>
+  </data>
+  <data name="FolderName_SoftwareLicenses" xml:space="preserve">
+    <value>软件许可</value>
+  </data>
+  <data name="FolderName_Logins" xml:space="preserve">
+    <value>登录信息</value>
+  </data>
+  <data name="FolderName_SecureNotes" xml:space="preserve">
+    <value>安全备注</value>
+  </data>
+  <data name="FolderName_Passwords" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Menu_accountType_atm" xml:space="preserve">
+    <value>ATM</value>
+  </data>
+  <data name="Menu_accountType_checking" xml:space="preserve">
+    <value>支票</value>
+  </data>
+  <data name="Menu_accountType_savings" xml:space="preserve">
+    <value>储蓄</value>
+  </data>
+  <data name="Menu_accountType_loc" xml:space="preserve">
+    <value>信用额度</value>
+  </data>
+  <data name="Menu_accountType_money_market" xml:space="preserve">
+    <value>货币市场</value>
+  </data>
+  <data name="Menu_accountType_other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Menu_type_visa" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="Menu_type_mc" xml:space="preserve">
+    <value>MasterCard</value>
+  </data>
+  <data name="Menu_type_amex" xml:space="preserve">
+    <value>American Express</value>
+  </data>
+  <data name="Menu_type_diners" xml:space="preserve">
+    <value>Diners Club</value>
+  </data>
+  <data name="Menu_type_discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="Menu_type_jcb" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="Menu_type_solo" xml:space="preserve">
+    <value>Solo</value>
+  </data>
+  <data name="Menu_type_switch" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="Menu_type_maestro" xml:space="preserve">
+    <value>MasterCard Maestro</value>
+  </data>
+  <data name="Menu_type_laser" xml:space="preserve">
+    <value>Laser</value>
+  </data>
+  <data name="Menu_type_unionpay" xml:space="preserve">
+    <value>银联</value>
+  </data>
+  <data name="Menu_type_visaelectron" xml:space="preserve">
+    <value>VISA Electron</value>
+  </data>
+  <data name="Menu_type_carteblanche" xml:space="preserve">
+    <value>Carte Blanche</value>
+  </data>
+  <data name="Menu_database_type_db2" xml:space="preserve">
+    <value>DB2</value>
+  </data>
+  <data name="Menu_database_type_filemaker" xml:space="preserve">
+    <value>FileMaker</value>
+  </data>
+  <data name="Menu_database_type_msaccess" xml:space="preserve">
+    <value>Microsoft Access</value>
+  </data>
+  <data name="Menu_database_type_mssql" xml:space="preserve">
+    <value>MS SQL Server</value>
+  </data>
+  <data name="Menu_database_type_mysql" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="Menu_database_type_oracle" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="Menu_database_type_postresql" xml:space="preserve">
+    <value>PostgreSQL</value>
+  </data>
+  <data name="Menu_database_type_postgresql" xml:space="preserve">
+    <value>PostgreSQL</value>
+  </data>
+  <data name="Menu_database_type_sqlite" xml:space="preserve">
+    <value>SQLite</value>
+  </data>
+  <data name="Menu_database_type_other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Menu_pop_type_pop3" xml:space="preserve">
+    <value>POP3</value>
+  </data>
+  <data name="Menu_pop_type_imap" xml:space="preserve">
+    <value>IMAP</value>
+  </data>
+  <data name="Menu_pop_type_either" xml:space="preserve">
+    <value>POP3 或 IMAP</value>
+  </data>
+  <data name="Menu_pop_security_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Menu_pop_security_SSL" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="Menu_pop_security_TLS" xml:space="preserve">
+    <value>TLS</value>
+  </data>
+  <data name="Menu_pop_authentication_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Menu_pop_authentication_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Menu_pop_authentication_md5_challenge_response" xml:space="preserve">
+    <value>MD5 质询响应</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberized_pop" xml:space="preserve">
+    <value>Kerberos POP (KPOP)</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberos_v4" xml:space="preserve">
+    <value>Kerberos 版本 4</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberos_v5" xml:space="preserve">
+    <value>Kerberos 版本 5 (GSSAPI)</value>
+  </data>
+  <data name="Menu_pop_authentication_ntlm" xml:space="preserve">
+    <value>NTLM</value>
+  </data>
+  <data name="Menu_smtp_authentication_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Menu_smtp_authentication_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Menu_smtp_authentication_md5_challenge_response" xml:space="preserve">
+    <value>MD5 质询响应</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberized_pop" xml:space="preserve">
+    <value>Kerberos POP (KPOP)</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberos_v4" xml:space="preserve">
+    <value>Kerberos 版本 4</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberos_v5" xml:space="preserve">
+    <value>Kerberos 版本 5 (GSSAPI)</value>
+  </data>
+  <data name="Menu_smtp_authentication_ntlm" xml:space="preserve">
+    <value>NTLM</value>
+  </data>
+  <data name="Menu_smtp_security_none" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="Menu_smtp_security_SSL" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="Menu_smtp_security_TLS" xml:space="preserve">
+    <value>TLS</value>
+  </data>
+  <data name="Menu_sex_male" xml:space="preserve">
+    <value>男</value>
+  </data>
+  <data name="Menu_sex_female" xml:space="preserve">
+    <value>女</value>
+  </data>
+  <data name="Menu_wireless_security_none" xml:space="preserve">
+    <value>无安全</value>
+  </data>
+  <data name="Menu_wireless_security_wep" xml:space="preserve">
+    <value>WEP</value>
+  </data>
+  <data name="Menu_wireless_security_wpa" xml:space="preserve">
+    <value>WPA</value>
+  </data>
+  <data name="Menu_wireless_security_wpa2p" xml:space="preserve">
+    <value>WPA2 个人</value>
+  </data>
+  <data name="Menu_wireless_security_wpa2e" xml:space="preserve">
+    <value>WPA2 企业</value>
+  </data>
+  <data name="Menu_country_ad" xml:space="preserve">
+    <value>安道尔</value>
+  </data>
+  <data name="Menu_country_ae" xml:space="preserve">
+    <value>阿拉伯联合酋长国</value>
+  </data>
+  <data name="Menu_country_af" xml:space="preserve">
+    <value>阿富汗</value>
+  </data>
+  <data name="Menu_country_ag" xml:space="preserve">
+    <value>安提瓜和巴布达</value>
+  </data>
+  <data name="Menu_country_ai" xml:space="preserve">
+    <value>安圭拉</value>
+  </data>
+  <data name="Menu_country_al" xml:space="preserve">
+    <value>阿尔巴尼亚</value>
+  </data>
+  <data name="Menu_country_am" xml:space="preserve">
+    <value>亚美尼亚</value>
+  </data>
+  <data name="Menu_country_ao" xml:space="preserve">
+    <value>安哥拉</value>
+  </data>
+  <data name="Menu_country_aq" xml:space="preserve">
+    <value>南极洲</value>
+  </data>
+  <data name="Menu_country_ar" xml:space="preserve">
+    <value>阿根廷</value>
+  </data>
+  <data name="Menu_country_as" xml:space="preserve">
+    <value>美属萨摩亚</value>
+  </data>
+  <data name="Menu_country_at" xml:space="preserve">
+    <value>奥地利</value>
+  </data>
+  <data name="Menu_country_au" xml:space="preserve">
+    <value>澳大利亚</value>
+  </data>
+  <data name="Menu_country_aw" xml:space="preserve">
+    <value>阿鲁巴</value>
+  </data>
+  <data name="Menu_country_ax" xml:space="preserve">
+    <value>奥兰群岛</value>
+  </data>
+  <data name="Menu_country_az" xml:space="preserve">
+    <value>阿塞拜疆</value>
+  </data>
+  <data name="Menu_country_ba" xml:space="preserve">
+    <value>波斯尼亚和黑塞哥维那</value>
+  </data>
+  <data name="Menu_country_bb" xml:space="preserve">
+    <value>巴巴多斯</value>
+  </data>
+  <data name="Menu_country_bd" xml:space="preserve">
+    <value>孟加拉国</value>
+  </data>
+  <data name="Menu_country_be" xml:space="preserve">
+    <value>比利时</value>
+  </data>
+  <data name="Menu_country_bf" xml:space="preserve">
+    <value>布基纳法索</value>
+  </data>
+  <data name="Menu_country_bg" xml:space="preserve">
+    <value>保加利亚</value>
+  </data>
+  <data name="Menu_country_bh" xml:space="preserve">
+    <value>巴林</value>
+  </data>
+  <data name="Menu_country_bi" xml:space="preserve">
+    <value>布隆迪</value>
+  </data>
+  <data name="Menu_country_bj" xml:space="preserve">
+    <value>贝宁</value>
+  </data>
+  <data name="Menu_country_bl" xml:space="preserve">
+    <value>圣巴泰勒米</value>
+  </data>
+  <data name="Menu_country_bm" xml:space="preserve">
+    <value>百慕大</value>
+  </data>
+  <data name="Menu_country_bn" xml:space="preserve">
+    <value>文莱</value>
+  </data>
+  <data name="Menu_country_bo" xml:space="preserve">
+    <value>玻利维亚</value>
+  </data>
+  <data name="Menu_country_bq" xml:space="preserve">
+    <value>博内尔岛、 圣尤斯特歇斯和萨巴</value>
+  </data>
+  <data name="Menu_country_br" xml:space="preserve">
+    <value>巴西</value>
+  </data>
+  <data name="Menu_country_bs" xml:space="preserve">
+    <value>巴哈马</value>
+  </data>
+  <data name="Menu_country_bt" xml:space="preserve">
+    <value>不丹</value>
+  </data>
+  <data name="Menu_country_bv" xml:space="preserve">
+    <value>布维岛</value>
+  </data>
+  <data name="Menu_country_bw" xml:space="preserve">
+    <value>博茨瓦纳</value>
+  </data>
+  <data name="Menu_country_by" xml:space="preserve">
+    <value>白俄罗斯</value>
+  </data>
+  <data name="Menu_country_bz" xml:space="preserve">
+    <value>伯利兹</value>
+  </data>
+  <data name="Menu_country_ca" xml:space="preserve">
+    <value>加拿大</value>
+  </data>
+  <data name="Menu_country_cc" xml:space="preserve">
+    <value>科科斯群岛</value>
+  </data>
+  <data name="Menu_country_cd" xml:space="preserve">
+    <value>刚果民主共和国</value>
+  </data>
+  <data name="Menu_country_cf" xml:space="preserve">
+    <value>中非共和国</value>
+  </data>
+  <data name="Menu_country_cg" xml:space="preserve">
+    <value>刚果</value>
+  </data>
+  <data name="Menu_country_ch" xml:space="preserve">
+    <value>瑞士</value>
+  </data>
+  <data name="Menu_country_ci" xml:space="preserve">
+    <value>科特迪瓦</value>
+  </data>
+  <data name="Menu_country_ck" xml:space="preserve">
+    <value>库克群岛</value>
+  </data>
+  <data name="Menu_country_cl" xml:space="preserve">
+    <value>智利</value>
+  </data>
+  <data name="Menu_country_cm" xml:space="preserve">
+    <value>喀麦隆</value>
+  </data>
+  <data name="Menu_country_cn" xml:space="preserve">
+    <value>中国</value>
+  </data>
+  <data name="Menu_country_co" xml:space="preserve">
+    <value>哥伦比亚</value>
+  </data>
+  <data name="Menu_country_cr" xml:space="preserve">
+    <value>哥斯达黎加</value>
+  </data>
+  <data name="Menu_country_cu" xml:space="preserve">
+    <value>古巴</value>
+  </data>
+  <data name="Menu_country_cv" xml:space="preserve">
+    <value>佛得角</value>
+  </data>
+  <data name="Menu_country_cw" xml:space="preserve">
+    <value>库拉索岛</value>
+  </data>
+  <data name="Menu_country_cx" xml:space="preserve">
+    <value>圣诞岛</value>
+  </data>
+  <data name="Menu_country_cy" xml:space="preserve">
+    <value>塞浦路斯</value>
+  </data>
+  <data name="Menu_country_cz" xml:space="preserve">
+    <value>捷克共和国</value>
+  </data>
+  <data name="Menu_country_de" xml:space="preserve">
+    <value>德国</value>
+  </data>
+  <data name="Menu_country_dj" xml:space="preserve">
+    <value>吉布提</value>
+  </data>
+  <data name="Menu_country_dk" xml:space="preserve">
+    <value>丹麦</value>
+  </data>
+  <data name="Menu_country_dm" xml:space="preserve">
+    <value>多米尼克</value>
+  </data>
+  <data name="Menu_country_do" xml:space="preserve">
+    <value>多米尼加共和国</value>
+  </data>
+  <data name="Menu_country_dz" xml:space="preserve">
+    <value>阿尔及利亚</value>
+  </data>
+  <data name="Menu_country_ec" xml:space="preserve">
+    <value>厄瓜多尔</value>
+  </data>
+  <data name="Menu_country_ee" xml:space="preserve">
+    <value>爱沙尼亚</value>
+  </data>
+  <data name="Menu_country_eg" xml:space="preserve">
+    <value>埃及</value>
+  </data>
+  <data name="Menu_country_eh" xml:space="preserve">
+    <value>西撒哈拉</value>
+  </data>
+  <data name="Menu_country_er" xml:space="preserve">
+    <value>厄立特里亚</value>
+  </data>
+  <data name="Menu_country_es" xml:space="preserve">
+    <value>西班牙</value>
+  </data>
+  <data name="Menu_country_es_cn" xml:space="preserve">
+    <value>加那利群岛</value>
+  </data>
+  <data name="Menu_country_et" xml:space="preserve">
+    <value>埃塞俄比亚</value>
+  </data>
+  <data name="Menu_country_fi" xml:space="preserve">
+    <value>芬兰</value>
+  </data>
+  <data name="Menu_country_fj" xml:space="preserve">
+    <value>斐济</value>
+  </data>
+  <data name="Menu_country_fk" xml:space="preserve">
+    <value>福克兰群岛</value>
+  </data>
+  <data name="Menu_country_fm" xml:space="preserve">
+    <value>密克罗尼西亚</value>
+  </data>
+  <data name="Menu_country_fo" xml:space="preserve">
+    <value>法罗群岛</value>
+  </data>
+  <data name="Menu_country_fr" xml:space="preserve">
+    <value>法国</value>
+  </data>
+  <data name="Menu_country_ga" xml:space="preserve">
+    <value>加蓬</value>
+  </data>
+  <data name="Menu_country_gb" xml:space="preserve">
+    <value>英国</value>
+  </data>
+  <data name="Menu_country_gd" xml:space="preserve">
+    <value>格林纳达</value>
+  </data>
+  <data name="Menu_country_ge" xml:space="preserve">
+    <value>格鲁吉亚</value>
+  </data>
+  <data name="Menu_country_gf" xml:space="preserve">
+    <value>法属圭亚那</value>
+  </data>
+  <data name="Menu_country_gg" xml:space="preserve">
+    <value>根西岛</value>
+  </data>
+  <data name="Menu_country_gh" xml:space="preserve">
+    <value>加纳</value>
+  </data>
+  <data name="Menu_country_gi" xml:space="preserve">
+    <value>直布罗陀</value>
+  </data>
+  <data name="Menu_country_gl" xml:space="preserve">
+    <value>格陵兰</value>
+  </data>
+  <data name="Menu_country_gm" xml:space="preserve">
+    <value>冈比亚</value>
+  </data>
+  <data name="Menu_country_gn" xml:space="preserve">
+    <value>几内亚</value>
+  </data>
+  <data name="Menu_country_gp" xml:space="preserve">
+    <value>瓜德罗普</value>
+  </data>
+  <data name="Menu_country_gq" xml:space="preserve">
+    <value>赤道几内亚</value>
+  </data>
+  <data name="Menu_country_gr" xml:space="preserve">
+    <value>希腊</value>
+  </data>
+  <data name="Menu_country_gs" xml:space="preserve">
+    <value>南乔治亚岛和南桑威奇群岛</value>
+  </data>
+  <data name="Menu_country_gt" xml:space="preserve">
+    <value>危地马拉</value>
+  </data>
+  <data name="Menu_country_gu" xml:space="preserve">
+    <value>关岛</value>
+  </data>
+  <data name="Menu_country_gw" xml:space="preserve">
+    <value>几内亚比绍</value>
+  </data>
+  <data name="Menu_country_gy" xml:space="preserve">
+    <value>圭亚那</value>
+  </data>
+  <data name="Menu_country_hk" xml:space="preserve">
+    <value>中国香港</value>
+  </data>
+  <data name="Menu_country_hm" xml:space="preserve">
+    <value>赫德岛和麦克唐纳群岛</value>
+  </data>
+  <data name="Menu_country_hn" xml:space="preserve">
+    <value>洪都拉斯</value>
+  </data>
+  <data name="Menu_country_hr" xml:space="preserve">
+    <value>克罗地亚</value>
+  </data>
+  <data name="Menu_country_ht" xml:space="preserve">
+    <value>海地</value>
+  </data>
+  <data name="Menu_country_hu" xml:space="preserve">
+    <value>匈牙利</value>
+  </data>
+  <data name="Menu_country_id" xml:space="preserve">
+    <value>印度尼西亚</value>
+  </data>
+  <data name="Menu_country_ie" xml:space="preserve">
+    <value>爱尔兰</value>
+  </data>
+  <data name="Menu_country_il" xml:space="preserve">
+    <value>以色列</value>
+  </data>
+  <data name="Menu_country_im" xml:space="preserve">
+    <value>马恩岛</value>
+  </data>
+  <data name="Menu_country_in" xml:space="preserve">
+    <value>印度</value>
+  </data>
+  <data name="Menu_country_io" xml:space="preserve">
+    <value>英属印度洋领地</value>
+  </data>
+  <data name="Menu_country_iq" xml:space="preserve">
+    <value>伊拉克</value>
+  </data>
+  <data name="Menu_country_ir" xml:space="preserve">
+    <value>伊朗</value>
+  </data>
+  <data name="Menu_country_is" xml:space="preserve">
+    <value>冰岛</value>
+  </data>
+  <data name="Menu_country_it" xml:space="preserve">
+    <value>意大利</value>
+  </data>
+  <data name="Menu_country_je" xml:space="preserve">
+    <value>泽西岛</value>
+  </data>
+  <data name="Menu_country_jm" xml:space="preserve">
+    <value>牙买加</value>
+  </data>
+  <data name="Menu_country_jo" xml:space="preserve">
+    <value>约旦</value>
+  </data>
+  <data name="Menu_country_jp" xml:space="preserve">
+    <value>日本</value>
+  </data>
+  <data name="Menu_country_ke" xml:space="preserve">
+    <value>肯尼亚</value>
+  </data>
+  <data name="Menu_country_kg" xml:space="preserve">
+    <value>吉尔吉斯斯坦</value>
+  </data>
+  <data name="Menu_country_kh" xml:space="preserve">
+    <value>柬埔寨</value>
+  </data>
+  <data name="Menu_country_ki" xml:space="preserve">
+    <value>基里巴斯</value>
+  </data>
+  <data name="Menu_country_km" xml:space="preserve">
+    <value>科摩罗</value>
+  </data>
+  <data name="Menu_country_kn" xml:space="preserve">
+    <value>圣基茨</value>
+  </data>
+  <data name="Menu_country_kp" xml:space="preserve">
+    <value>朝鲜</value>
+  </data>
+  <data name="Menu_country_kr" xml:space="preserve">
+    <value>韩国</value>
+  </data>
+  <data name="Menu_country_kw" xml:space="preserve">
+    <value>科威特</value>
+  </data>
+  <data name="Menu_country_ky" xml:space="preserve">
+    <value>开曼群岛</value>
+  </data>
+  <data name="Menu_country_kz" xml:space="preserve">
+    <value>哈萨克斯坦</value>
+  </data>
+  <data name="Menu_country_la" xml:space="preserve">
+    <value>老挝</value>
+  </data>
+  <data name="Menu_country_lb" xml:space="preserve">
+    <value>黎巴嫩</value>
+  </data>
+  <data name="Menu_country_lc" xml:space="preserve">
+    <value>圣卢西亚</value>
+  </data>
+  <data name="Menu_country_li" xml:space="preserve">
+    <value>列支敦士登</value>
+  </data>
+  <data name="Menu_country_lk" xml:space="preserve">
+    <value>斯里兰卡</value>
+  </data>
+  <data name="Menu_country_lr" xml:space="preserve">
+    <value>利比里亚</value>
+  </data>
+  <data name="Menu_country_ls" xml:space="preserve">
+    <value>莱索托</value>
+  </data>
+  <data name="Menu_country_lt" xml:space="preserve">
+    <value>立陶宛</value>
+  </data>
+  <data name="Menu_country_lu" xml:space="preserve">
+    <value>卢森堡</value>
+  </data>
+  <data name="Menu_country_lv" xml:space="preserve">
+    <value>拉脱维亚</value>
+  </data>
+  <data name="Menu_country_ly" xml:space="preserve">
+    <value>利比亚</value>
+  </data>
+  <data name="Menu_country_ma" xml:space="preserve">
+    <value>摩洛哥</value>
+  </data>
+  <data name="Menu_country_mc" xml:space="preserve">
+    <value>摩洛哥</value>
+  </data>
+  <data name="Menu_country_md" xml:space="preserve">
+    <value>摩尔多瓦</value>
+  </data>
+  <data name="Menu_country_me" xml:space="preserve">
+    <value>黑山共和国</value>
+  </data>
+  <data name="Menu_country_mf" xml:space="preserve">
+    <value>圣马丁岛</value>
+  </data>
+  <data name="Menu_country_mg" xml:space="preserve">
+    <value>马达加斯加</value>
+  </data>
+  <data name="Menu_country_mh" xml:space="preserve">
+    <value>马绍尔群岛</value>
+  </data>
+  <data name="Menu_country_mk" xml:space="preserve">
+    <value>马其顿</value>
+  </data>
+  <data name="Menu_country_ml" xml:space="preserve">
+    <value>马里</value>
+  </data>
+  <data name="Menu_country_mm" xml:space="preserve">
+    <value>缅甸</value>
+  </data>
+  <data name="Menu_country_mn" xml:space="preserve">
+    <value>蒙古</value>
+  </data>
+  <data name="Menu_country_mo" xml:space="preserve">
+    <value>中国澳门</value>
+  </data>
+  <data name="Menu_country_mp" xml:space="preserve">
+    <value>北马里亚纳群岛</value>
+  </data>
+  <data name="Menu_country_mq" xml:space="preserve">
+    <value>马提尼克</value>
+  </data>
+  <data name="Menu_country_mr" xml:space="preserve">
+    <value>毛里塔尼亚</value>
+  </data>
+  <data name="Menu_country_ms" xml:space="preserve">
+    <value>蒙特塞拉特</value>
+  </data>
+  <data name="Menu_country_mt" xml:space="preserve">
+    <value>马耳他</value>
+  </data>
+  <data name="Menu_country_mu" xml:space="preserve">
+    <value>毛里求斯</value>
+  </data>
+  <data name="Menu_country_mv" xml:space="preserve">
+    <value>马尔代夫</value>
+  </data>
+  <data name="Menu_country_mw" xml:space="preserve">
+    <value>马拉维</value>
+  </data>
+  <data name="Menu_country_mx" xml:space="preserve">
+    <value>墨西哥</value>
+  </data>
+  <data name="Menu_country_my" xml:space="preserve">
+    <value>马来西亚</value>
+  </data>
+  <data name="Menu_country_mz" xml:space="preserve">
+    <value>莫桑比克</value>
+  </data>
+  <data name="Menu_country_na" xml:space="preserve">
+    <value>纳米比亚</value>
+  </data>
+  <data name="Menu_country_nc" xml:space="preserve">
+    <value>新喀里多尼亚</value>
+  </data>
+  <data name="Menu_country_ne" xml:space="preserve">
+    <value>尼日尔</value>
+  </data>
+  <data name="Menu_country_nf" xml:space="preserve">
+    <value>诺福克岛</value>
+  </data>
+  <data name="Menu_country_ng" xml:space="preserve">
+    <value>尼日利亚</value>
+  </data>
+  <data name="Menu_country_ni" xml:space="preserve">
+    <value>尼加拉瓜</value>
+  </data>
+  <data name="Menu_country_nl" xml:space="preserve">
+    <value>荷兰</value>
+  </data>
+  <data name="Menu_country_no" xml:space="preserve">
+    <value>挪威</value>
+  </data>
+  <data name="Menu_country_np" xml:space="preserve">
+    <value>尼泊尔</value>
+  </data>
+  <data name="Menu_country_nr" xml:space="preserve">
+    <value>瑙鲁</value>
+  </data>
+  <data name="Menu_country_nu" xml:space="preserve">
+    <value>纽埃</value>
+  </data>
+  <data name="Menu_country_nz" xml:space="preserve">
+    <value>新西兰</value>
+  </data>
+  <data name="Menu_country_om" xml:space="preserve">
+    <value>阿曼</value>
+  </data>
+  <data name="Menu_country_pa" xml:space="preserve">
+    <value>巴拿马</value>
+  </data>
+  <data name="Menu_country_pe" xml:space="preserve">
+    <value>秘鲁</value>
+  </data>
+  <data name="Menu_country_pf" xml:space="preserve">
+    <value>法属波利尼西亚</value>
+  </data>
+  <data name="Menu_country_pg" xml:space="preserve">
+    <value>巴布亚新几内亚</value>
+  </data>
+  <data name="Menu_country_ph" xml:space="preserve">
+    <value>菲律宾</value>
+  </data>
+  <data name="Menu_country_pk" xml:space="preserve">
+    <value>巴基斯坦</value>
+  </data>
+  <data name="Menu_country_pl" xml:space="preserve">
+    <value>波兰</value>
+  </data>
+  <data name="Menu_country_pm" xml:space="preserve">
+    <value>圣皮埃尔和密克隆</value>
+  </data>
+  <data name="Menu_country_pn" xml:space="preserve">
+    <value>皮特凯恩</value>
+  </data>
+  <data name="Menu_country_pr" xml:space="preserve">
+    <value>波多黎各</value>
+  </data>
+  <data name="Menu_country_ps" xml:space="preserve">
+    <value>巴勒斯坦</value>
+  </data>
+  <data name="Menu_country_pt" xml:space="preserve">
+    <value>葡萄牙</value>
+  </data>
+  <data name="Menu_country_pw" xml:space="preserve">
+    <value>帕劳</value>
+  </data>
+  <data name="Menu_country_py" xml:space="preserve">
+    <value>巴拉圭</value>
+  </data>
+  <data name="Menu_country_qa" xml:space="preserve">
+    <value>卡塔尔</value>
+  </data>
+  <data name="Menu_country_re" xml:space="preserve">
+    <value>留尼旺岛</value>
+  </data>
+  <data name="Menu_country_ro" xml:space="preserve">
+    <value>罗马尼亚</value>
+  </data>
+  <data name="Menu_country_rs" xml:space="preserve">
+    <value>塞尔维亚</value>
+  </data>
+  <data name="Menu_country_ru" xml:space="preserve">
+    <value>俄罗斯联邦</value>
+  </data>
+  <data name="Menu_country_rw" xml:space="preserve">
+    <value>卢旺达</value>
+  </data>
+  <data name="Menu_country_sa" xml:space="preserve">
+    <value>沙特阿拉伯</value>
+  </data>
+  <data name="Menu_country_sb" xml:space="preserve">
+    <value>所罗门群岛</value>
+  </data>
+  <data name="Menu_country_sc" xml:space="preserve">
+    <value>塞舌尔</value>
+  </data>
+  <data name="Menu_country_sd" xml:space="preserve">
+    <value>苏丹</value>
+  </data>
+  <data name="Menu_country_se" xml:space="preserve">
+    <value>瑞典</value>
+  </data>
+  <data name="Menu_country_sg" xml:space="preserve">
+    <value>新加坡</value>
+  </data>
+  <data name="Menu_country_sh" xml:space="preserve">
+    <value>圣赫勒拿、 阿森松和特里斯坦达库尼</value>
+  </data>
+  <data name="Menu_country_si" xml:space="preserve">
+    <value>斯洛文尼亚</value>
+  </data>
+  <data name="Menu_country_sj" xml:space="preserve">
+    <value>斯瓦尔巴和扬马延</value>
+  </data>
+  <data name="Menu_country_sk" xml:space="preserve">
+    <value>斯洛伐克</value>
+  </data>
+  <data name="Menu_country_sl" xml:space="preserve">
+    <value>塞拉利昂</value>
+  </data>
+  <data name="Menu_country_sm" xml:space="preserve">
+    <value>圣马力诺</value>
+  </data>
+  <data name="Menu_country_sn" xml:space="preserve">
+    <value>塞内加尔</value>
+  </data>
+  <data name="Menu_country_so" xml:space="preserve">
+    <value>索马里</value>
+  </data>
+  <data name="Menu_country_sr" xml:space="preserve">
+    <value>苏里南</value>
+  </data>
+  <data name="Menu_country_ss" xml:space="preserve">
+    <value>南苏丹</value>
+  </data>
+  <data name="Menu_country_st" xml:space="preserve">
+    <value>圣多美和普林西比</value>
+  </data>
+  <data name="Menu_country_sv" xml:space="preserve">
+    <value>萨尔瓦多</value>
+  </data>
+  <data name="Menu_country_sx" xml:space="preserve">
+    <value>圣马丁</value>
+  </data>
+  <data name="Menu_country_sy" xml:space="preserve">
+    <value>叙利亚</value>
+  </data>
+  <data name="Menu_country_sz" xml:space="preserve">
+    <value>斯威士兰</value>
+  </data>
+  <data name="Menu_country_tc" xml:space="preserve">
+    <value>特克斯和凯科斯群岛</value>
+  </data>
+  <data name="Menu_country_td" xml:space="preserve">
+    <value>乍得</value>
+  </data>
+  <data name="Menu_country_tf" xml:space="preserve">
+    <value>法属南部领地</value>
+  </data>
+  <data name="Menu_country_tg" xml:space="preserve">
+    <value>多哥</value>
+  </data>
+  <data name="Menu_country_th" xml:space="preserve">
+    <value>泰国</value>
+  </data>
+  <data name="Menu_country_tj" xml:space="preserve">
+    <value>塔吉克斯坦</value>
+  </data>
+  <data name="Menu_country_tk" xml:space="preserve">
+    <value>托克劳</value>
+  </data>
+  <data name="Menu_country_tl" xml:space="preserve">
+    <value>东帝汶</value>
+  </data>
+  <data name="Menu_country_tm" xml:space="preserve">
+    <value>土库曼斯坦</value>
+  </data>
+  <data name="Menu_country_tn" xml:space="preserve">
+    <value>突尼斯</value>
+  </data>
+  <data name="Menu_country_to" xml:space="preserve">
+    <value>汤加</value>
+  </data>
+  <data name="Menu_country_tr" xml:space="preserve">
+    <value>土耳其</value>
+  </data>
+  <data name="Menu_country_tt" xml:space="preserve">
+    <value>特立尼达和多巴哥</value>
+  </data>
+  <data name="Menu_country_tv" xml:space="preserve">
+    <value>图瓦卢</value>
+  </data>
+  <data name="Menu_country_tw" xml:space="preserve">
+    <value>中国台湾</value>
+  </data>
+  <data name="Menu_country_tz" xml:space="preserve">
+    <value>坦桑尼亚</value>
+  </data>
+  <data name="Menu_country_ua" xml:space="preserve">
+    <value>乌克兰</value>
+  </data>
+  <data name="Menu_country_ug" xml:space="preserve">
+    <value>乌干达</value>
+  </data>
+  <data name="Menu_country_um" xml:space="preserve">
+    <value>美属离岛</value>
+  </data>
+  <data name="Menu_country_us" xml:space="preserve">
+    <value>美国</value>
+  </data>
+  <data name="Menu_country_uy" xml:space="preserve">
+    <value>乌拉圭</value>
+  </data>
+  <data name="Menu_country_uz" xml:space="preserve">
+    <value>乌兹别克斯坦</value>
+  </data>
+  <data name="Menu_country_va" xml:space="preserve">
+    <value>梵蒂冈城</value>
+  </data>
+  <data name="Menu_country_vc" xml:space="preserve">
+    <value>圣文森特岛和格林纳丁斯群岛</value>
+  </data>
+  <data name="Menu_country_ve" xml:space="preserve">
+    <value>委内瑞拉</value>
+  </data>
+  <data name="Menu_country_vg" xml:space="preserve">
+    <value>英属维尔京群岛</value>
+  </data>
+  <data name="Menu_country_vi" xml:space="preserve">
+    <value>美属维尔京群岛</value>
+  </data>
+  <data name="Menu_country_vn" xml:space="preserve">
+    <value>越南</value>
+  </data>
+  <data name="Menu_country_vu" xml:space="preserve">
+    <value>瓦努阿图</value>
+  </data>
+  <data name="Menu_country_wf" xml:space="preserve">
+    <value>瓦利斯群岛和富图纳群岛</value>
+  </data>
+  <data name="Menu_country_ws" xml:space="preserve">
+    <value>萨摩亚</value>
+  </data>
+  <data name="Menu_country_ye" xml:space="preserve">
+    <value>也门</value>
+  </data>
+  <data name="Menu_country_yt" xml:space="preserve">
+    <value>马约特岛</value>
+  </data>
+  <data name="Menu_country_za" xml:space="preserve">
+    <value>南非</value>
+  </data>
+  <data name="Menu_country_zm" xml:space="preserve">
+    <value>赞比亚</value>
+  </data>
+  <data name="Menu_country_zw" xml:space="preserve">
+    <value>津巴布韦</value>
+  </data>
+  <data name="FolderName_Trash" xml:space="preserve">
+    <value>废纸篓</value>
+  </data>
+  <data name="Tag_Favorite" xml:space="preserve">
+    <value>喜好</value>
+  </data>
+  <data name="Section_Title" xml:space="preserve">
+    <value>组</value>
+  </data>
+</root>

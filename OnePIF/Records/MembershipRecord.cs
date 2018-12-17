@@ -1,0 +1,56 @@
+﻿using KeePassLib;
+
+namespace OnePIF.Records
+{
+    public class MembershipSecureContents : PasswordHistorySecureContents
+    {
+#pragma warning disable IDE1006
+        #region Membership Data
+        public string org_name { get; set; }
+
+        public string website { get; set; }
+
+        public string phone { get; set; }
+
+        public string member_name { get; set; }
+
+        #region Member Since
+        public int member_since_yy { get; set; }
+
+        public int member_since_mm { get; set; }
+        #endregion
+
+        #region Expiration Date
+        public int expiry_date_yy { get; set; }
+
+        public int expiry_date_mm { get; set; }
+        #endregion
+
+        public string membership_no { get; set; }
+
+        public string pin { get; set; }
+        #endregion
+#pragma warning restore IDE1006
+    }
+
+    public class MembershipRecord : ItemRecord
+    {
+#pragma warning disable IDE1006
+        public MembershipSecureContents secureContents { get; set; }
+
+        public ScopedOpenContents openContents { get; set; }
+#pragma warning restore IDE1006
+
+        protected override SecureContents GetSecureContents() { return this.secureContents; }
+
+        protected override OpenContents GetOpenContents() { return this.openContents; }
+
+        public override PwEntry CreatePwEntry(PwDatabase pwDatabase, UserPrefs userPrefs)
+        {
+            PwEntry pwEntry = base.CreatePwEntry(pwDatabase, userPrefs);
+            pwEntry.IconId = PwIcon.Certificate;
+
+            return pwEntry;
+        }
+    }
+}

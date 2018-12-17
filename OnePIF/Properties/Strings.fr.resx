@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FolderName_BankAccounts" xml:space="preserve">
+    <value>Comptes bancaires</value>
+  </data>
+  <data name="FolderName_CreditCards" xml:space="preserve">
+    <value>Cartes de crédit</value>
+  </data>
+  <data name="FolderName_Databases" xml:space="preserve">
+    <value>Bases de données</value>
+  </data>
+  <data name="FolderName_DriverLicenses" xml:space="preserve">
+    <value>Permis de conduire</value>
+  </data>
+  <data name="FolderName_EmailAccounts" xml:space="preserve">
+    <value>Comptes e-mail</value>
+  </data>
+  <data name="FolderName_Identities" xml:space="preserve">
+    <value>Identités</value>
+  </data>
+  <data name="FolderName_Memberships" xml:space="preserve">
+    <value>Adhésions</value>
+  </data>
+  <data name="FolderName_OutdoorLicenses" xml:space="preserve">
+    <value>Permis de chasse ou pêche</value>
+  </data>
+  <data name="FolderName_Passports" xml:space="preserve">
+    <value>Passeports</value>
+  </data>
+  <data name="FolderName_RewardPrograms" xml:space="preserve">
+    <value>Programmes de fidélité</value>
+  </data>
+  <data name="FolderName_WirelessRouters" xml:space="preserve">
+    <value>Routeurs sans fil</value>
+  </data>
+  <data name="FolderName_Servers" xml:space="preserve">
+    <value>Serveurs</value>
+  </data>
+  <data name="FolderName_SocialSecurityNumbers" xml:space="preserve">
+    <value>N° de sécurité sociale</value>
+  </data>
+  <data name="FolderName_SoftwareLicenses" xml:space="preserve">
+    <value>Licences du logiciel</value>
+  </data>
+  <data name="FolderName_Logins" xml:space="preserve">
+    <value>Identifiants</value>
+  </data>
+  <data name="FolderName_SecureNotes" xml:space="preserve">
+    <value>Notes sécurisées</value>
+  </data>
+  <data name="FolderName_Passwords" xml:space="preserve">
+    <value>Mots de passe</value>
+  </data>
+  <data name="Menu_accountType_atm" xml:space="preserve">
+    <value>DAB</value>
+  </data>
+  <data name="Menu_accountType_checking" xml:space="preserve">
+    <value>Compte-chèque</value>
+  </data>
+  <data name="Menu_accountType_savings" xml:space="preserve">
+    <value>Compte-épargne</value>
+  </data>
+  <data name="Menu_accountType_loc" xml:space="preserve">
+    <value>Ligne de crédit</value>
+  </data>
+  <data name="Menu_accountType_money_market" xml:space="preserve">
+    <value>Marché monétaire</value>
+  </data>
+  <data name="Menu_accountType_other" xml:space="preserve">
+    <value>Autre</value>
+  </data>
+  <data name="Menu_type_visa" xml:space="preserve">
+    <value>VISA</value>
+  </data>
+  <data name="Menu_type_mc" xml:space="preserve">
+    <value>MasterCard</value>
+  </data>
+  <data name="Menu_type_amex" xml:space="preserve">
+    <value>American Express</value>
+  </data>
+  <data name="Menu_type_diners" xml:space="preserve">
+    <value>Diners Club</value>
+  </data>
+  <data name="Menu_type_discover" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="Menu_type_jcb" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="Menu_type_solo" xml:space="preserve">
+    <value>Solo</value>
+  </data>
+  <data name="Menu_type_switch" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="Menu_type_maestro" xml:space="preserve">
+    <value>MasterCard Maestro</value>
+  </data>
+  <data name="Menu_type_laser" xml:space="preserve">
+    <value>Laser</value>
+  </data>
+  <data name="Menu_type_unionpay" xml:space="preserve">
+    <value>UnionPay</value>
+  </data>
+  <data name="Menu_type_visaelectron" xml:space="preserve">
+    <value>VISA Electron</value>
+  </data>
+  <data name="Menu_type_carteblanche" xml:space="preserve">
+    <value>Carte Blanche</value>
+  </data>
+  <data name="Menu_database_type_db2" xml:space="preserve">
+    <value>DB2</value>
+  </data>
+  <data name="Menu_database_type_filemaker" xml:space="preserve">
+    <value>FileMaker</value>
+  </data>
+  <data name="Menu_database_type_msaccess" xml:space="preserve">
+    <value>Microsoft Access</value>
+  </data>
+  <data name="Menu_database_type_mssql" xml:space="preserve">
+    <value>MS SQL Server</value>
+  </data>
+  <data name="Menu_database_type_mysql" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="Menu_database_type_oracle" xml:space="preserve">
+    <value>Oracle</value>
+  </data>
+  <data name="Menu_database_type_postresql" xml:space="preserve">
+    <value>PostgreSQL</value>
+  </data>
+  <data name="Menu_database_type_postgresql" xml:space="preserve">
+    <value>PostgreSQL</value>
+  </data>
+  <data name="Menu_database_type_sqlite" xml:space="preserve">
+    <value>SQLite</value>
+  </data>
+  <data name="Menu_database_type_other" xml:space="preserve">
+    <value>Autre</value>
+  </data>
+  <data name="Menu_pop_type_pop3" xml:space="preserve">
+    <value>POP3</value>
+  </data>
+  <data name="Menu_pop_type_imap" xml:space="preserve">
+    <value>IMAP</value>
+  </data>
+  <data name="Menu_pop_type_either" xml:space="preserve">
+    <value>POP3 ou IMAP</value>
+  </data>
+  <data name="Menu_pop_security_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="Menu_pop_security_SSL" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="Menu_pop_security_TLS" xml:space="preserve">
+    <value>TLS</value>
+  </data>
+  <data name="Menu_pop_authentication_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="Menu_pop_authentication_password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="Menu_pop_authentication_md5_challenge_response" xml:space="preserve">
+    <value>Réponse au défi MD5</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberized_pop" xml:space="preserve">
+    <value>Kerberized POP (KPOP)</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberos_v4" xml:space="preserve">
+    <value>Kerberos Version 4</value>
+  </data>
+  <data name="Menu_pop_authentication_kerberos_v5" xml:space="preserve">
+    <value>Kerberos Version 5 (GSSAPI)</value>
+  </data>
+  <data name="Menu_pop_authentication_ntlm" xml:space="preserve">
+    <value>NTLM</value>
+  </data>
+  <data name="Menu_smtp_authentication_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="Menu_smtp_authentication_password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="Menu_smtp_authentication_md5_challenge_response" xml:space="preserve">
+    <value>Réponse au défi MD5</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberized_pop" xml:space="preserve">
+    <value>Kerberized POP (KPOP)</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberos_v4" xml:space="preserve">
+    <value>Kerberos Version 4</value>
+  </data>
+  <data name="Menu_smtp_authentication_kerberos_v5" xml:space="preserve">
+    <value>Kerberos Version 5 (GSSAPI)</value>
+  </data>
+  <data name="Menu_smtp_authentication_ntlm" xml:space="preserve">
+    <value>NTLM</value>
+  </data>
+  <data name="Menu_smtp_security_none" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="Menu_smtp_security_SSL" xml:space="preserve">
+    <value>SSL</value>
+  </data>
+  <data name="Menu_smtp_security_TLS" xml:space="preserve">
+    <value>TLS</value>
+  </data>
+  <data name="Menu_sex_male" xml:space="preserve">
+    <value>Homme</value>
+  </data>
+  <data name="Menu_sex_female" xml:space="preserve">
+    <value>Femme</value>
+  </data>
+  <data name="Menu_wireless_security_none" xml:space="preserve">
+    <value>Aucune sécurité</value>
+  </data>
+  <data name="Menu_wireless_security_wep" xml:space="preserve">
+    <value>WEP</value>
+  </data>
+  <data name="Menu_wireless_security_wpa" xml:space="preserve">
+    <value>WPA</value>
+  </data>
+  <data name="Menu_wireless_security_wpa2p" xml:space="preserve">
+    <value>WPA2 personnel</value>
+  </data>
+  <data name="Menu_wireless_security_wpa2e" xml:space="preserve">
+    <value>WPA2 entreprise</value>
+  </data>
+  <data name="Menu_country_ad" xml:space="preserve">
+    <value>Andorre</value>
+  </data>
+  <data name="Menu_country_ae" xml:space="preserve">
+    <value>Émirats Arabes Unis</value>
+  </data>
+  <data name="Menu_country_af" xml:space="preserve">
+    <value>Afghanistan</value>
+  </data>
+  <data name="Menu_country_ag" xml:space="preserve">
+    <value>Antigua &amp; Barbuda</value>
+  </data>
+  <data name="Menu_country_ai" xml:space="preserve">
+    <value>Anguilla</value>
+  </data>
+  <data name="Menu_country_al" xml:space="preserve">
+    <value>Albanie</value>
+  </data>
+  <data name="Menu_country_am" xml:space="preserve">
+    <value>Arménie</value>
+  </data>
+  <data name="Menu_country_ao" xml:space="preserve">
+    <value>Angola</value>
+  </data>
+  <data name="Menu_country_aq" xml:space="preserve">
+    <value>Antarctique</value>
+  </data>
+  <data name="Menu_country_ar" xml:space="preserve">
+    <value>Argentine</value>
+  </data>
+  <data name="Menu_country_as" xml:space="preserve">
+    <value>Samoa américaine</value>
+  </data>
+  <data name="Menu_country_at" xml:space="preserve">
+    <value>Autriche</value>
+  </data>
+  <data name="Menu_country_au" xml:space="preserve">
+    <value>Australie</value>
+  </data>
+  <data name="Menu_country_aw" xml:space="preserve">
+    <value>Aruba</value>
+  </data>
+  <data name="Menu_country_ax" xml:space="preserve">
+    <value>Îles d'Åland</value>
+  </data>
+  <data name="Menu_country_az" xml:space="preserve">
+    <value>Azerbaïdjan</value>
+  </data>
+  <data name="Menu_country_ba" xml:space="preserve">
+    <value>Bosnie-Herzégovine</value>
+  </data>
+  <data name="Menu_country_bb" xml:space="preserve">
+    <value>Barbade</value>
+  </data>
+  <data name="Menu_country_bd" xml:space="preserve">
+    <value>Bangladesh</value>
+  </data>
+  <data name="Menu_country_be" xml:space="preserve">
+    <value>Belgique</value>
+  </data>
+  <data name="Menu_country_bf" xml:space="preserve">
+    <value>Burkina Faso</value>
+  </data>
+  <data name="Menu_country_bg" xml:space="preserve">
+    <value>Bulgarie</value>
+  </data>
+  <data name="Menu_country_bh" xml:space="preserve">
+    <value>Bahreïn</value>
+  </data>
+  <data name="Menu_country_bi" xml:space="preserve">
+    <value>Burundi</value>
+  </data>
+  <data name="Menu_country_bj" xml:space="preserve">
+    <value>Bénin</value>
+  </data>
+  <data name="Menu_country_bl" xml:space="preserve">
+    <value>Saint-Barthélemy</value>
+  </data>
+  <data name="Menu_country_bm" xml:space="preserve">
+    <value>Bermudes</value>
+  </data>
+  <data name="Menu_country_bn" xml:space="preserve">
+    <value>Brunei</value>
+  </data>
+  <data name="Menu_country_bo" xml:space="preserve">
+    <value>Bolivie</value>
+  </data>
+  <data name="Menu_country_bq" xml:space="preserve">
+    <value>Bonaire, Saint-Eustache et Saba</value>
+  </data>
+  <data name="Menu_country_br" xml:space="preserve">
+    <value>Brésil</value>
+  </data>
+  <data name="Menu_country_bs" xml:space="preserve">
+    <value>Bahamas</value>
+  </data>
+  <data name="Menu_country_bt" xml:space="preserve">
+    <value>Bhoutan</value>
+  </data>
+  <data name="Menu_country_bv" xml:space="preserve">
+    <value>Ile Bouvet</value>
+  </data>
+  <data name="Menu_country_bw" xml:space="preserve">
+    <value>Botswana</value>
+  </data>
+  <data name="Menu_country_by" xml:space="preserve">
+    <value>Bélarus</value>
+  </data>
+  <data name="Menu_country_bz" xml:space="preserve">
+    <value>Bélize</value>
+  </data>
+  <data name="Menu_country_ca" xml:space="preserve">
+    <value>Canada</value>
+  </data>
+  <data name="Menu_country_cc" xml:space="preserve">
+    <value>Îles Cocos</value>
+  </data>
+  <data name="Menu_country_cd" xml:space="preserve">
+    <value>République démocratique du Congo</value>
+  </data>
+  <data name="Menu_country_cf" xml:space="preserve">
+    <value>République Centrafricaine</value>
+  </data>
+  <data name="Menu_country_cg" xml:space="preserve">
+    <value>Congo</value>
+  </data>
+  <data name="Menu_country_ch" xml:space="preserve">
+    <value>Suisse</value>
+  </data>
+  <data name="Menu_country_ci" xml:space="preserve">
+    <value>Côte d'Ivoire</value>
+  </data>
+  <data name="Menu_country_ck" xml:space="preserve">
+    <value>Îles Cook</value>
+  </data>
+  <data name="Menu_country_cl" xml:space="preserve">
+    <value>Chili</value>
+  </data>
+  <data name="Menu_country_cm" xml:space="preserve">
+    <value>Cameroun</value>
+  </data>
+  <data name="Menu_country_cn" xml:space="preserve">
+    <value>Chine</value>
+  </data>
+  <data name="Menu_country_co" xml:space="preserve">
+    <value>Colombie</value>
+  </data>
+  <data name="Menu_country_cr" xml:space="preserve">
+    <value>Costa Rica</value>
+  </data>
+  <data name="Menu_country_cu" xml:space="preserve">
+    <value>Cuba</value>
+  </data>
+  <data name="Menu_country_cv" xml:space="preserve">
+    <value>Cabo Verde</value>
+  </data>
+  <data name="Menu_country_cw" xml:space="preserve">
+    <value>Curaçao</value>
+  </data>
+  <data name="Menu_country_cx" xml:space="preserve">
+    <value>Île Christmas</value>
+  </data>
+  <data name="Menu_country_cy" xml:space="preserve">
+    <value>Chypre</value>
+  </data>
+  <data name="Menu_country_cz" xml:space="preserve">
+    <value>République Tchèque</value>
+  </data>
+  <data name="Menu_country_de" xml:space="preserve">
+    <value>Allemagne</value>
+  </data>
+  <data name="Menu_country_dj" xml:space="preserve">
+    <value>Djibouti</value>
+  </data>
+  <data name="Menu_country_dk" xml:space="preserve">
+    <value>Danemark</value>
+  </data>
+  <data name="Menu_country_dm" xml:space="preserve">
+    <value>Dominique</value>
+  </data>
+  <data name="Menu_country_do" xml:space="preserve">
+    <value>République Dominicaine</value>
+  </data>
+  <data name="Menu_country_dz" xml:space="preserve">
+    <value>Algérie</value>
+  </data>
+  <data name="Menu_country_ec" xml:space="preserve">
+    <value>Équateur</value>
+  </data>
+  <data name="Menu_country_ee" xml:space="preserve">
+    <value>Estonie</value>
+  </data>
+  <data name="Menu_country_eg" xml:space="preserve">
+    <value>Égypte</value>
+  </data>
+  <data name="Menu_country_eh" xml:space="preserve">
+    <value>Sahara Occidental</value>
+  </data>
+  <data name="Menu_country_er" xml:space="preserve">
+    <value>Érythrée</value>
+  </data>
+  <data name="Menu_country_es" xml:space="preserve">
+    <value>Espagne</value>
+  </data>
+  <data name="Menu_country_es_cn" xml:space="preserve">
+    <value>Îles Canaries</value>
+  </data>
+  <data name="Menu_country_et" xml:space="preserve">
+    <value>Éthiopie</value>
+  </data>
+  <data name="Menu_country_fi" xml:space="preserve">
+    <value>Finlande</value>
+  </data>
+  <data name="Menu_country_fj" xml:space="preserve">
+    <value>Fidji</value>
+  </data>
+  <data name="Menu_country_fk" xml:space="preserve">
+    <value>Îles Falkland</value>
+  </data>
+  <data name="Menu_country_fm" xml:space="preserve">
+    <value>Micronésie</value>
+  </data>
+  <data name="Menu_country_fo" xml:space="preserve">
+    <value>îles Féroé</value>
+  </data>
+  <data name="Menu_country_fr" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="Menu_country_ga" xml:space="preserve">
+    <value>Gabon</value>
+  </data>
+  <data name="Menu_country_gb" xml:space="preserve">
+    <value>Royaume-Uni</value>
+  </data>
+  <data name="Menu_country_gd" xml:space="preserve">
+    <value>Grenade</value>
+  </data>
+  <data name="Menu_country_ge" xml:space="preserve">
+    <value>Géorgie</value>
+  </data>
+  <data name="Menu_country_gf" xml:space="preserve">
+    <value>Guyane française</value>
+  </data>
+  <data name="Menu_country_gg" xml:space="preserve">
+    <value>Guernesey</value>
+  </data>
+  <data name="Menu_country_gh" xml:space="preserve">
+    <value>Ghana</value>
+  </data>
+  <data name="Menu_country_gi" xml:space="preserve">
+    <value>Gibraltar</value>
+  </data>
+  <data name="Menu_country_gl" xml:space="preserve">
+    <value>Groenland</value>
+  </data>
+  <data name="Menu_country_gm" xml:space="preserve">
+    <value>Gambie</value>
+  </data>
+  <data name="Menu_country_gn" xml:space="preserve">
+    <value>Guinée</value>
+  </data>
+  <data name="Menu_country_gp" xml:space="preserve">
+    <value>Guadeloupe</value>
+  </data>
+  <data name="Menu_country_gq" xml:space="preserve">
+    <value>Guinée Équatoriale</value>
+  </data>
+  <data name="Menu_country_gr" xml:space="preserve">
+    <value>Grèce</value>
+  </data>
+  <data name="Menu_country_gs" xml:space="preserve">
+    <value>Géorgie du Sud et les Îles Sandwich du Sud</value>
+  </data>
+  <data name="Menu_country_gt" xml:space="preserve">
+    <value>Guatemala</value>
+  </data>
+  <data name="Menu_country_gu" xml:space="preserve">
+    <value>Guam</value>
+  </data>
+  <data name="Menu_country_gw" xml:space="preserve">
+    <value>Guinée-Bissau</value>
+  </data>
+  <data name="Menu_country_gy" xml:space="preserve">
+    <value>Guyana</value>
+  </data>
+  <data name="Menu_country_hk" xml:space="preserve">
+    <value>Hong Kong</value>
+  </data>
+  <data name="Menu_country_hm" xml:space="preserve">
+    <value>Îles Heard et MacDonald</value>
+  </data>
+  <data name="Menu_country_hn" xml:space="preserve">
+    <value>Honduras</value>
+  </data>
+  <data name="Menu_country_hr" xml:space="preserve">
+    <value>Croatie</value>
+  </data>
+  <data name="Menu_country_ht" xml:space="preserve">
+    <value>Haïti</value>
+  </data>
+  <data name="Menu_country_hu" xml:space="preserve">
+    <value>Hongrie</value>
+  </data>
+  <data name="Menu_country_id" xml:space="preserve">
+    <value>Indonésie</value>
+  </data>
+  <data name="Menu_country_ie" xml:space="preserve">
+    <value>Irlande</value>
+  </data>
+  <data name="Menu_country_il" xml:space="preserve">
+    <value>Israël</value>
+  </data>
+  <data name="Menu_country_im" xml:space="preserve">
+    <value>Île de Man</value>
+  </data>
+  <data name="Menu_country_in" xml:space="preserve">
+    <value>Inde</value>
+  </data>
+  <data name="Menu_country_io" xml:space="preserve">
+    <value>Territoire britannique de l'océan Indien</value>
+  </data>
+  <data name="Menu_country_iq" xml:space="preserve">
+    <value>Irak</value>
+  </data>
+  <data name="Menu_country_ir" xml:space="preserve">
+    <value>Iran</value>
+  </data>
+  <data name="Menu_country_is" xml:space="preserve">
+    <value>Islande</value>
+  </data>
+  <data name="Menu_country_it" xml:space="preserve">
+    <value>Italie</value>
+  </data>
+  <data name="Menu_country_je" xml:space="preserve">
+    <value>Jersey</value>
+  </data>
+  <data name="Menu_country_jm" xml:space="preserve">
+    <value>Jamaïque</value>
+  </data>
+  <data name="Menu_country_jo" xml:space="preserve">
+    <value>Jordanie</value>
+  </data>
+  <data name="Menu_country_jp" xml:space="preserve">
+    <value>Japon</value>
+  </data>
+  <data name="Menu_country_ke" xml:space="preserve">
+    <value>Kenya</value>
+  </data>
+  <data name="Menu_country_kg" xml:space="preserve">
+    <value>Kirghizistan</value>
+  </data>
+  <data name="Menu_country_kh" xml:space="preserve">
+    <value>Cambodge</value>
+  </data>
+  <data name="Menu_country_ki" xml:space="preserve">
+    <value>Kiribati</value>
+  </data>
+  <data name="Menu_country_km" xml:space="preserve">
+    <value>Comores</value>
+  </data>
+  <data name="Menu_country_kn" xml:space="preserve">
+    <value>Saint-Christophe-et-Niévès</value>
+  </data>
+  <data name="Menu_country_kp" xml:space="preserve">
+    <value>Corée du Nord</value>
+  </data>
+  <data name="Menu_country_kr" xml:space="preserve">
+    <value>Corée du Sud</value>
+  </data>
+  <data name="Menu_country_kw" xml:space="preserve">
+    <value>Koweït</value>
+  </data>
+  <data name="Menu_country_ky" xml:space="preserve">
+    <value>Îles Caïman</value>
+  </data>
+  <data name="Menu_country_kz" xml:space="preserve">
+    <value>Kazakhstan</value>
+  </data>
+  <data name="Menu_country_la" xml:space="preserve">
+    <value>Laos</value>
+  </data>
+  <data name="Menu_country_lb" xml:space="preserve">
+    <value>Liban</value>
+  </data>
+  <data name="Menu_country_lc" xml:space="preserve">
+    <value>Sainte-Lucie</value>
+  </data>
+  <data name="Menu_country_li" xml:space="preserve">
+    <value>Liechtenstein</value>
+  </data>
+  <data name="Menu_country_lk" xml:space="preserve">
+    <value>Sri Lanka</value>
+  </data>
+  <data name="Menu_country_lr" xml:space="preserve">
+    <value>Liberia</value>
+  </data>
+  <data name="Menu_country_ls" xml:space="preserve">
+    <value>Lesotho</value>
+  </data>
+  <data name="Menu_country_lt" xml:space="preserve">
+    <value>Lituanie</value>
+  </data>
+  <data name="Menu_country_lu" xml:space="preserve">
+    <value>Luxembourg</value>
+  </data>
+  <data name="Menu_country_lv" xml:space="preserve">
+    <value>Lettonie</value>
+  </data>
+  <data name="Menu_country_ly" xml:space="preserve">
+    <value>Libye</value>
+  </data>
+  <data name="Menu_country_ma" xml:space="preserve">
+    <value>Maroc</value>
+  </data>
+  <data name="Menu_country_mc" xml:space="preserve">
+    <value>Monaco</value>
+  </data>
+  <data name="Menu_country_md" xml:space="preserve">
+    <value>Moldavie</value>
+  </data>
+  <data name="Menu_country_me" xml:space="preserve">
+    <value>Monténégro</value>
+  </data>
+  <data name="Menu_country_mf" xml:space="preserve">
+    <value>Saint-Martin</value>
+  </data>
+  <data name="Menu_country_mg" xml:space="preserve">
+    <value>Madagascar</value>
+  </data>
+  <data name="Menu_country_mh" xml:space="preserve">
+    <value>Îles Marshall</value>
+  </data>
+  <data name="Menu_country_mk" xml:space="preserve">
+    <value>Macédoine</value>
+  </data>
+  <data name="Menu_country_ml" xml:space="preserve">
+    <value>Mali</value>
+  </data>
+  <data name="Menu_country_mm" xml:space="preserve">
+    <value>Myanmar</value>
+  </data>
+  <data name="Menu_country_mn" xml:space="preserve">
+    <value>Mongolie</value>
+  </data>
+  <data name="Menu_country_mo" xml:space="preserve">
+    <value>Macao</value>
+  </data>
+  <data name="Menu_country_mp" xml:space="preserve">
+    <value>Îles Mariannes du Nord</value>
+  </data>
+  <data name="Menu_country_mq" xml:space="preserve">
+    <value>Martinique</value>
+  </data>
+  <data name="Menu_country_mr" xml:space="preserve">
+    <value>Mauritanie</value>
+  </data>
+  <data name="Menu_country_ms" xml:space="preserve">
+    <value>Montserrat</value>
+  </data>
+  <data name="Menu_country_mt" xml:space="preserve">
+    <value>Malte</value>
+  </data>
+  <data name="Menu_country_mu" xml:space="preserve">
+    <value>Maurice</value>
+  </data>
+  <data name="Menu_country_mv" xml:space="preserve">
+    <value>Maldives</value>
+  </data>
+  <data name="Menu_country_mw" xml:space="preserve">
+    <value>Malawi</value>
+  </data>
+  <data name="Menu_country_mx" xml:space="preserve">
+    <value>Mexique</value>
+  </data>
+  <data name="Menu_country_my" xml:space="preserve">
+    <value>Malaisie</value>
+  </data>
+  <data name="Menu_country_mz" xml:space="preserve">
+    <value>Mozambique</value>
+  </data>
+  <data name="Menu_country_na" xml:space="preserve">
+    <value>Namibie</value>
+  </data>
+  <data name="Menu_country_nc" xml:space="preserve">
+    <value>Nouvelle Calédonie</value>
+  </data>
+  <data name="Menu_country_ne" xml:space="preserve">
+    <value>Niger</value>
+  </data>
+  <data name="Menu_country_nf" xml:space="preserve">
+    <value>Île Norfolk</value>
+  </data>
+  <data name="Menu_country_ng" xml:space="preserve">
+    <value>Nigeria</value>
+  </data>
+  <data name="Menu_country_ni" xml:space="preserve">
+    <value>Nicaragua</value>
+  </data>
+  <data name="Menu_country_nl" xml:space="preserve">
+    <value>Pays-Bas</value>
+  </data>
+  <data name="Menu_country_no" xml:space="preserve">
+    <value>Norvège</value>
+  </data>
+  <data name="Menu_country_np" xml:space="preserve">
+    <value>Népal</value>
+  </data>
+  <data name="Menu_country_nr" xml:space="preserve">
+    <value>Nauru</value>
+  </data>
+  <data name="Menu_country_nu" xml:space="preserve">
+    <value>Niue</value>
+  </data>
+  <data name="Menu_country_nz" xml:space="preserve">
+    <value>Nouvelle-Zélande</value>
+  </data>
+  <data name="Menu_country_om" xml:space="preserve">
+    <value>Oman</value>
+  </data>
+  <data name="Menu_country_pa" xml:space="preserve">
+    <value>Panama</value>
+  </data>
+  <data name="Menu_country_pe" xml:space="preserve">
+    <value>Pérou</value>
+  </data>
+  <data name="Menu_country_pf" xml:space="preserve">
+    <value>Polynésie Française</value>
+  </data>
+  <data name="Menu_country_pg" xml:space="preserve">
+    <value>Papouasie-Nouvelle-Guinée</value>
+  </data>
+  <data name="Menu_country_ph" xml:space="preserve">
+    <value>Philippines</value>
+  </data>
+  <data name="Menu_country_pk" xml:space="preserve">
+    <value>Pakistan</value>
+  </data>
+  <data name="Menu_country_pl" xml:space="preserve">
+    <value>Pologne</value>
+  </data>
+  <data name="Menu_country_pm" xml:space="preserve">
+    <value>Saint-Pierre-et-Miquelon</value>
+  </data>
+  <data name="Menu_country_pn" xml:space="preserve">
+    <value>Îles Pitcairn</value>
+  </data>
+  <data name="Menu_country_pr" xml:space="preserve">
+    <value>Porto Rico</value>
+  </data>
+  <data name="Menu_country_ps" xml:space="preserve">
+    <value>Palestine</value>
+  </data>
+  <data name="Menu_country_pt" xml:space="preserve">
+    <value>Portugal</value>
+  </data>
+  <data name="Menu_country_pw" xml:space="preserve">
+    <value>Palau</value>
+  </data>
+  <data name="Menu_country_py" xml:space="preserve">
+    <value>Paraguay</value>
+  </data>
+  <data name="Menu_country_qa" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="Menu_country_re" xml:space="preserve">
+    <value>La Réunion</value>
+  </data>
+  <data name="Menu_country_ro" xml:space="preserve">
+    <value>Roumanie</value>
+  </data>
+  <data name="Menu_country_rs" xml:space="preserve">
+    <value>Serbie</value>
+  </data>
+  <data name="Menu_country_ru" xml:space="preserve">
+    <value>Fédération de Russie</value>
+  </data>
+  <data name="Menu_country_rw" xml:space="preserve">
+    <value>Rwanda</value>
+  </data>
+  <data name="Menu_country_sa" xml:space="preserve">
+    <value>Arabie Saoudite</value>
+  </data>
+  <data name="Menu_country_sb" xml:space="preserve">
+    <value>Îles Salomon</value>
+  </data>
+  <data name="Menu_country_sc" xml:space="preserve">
+    <value>Seychelles</value>
+  </data>
+  <data name="Menu_country_sd" xml:space="preserve">
+    <value>Soudan</value>
+  </data>
+  <data name="Menu_country_se" xml:space="preserve">
+    <value>Suède</value>
+  </data>
+  <data name="Menu_country_sg" xml:space="preserve">
+    <value>Singapour</value>
+  </data>
+  <data name="Menu_country_sh" xml:space="preserve">
+    <value>Sainte-Hélène, Ascension et Tristan da Cunha</value>
+  </data>
+  <data name="Menu_country_si" xml:space="preserve">
+    <value>Slovénie</value>
+  </data>
+  <data name="Menu_country_sj" xml:space="preserve">
+    <value>Svalbard et Jan Mayen</value>
+  </data>
+  <data name="Menu_country_sk" xml:space="preserve">
+    <value>Slovaquie</value>
+  </data>
+  <data name="Menu_country_sl" xml:space="preserve">
+    <value>Sierra Leone</value>
+  </data>
+  <data name="Menu_country_sm" xml:space="preserve">
+    <value>Saint-Marin</value>
+  </data>
+  <data name="Menu_country_sn" xml:space="preserve">
+    <value>Sénégal</value>
+  </data>
+  <data name="Menu_country_so" xml:space="preserve">
+    <value>Somalie</value>
+  </data>
+  <data name="Menu_country_sr" xml:space="preserve">
+    <value>Surinam</value>
+  </data>
+  <data name="Menu_country_ss" xml:space="preserve">
+    <value>Soudan du Sud</value>
+  </data>
+  <data name="Menu_country_st" xml:space="preserve">
+    <value>Sao Tomé-et-Principe</value>
+  </data>
+  <data name="Menu_country_sv" xml:space="preserve">
+    <value>Salvador</value>
+  </data>
+  <data name="Menu_country_sx" xml:space="preserve">
+    <value>Saint-Martin</value>
+  </data>
+  <data name="Menu_country_sy" xml:space="preserve">
+    <value>Syrie</value>
+  </data>
+  <data name="Menu_country_sz" xml:space="preserve">
+    <value>Swaziland</value>
+  </data>
+  <data name="Menu_country_tc" xml:space="preserve">
+    <value>Îles Turques-et-Caïques</value>
+  </data>
+  <data name="Menu_country_td" xml:space="preserve">
+    <value>Tchad</value>
+  </data>
+  <data name="Menu_country_tf" xml:space="preserve">
+    <value>Terres australes et antarctiques françaises</value>
+  </data>
+  <data name="Menu_country_tg" xml:space="preserve">
+    <value>Togo</value>
+  </data>
+  <data name="Menu_country_th" xml:space="preserve">
+    <value>Thaïlande</value>
+  </data>
+  <data name="Menu_country_tj" xml:space="preserve">
+    <value>Tadjikistan</value>
+  </data>
+  <data name="Menu_country_tk" xml:space="preserve">
+    <value>Tokelau</value>
+  </data>
+  <data name="Menu_country_tl" xml:space="preserve">
+    <value>Timor oriental</value>
+  </data>
+  <data name="Menu_country_tm" xml:space="preserve">
+    <value>Turkménistan</value>
+  </data>
+  <data name="Menu_country_tn" xml:space="preserve">
+    <value>Tunisie</value>
+  </data>
+  <data name="Menu_country_to" xml:space="preserve">
+    <value>Tonga</value>
+  </data>
+  <data name="Menu_country_tr" xml:space="preserve">
+    <value>Turquie</value>
+  </data>
+  <data name="Menu_country_tt" xml:space="preserve">
+    <value>Trinidad &amp; Tobago</value>
+  </data>
+  <data name="Menu_country_tv" xml:space="preserve">
+    <value>Tuvalu</value>
+  </data>
+  <data name="Menu_country_tw" xml:space="preserve">
+    <value>Taïwan</value>
+  </data>
+  <data name="Menu_country_tz" xml:space="preserve">
+    <value>Tanzanie</value>
+  </data>
+  <data name="Menu_country_ua" xml:space="preserve">
+    <value>Ukraine</value>
+  </data>
+  <data name="Menu_country_ug" xml:space="preserve">
+    <value>Ouganda</value>
+  </data>
+  <data name="Menu_country_um" xml:space="preserve">
+    <value>Îles mineures éloignées des États-Unis</value>
+  </data>
+  <data name="Menu_country_us" xml:space="preserve">
+    <value>États-Unis</value>
+  </data>
+  <data name="Menu_country_uy" xml:space="preserve">
+    <value>Uruguay</value>
+  </data>
+  <data name="Menu_country_uz" xml:space="preserve">
+    <value>Ouzbékistan</value>
+  </data>
+  <data name="Menu_country_va" xml:space="preserve">
+    <value>Cité du Vatican</value>
+  </data>
+  <data name="Menu_country_vc" xml:space="preserve">
+    <value>Saint-Vincent-et-les-Grenadines</value>
+  </data>
+  <data name="Menu_country_ve" xml:space="preserve">
+    <value>Venezuela</value>
+  </data>
+  <data name="Menu_country_vg" xml:space="preserve">
+    <value>Îles Vierges britanniques</value>
+  </data>
+  <data name="Menu_country_vi" xml:space="preserve">
+    <value>Îles Vierges des États-Unis</value>
+  </data>
+  <data name="Menu_country_vn" xml:space="preserve">
+    <value>Vietnam</value>
+  </data>
+  <data name="Menu_country_vu" xml:space="preserve">
+    <value>Vanuatu</value>
+  </data>
+  <data name="Menu_country_wf" xml:space="preserve">
+    <value>Wallis-et-Futuna</value>
+  </data>
+  <data name="Menu_country_ws" xml:space="preserve">
+    <value>Samoa</value>
+  </data>
+  <data name="Menu_country_ye" xml:space="preserve">
+    <value>Yémen</value>
+  </data>
+  <data name="Menu_country_yt" xml:space="preserve">
+    <value>Mayotte</value>
+  </data>
+  <data name="Menu_country_za" xml:space="preserve">
+    <value>Afrique du Sud</value>
+  </data>
+  <data name="Menu_country_zm" xml:space="preserve">
+    <value>Zambie</value>
+  </data>
+  <data name="Menu_country_zw" xml:space="preserve">
+    <value>Zimbabwe</value>
+  </data>
+  <data name="FolderName_Trash" xml:space="preserve">
+    <value>Corbeille</value>
+  </data>
+  <data name="FolderName_Unassigned" xml:space="preserve">
+    <value>Non assigné</value>
+  </data>
+  <data name="Tag_Favorite" xml:space="preserve">
+    <value>Favori</value>
+  </data>
+  <data name="Section_Title" xml:space="preserve">
+    <value>Section</value>
+  </data>
+</root>

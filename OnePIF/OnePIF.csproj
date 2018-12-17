@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48F49879-8129-44D4-BF0E-19850E583846}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnePIF</RootNamespace>
+    <AssemblyName>OnePIF</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)KeePass</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Properties\OnePIF_icon_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KeePass">
+      <HintPath>$(SolutionDir)KeePass\KeePass.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath Condition="Exists('$(ProjectDir)Newtonsoft.Json.dll')">Newtonsoft.Json.dll</HintPath>
+      <HintPath Condition="Exists('..\packages\Newtonsoft.Json.12.0.1\lib\net20\Newtonsoft.Json.dll')">..\packages\Newtonsoft.Json.12.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
+      <IncludeInPackage>false</IncludeInPackage>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JSON Converters\BaseRecordConverter.cs" />
+    <Compile Include="JSON Converters\EnumConverter.cs" />
+    <Compile Include="JSON Converters\SectionFieldConverter.cs" />
+    <Compile Include="DateTimeFormatter.cs" />
+    <Compile Include="Properties\Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OnePIFImporter.cs" />
+    <Compile Include="OnePIFParser.cs" />
+    <Compile Include="ConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationForm.Designer.cs">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Records\BankAccountUsRecord.cs" />
+    <Compile Include="Records\BaseRecord.cs" />
+    <Compile Include="JSON Converters\FlexibleBooleanConverter.cs" />
+    <Compile Include="JSON Converters\MonthYearConverter.cs" />
+    <Compile Include="Records\ItemRecord.cs" />
+    <Compile Include="Records\SecureContents\ItemSecureContents.cs" />
+    <Compile Include="Records\SecureContents\PasswordHistorySecureContents.cs" />
+    <Compile Include="Records\SecureContents\SavedSearchSecureContents.cs" />
+    <Compile Include="Records\SecureContents\URLListSecureContents.cs" />
+    <Compile Include="Records\SecureContents\WebFormSecureContents.cs" />
+    <Compile Include="Records\CreditCardRecord.cs" />
+    <Compile Include="Records\DatabaseRecord.cs" />
+    <Compile Include="Records\DriversLicenseRecord.cs" />
+    <Compile Include="Records\EMailV2Record.cs" />
+    <Compile Include="Records\RegularFolderRecord.cs" />
+    <Compile Include="Records\IdentityRecord.cs" />
+    <Compile Include="Records\MembershipRecord.cs" />
+    <Compile Include="Records\OpenContents\OpenContents.cs" />
+    <Compile Include="JSON Converters\RecordTypeConverter.cs" />
+    <Compile Include="JSON Converters\UnixEpochConverter.cs" />
+    <Compile Include="JSON Converters\UUIDConverter.cs" />
+    <Compile Include="Records\HuntingLicenseRecord.cs" />
+    <Compile Include="Records\PassportRecord.cs" />
+    <Compile Include="Records\PasswordRecord.cs" />
+    <Compile Include="Records\OpenContents\ScopedOpenContents.cs" />
+    <Compile Include="Records\SecureContents\SecureContents.cs" />
+    <Compile Include="Records\RewardProgramRecord.cs" />
+    <Compile Include="Records\SecureNoteRecord.cs" />
+    <Compile Include="Records\OpenContents\SavedSearchOpenContents.cs" />
+    <Compile Include="Records\SavedSearchRecord.cs" />
+    <Compile Include="Records\LicenseRecord.cs" />
+    <Compile Include="Records\OpenContents\SubmittableOpenContents.cs" />
+    <Compile Include="Records\SiteItemRecord.cs" />
+    <Compile Include="Records\UnknownRecord.cs" />
+    <Compile Include="Records\RouterRecord.cs" />
+    <Compile Include="Records\SsnUsRecord.cs" />
+    <Compile Include="Records\UnixServerRecord.cs" />
+    <Compile Include="Records\WebFormRecord.cs" />
+    <Compile Include="OnePIFFormatProvider.cs" />
+    <Compile Include="OnePIFExt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager\EmbeddedResourceManager.cs" />
+    <Compile Include="ResourceManager\ResourceFallbackManager.cs" />
+    <Compile Include="StringExt.cs" />
+    <Compile Include="TreeNode.cs" />
+    <Compile Include="Dropdown List Types\BankAccountType.cs" />
+    <Compile Include="Dropdown List Types\CreditCardType.cs" />
+    <Compile Include="Dropdown List Types\DatabaseType.cs" />
+    <Compile Include="Dropdown List Types\EMailV2POPAuthentication.cs" />
+    <Compile Include="Dropdown List Types\EMailV2POPType.cs" />
+    <Compile Include="Dropdown List Types\EMailV2POPSecurity.cs" />
+    <Compile Include="Dropdown List Types\EMailV2SMTPAuthentication.cs" />
+    <Compile Include="Dropdown List Types\EMailV2SMTPSecurity.cs" />
+    <Compile Include="Dropdown List Types\FieldDesignation.cs" />
+    <Compile Include="Dropdown List Types\WebFormFieldType.cs" />
+    <Compile Include="Dropdown List Types\Gender.cs" />
+    <Compile Include="Records\RecordType.cs" />
+    <Compile Include="Dropdown List Types\SectionFieldType.cs" />
+    <Compile Include="Dropdown List Types\WirelessSecurity.cs" />
+    <Compile Include="UserPrefs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConfigurationForm.resx">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.af.resx" />
+    <EmbeddedResource Include="Properties\Strings.cs.resx" />
+    <EmbeddedResource Include="Properties\Strings.da.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.de.resx" />
+    <EmbeddedResource Include="Properties\Strings.el.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.en-CA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.en-GB.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.es.resx" />
+    <EmbeddedResource Include="Properties\Strings.fi.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.fr.resx" />
+    <EmbeddedResource Include="Properties\Strings.it.resx" />
+    <EmbeddedResource Include="Properties\Strings.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.nb.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.nl.resx" />
+    <EmbeddedResource Include="Properties\Strings.pl.resx" />
+    <EmbeddedResource Include="Properties\Strings.pt-BR.resx" />
+    <EmbeddedResource Include="Properties\Strings.pt-PT.resx" />
+    <EmbeddedResource Include="Properties\Strings.pt.resx" />
+    <EmbeddedResource Include="Properties\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.sv.resx" />
+    <EmbeddedResource Include="Properties\Strings.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Strings.zh-Hant.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\OnePIF_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\OnePIF_icon_32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

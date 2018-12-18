@@ -22,17 +22,15 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 
 ### (Un)tested and (un)supported file formats and platforms
 
-* The plugin was tested using files exported by 1Password 6 standalone for macOS. All item types (from the above list of supported items) and template fields were tested.
+* The plugin was tested using files exported by 1Password 6 for macOS as well as 1Password 4 for Windows. All item types (from the above list in previous section) and template fields were tested.
   - It was *not* tested with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
-  - It does *not* support 1pif files exported from 1Password 4 for MS-Windows.
-* The plugin was tested with KeePass 2.x running on MS-Windows 10 and Ubuntu 18.04.
+* The plugin was tested with KeePass 2.40 running on Windows and KeePass 2.38 running on Ubuntu.
 
 ### What's next
 
 I expect to keep fixing bugs, adding some features and broadening support for more variants of 1pif files. Here are some of the plans, in no particular order:
 
 * Better mapping of 1Password fields to standard KeePass fields.
-* Support 1pif files exported from 1Password 4 for MS-Windows.
 * Log/summary of import errors.
 * Import attachments.
 
@@ -58,7 +56,7 @@ You don't have to actually compile anything, just build the `PackagePLGX` projec
 
 Build the `OnePIF` project and you're ready to go.
 
-If you're copying this version to your KeePass installation path, don't forget to copy the dependecies and localization satellite DLLs. Copy the files to the _root_ KeePass installation path and not inside the Plugins directory. If KeePass finds the satellite DLLs in the Plugins directory, it will try (and fail) to load them as plugins. I still couldn't find an easy way to embed the localized resources in the main DLL.
+To install, copy the plugin DLL along with the the dependecies and (optionally) the localization satellite DLLs to the _root_ KeePass installation path. Do not place the files inside the Plugins directory. If KeePass finds the satellite DLLs in the Plugins directory, it will try (and fail) to load them as plugins.<sup id="a5">[5](#f5)</sup>
 
 ### Debugging
 
@@ -70,10 +68,12 @@ This software is provided as-is without any warranty of any kind. I take no resp
 
 **Vaults often contain very sensitive information. Thoroughly check imported data for completeness and correctess before deleting the original files.**
 
-<b id="f1">1</b> Smart Folders are not supported since KeePass seems to lack a similar feature. [↩](#a1)
+<b id="f1">1</b> Smart Folders are not supported since KeePass seems to lack a similar feature. [:leftwards_arrow_with_hook:](#a1)
 
-<b id="f2">2</b> Only icons saved as image formats supported by .NET `System.Drawing.Bitmap` class, namely: BMP, GIF, EXIF, JPEG, PNG and TIFF. [↩](#a2)
+<b id="f2">2</b> Only icons saved as image formats supported by .NET `System.Drawing.Bitmap` class, namely: BMP, GIF, EXIF, JPEG, PNG and TIFF. [:leftwards_arrow_with_hook:](#a2)
 
-<b id="f3">3</b> Sample 1pif files completely or partially failing to be imported are welcome to expand support. **If they're from a real vault, don't forget to redact private information.** [↩](#a3)
+<b id="f3">3</b> Sample 1pif files completely or partially failing to be imported are welcome to expand support. **If they're from a real vault, don't forget to redact private information.** [:leftwards_arrow_with_hook:](#a3)
 
-<b id="f4">4</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [↩](#a5)
+<b id="f4">4</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [:leftwards_arrow_with_hook:](#a4)
+
+<b id="f5">5</b> An upcoming release of KeePass (> 2.40) will include a fix for the satellite DLLs issue. [:leftwards_arrow_with_hook:](#a5)

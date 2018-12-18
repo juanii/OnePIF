@@ -31,6 +31,111 @@ namespace OnePIF.Converters
             { "wallet.computer.License", typeof(LicenseRecord) }
         };
 
+        private static Dictionary<string, string> itemTypeByCategory = new Dictionary<string, string>()
+        {
+            { "001", "webforms.WebForm" },
+            { "002", "wallet.financial.CreditCard" },
+            { "003", "securenotes.SecureNote" },
+            { "004", "identities.Identity" },
+            { "005", "passwords.Password" },
+            { "100", "wallet.computer.License" },
+            { "101", "wallet.financial.BankAccountUS" },
+            { "102", "wallet.computer.Database" },
+            { "103", "wallet.government.DriversLicense" },
+            { "104", "wallet.government.HuntingLicense" },
+            { "105", "wallet.membership.Membership" },
+            { "106", "wallet.government.Passport" },
+            { "107", "wallet.membership.RewardProgram" },
+            { "108", "wallet.government.SsnUS" },
+            { "109", "wallet.computer.Router" },
+            { "110", "wallet.computer.UnixServer" },
+            { "111", "wallet.onlineservices.Email.v2" }
+        };
+
+        private void convertWinToMac(JObject jsonRecord)
+        {
+            // Rename top-level members
+            if (jsonRecord.ContainsKey("tx"))
+                JPropertyExt.Rename(jsonRecord.Property("tx"), "txTimestamp");
+
+            if (jsonRecord.ContainsKey("parent")) // Folders call their parent folder "parent"
+                JPropertyExt.Rename(jsonRecord.Property("parent"), "folderUuid");
+            else if (jsonRecord.ContainsKey("folder")) // Items call their parent folder "folder"
+                JPropertyExt.Rename(jsonRecord.Property("folder"), "folderUuid");
+
+            if (jsonRecord.ContainsKey("fave"))
+                JPropertyExt.Rename(jsonRecord.Property("fave"), "faveIndex");
+
+            if (jsonRecord.ContainsKey("created"))
+                JPropertyExt.Rename(jsonRecord.Property("created"), "createdAt");
+
+            if (jsonRecord.ContainsKey("updated"))
+                JPropertyExt.Rename(jsonRecord.Property("updated"), "updatedAt");
+
+            if (jsonRecord.ContainsKey("details"))
+                JPropertyExt.Rename(jsonRecord.Property("details"), "secureContents");
+
+            if (jsonRecord.ContainsKey("overview"))
+                JPropertyExt.Rename(jsonRecord.Property("overview"), "openContents");
+
+            // Convert item category to item type
+            if (jsonRecord.ContainsKey("category"))
+            {
+                string category = (string)jsonRecord.Property("category");
+                string itemType;
+
+                if (!itemTypeByCategory.TryGetValue(category, out itemType))
+                    itemType = category;
+
+                jsonRecord.Add("typeName", itemType);
+            }
+
+            // Rearrange/rename members from openContents/secureContents
+            JObject openContents = (JObject)jsonRecord.GetValue("openContents");
+            if (openContents == null)
+                openContents = new JObject();
+
+            JObject secureContents = (JObject)jsonRecord.GetValue("secureContents");
+            if (secureContents == null)
+                secureContents = new JObject();
+
+            if (jsonRecord.ContainsKey("scope"))
+                JPropertyExt.Move(jsonRecord.Property("scope"), openContents);
+
+            if (openContents.ContainsKey("title"))
+                JPropertyExt.Move(openContents.Property("title"), jsonRecord);
+
+            if (openContents.ContainsKey("url"))
+                JPropertyExt.Move(JPropertyExt.Rename(openContents.Property("url"), "location"), jsonRecord);
+
+            if (openContents.ContainsKey("URLs"))
+            {
+                JArray urls = (JArray)openContents.GetValue("URLs");
+
+                foreach (JToken url in urls)
+                {
+                    if (url.Type == JTokenType.Object)
+                    {
+                        JPropertyExt.Rename((url as JObject).Property("u"), "url");
+                        JPropertyExt.Rename((url as JObject).Property("l"), "label");
+                    }
+                }
+
+                JPropertyExt.Move(openContents.Property("URLs"), secureContents);
+            }
+
+            if (openContents.ContainsKey("icon"))
+                JPropertyExt.Move(JPropertyExt.Rename(openContents.Property("icon"), "customIcon"), secureContents);
+
+            // If there wasn't an openContents member and we needed to add properties to one
+            if (openContents.Parent == null && openContents.Count > 0)
+                jsonRecord.Add(new JProperty("openContents", openContents));
+
+            // If there wasn't a secureContents member and we needed to add poperties to one
+            if (secureContents.Parent == null && secureContents.Count > 0)
+                jsonRecord.Add(new JProperty("secureContents", secureContents));
+        }
+
         public override bool CanWrite { get { return false; } }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer) { throw new NotImplementedException(); }
@@ -44,7 +149,10 @@ namespace OnePIF.Converters
         {
             JObject jsonRecord = JObject.Load(reader);
 
-            string recordType = (string)jsonRecord.Property("typeName");
+            if (jsonRecord.ContainsKey("tx")) // 1P4 for MS-Windows
+                this.convertWinToMac(jsonRecord);
+
+            string recordType = (string)jsonRecord.GetValue("typeName");
             BaseRecord record = null;
 
             if (!string.IsNullOrEmpty(recordType) && classTypesByItemType.ContainsKey(recordType))

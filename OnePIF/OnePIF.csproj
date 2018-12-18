@@ -53,6 +53,7 @@
     <Compile Include="JSON Converters\EnumConverter.cs" />
     <Compile Include="JSON Converters\SectionFieldConverter.cs" />
     <Compile Include="DateTimeFormatter.cs" />
+    <Compile Include="JPropertyExt.cs" />
     <Compile Include="Properties\Icons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

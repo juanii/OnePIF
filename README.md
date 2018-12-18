@@ -25,8 +25,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 * The plugin was tested using files exported by 1Password 6 standalone for macOS. All item types (from the above list of supported items) and template fields were tested.
   - It was *not* tested with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
   - It does *not* support 1pif files exported from 1Password 4 for MS-Windows.
-* The plugin was tested with KeePass 2.x running on MS-Windows 10.
-  - It was *not* tested on any *nix environment.<sup id="a4">[4](#f4)</sup>
+* The plugin was tested with KeePass 2.x running on MS-Windows 10 and Ubuntu 18.04.
 
 ### What's next
 
@@ -35,7 +34,6 @@ I expect to keep fixing bugs, adding some features and broadening support for mo
 * Better mapping of 1Password fields to standard KeePass fields.
 * Support 1pif files exported from 1Password 4 for MS-Windows.
 * Log/summary of import errors.
-* Test/fix on *nix environments.
 * Import attachments.
 
 ## Download and installation
@@ -48,7 +46,7 @@ If you're using KeePass 2.08 or older, you'll have to build the DLL version of t
 
 ### Prerequisites
 
-Before building the plugin you must either download and place a copy of KeePass software in the `KeePass` directory inside the solution directory, or adjust the paths all over the projects<sup id="a5">[5](#f5)</sup> to point to your current KeePass installation.
+Before building the plugin you must either download and place a copy of KeePass software in the `KeePass` directory inside the solution directory, or adjust the paths all over the projects<sup id="a4">[4](#f4)</sup> to point to your current KeePass installation.
 
 The plugin depends on [Newtonsoft Json.NET](https://www.newtonsoft.com/). If you're using Visual Studio, enable the NuGet automatic download and installation of missing packages in `Tools > Options > NuGet Package Manager > General`. If you're using MSBuild use the `nuget restore` command to restore dependencies before building.
 
@@ -78,6 +76,4 @@ This software is provided as-is without any warranty of any kind. I take no resp
 
 <b id="f3">3</b> Sample 1pif files completely or partially failing to be imported are welcome to expand support. **If they're from a real vault, don't forget to redact private information.** [↩](#a3)
 
-<b id="f4">4</b> If you manage to get it running on a different platform, comments and/or instructions are welcome and will be added to the project. [↩](#a4)
-
-<b id="f5">5</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [↩](#a5)
+<b id="f4">4</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [↩](#a5)

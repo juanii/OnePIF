@@ -1,7 +1,6 @@
 ﻿using KeePassLib;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using KeePassLib.Security;
+using System.IO;
 
 namespace OnePIF.Records
 {
@@ -31,6 +30,15 @@ namespace OnePIF.Records
 
             if (this.faveIndex > 0 && !pwEntry.Tags.Contains(Properties.Strings.Tag_Favorite))
                 pwEntry.Tags.Add(Properties.Strings.Tag_Favorite);
+
+            string attachmentsPath = Path.Combine(Path.GetDirectoryName(userPrefs.ImportFilePath), "attachments");
+            string itemAttachmentsPath = Path.Combine(attachmentsPath, this.uuid.ToString("N").ToUpper());
+
+            if (Directory.Exists(itemAttachmentsPath))
+            {
+                foreach (string itemAttachmentPath in Directory.GetFiles(itemAttachmentsPath))
+                    pwEntry.Binaries.Set(Path.GetFileName(itemAttachmentPath), new ProtectedBinary(false, File.ReadAllBytes(itemAttachmentPath)));
+            }
 
             return pwEntry;
         }

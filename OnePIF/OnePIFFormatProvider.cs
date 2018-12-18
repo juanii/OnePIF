@@ -67,7 +67,7 @@ namespace OnePIF
 
         public override bool RequiresFile
         {
-            get { return true; }
+            get { return false; }
         }
 
         public override Image SmallIcon
@@ -84,7 +84,9 @@ namespace OnePIF
             if (configurationForm.ShowDialog() == DialogResult.OK)
             {
                 statusLogger.SetText("Parsing 1PIF file...", LogStatusType.Info);
-                List<Records.BaseRecord> records = onePIFParser.Parse(input);
+                List<Records.BaseRecord> records;
+                using (Stream importFileStream = File.OpenRead(configurationForm.ImportFilePath))
+                    records = onePIFParser.Parse(importFileStream);
                 statusLogger.SetText(string.Format("Importing {0} parsed records...", records.Count), LogStatusType.Info);
                 onePIFImporter.Import(records, pwDatabase, statusLogger, configurationForm.GetUserPrefs());
                 statusLogger.SetText("Finished import.", LogStatusType.Info);

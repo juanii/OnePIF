@@ -16,6 +16,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
   - Favorite flag (as a tag).
   - Trashed items.
   - Custom user-provided icons<sup id="a2">[2](#f2)</sup> (not the rich icons provided by AgileBits).
+  - File attachments.
 * Organizes items into the standard 1Password categories or using preexistent user-defined folders.
 * Proper handling of line endings in multiline fields.
 * Customizable date formats: ISO 8601 or user locale.
@@ -32,7 +33,6 @@ I expect to keep fixing bugs, adding some features and broadening support for mo
 
 * Better mapping of 1Password fields to standard KeePass fields.
 * Log/summary of import errors.
-* Import attachments.
 
 ## Download and installation
 

@@ -23,5 +23,7 @@
         public bool KeepTrashedItems { get; set; }
 
         public bool CreateParentFolder { get; set; }
+
+        public string ImportFilePath { get; set; }
     }
 }

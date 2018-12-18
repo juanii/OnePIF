@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace OnePIF
@@ -30,7 +31,7 @@ namespace OnePIF
         {
             get
             {
-                if (this.folderCategoriesRadioButton.Checked)
+                if (this.categoryFolderLayoutRadioButton.Checked)
                     return FolderLayout.Category;
                 else
                     return FolderLayout.UserDefined;
@@ -47,6 +48,8 @@ namespace OnePIF
             get { return this.createParentFolderCheckBox.Checked; }
         }
 
+        public string ImportFilePath { get; private set; }
+
         public UserPrefs GetUserPrefs()
         {
             return new UserPrefs()
@@ -54,7 +57,8 @@ namespace OnePIF
                 FolderLayout = this.FolderLayout,
                 DateFormat = this.DateFormat,
                 KeepTrashedItems = this.KeepTrashedItems,
-                CreateParentFolder = this.CreateParentFolder
+                CreateParentFolder = this.CreateParentFolder,
+                ImportFilePath = this.ImportFilePath
             };
         }
 
@@ -85,6 +89,31 @@ namespace OnePIF
                 }
 
                 settingTooltip = false;
+            }
+        }
+
+        private void browseButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+                this.filePathTextBox.Text = openFileDialog.FileName;
+        }
+
+        private void filePathtextBox_TextChanged(object sender, EventArgs e)
+        {
+            this.importButton.Enabled = !string.IsNullOrEmpty((sender as TextBox).Text);
+        }
+
+        private void importButton_Click(object sender, EventArgs e)
+        {
+            if (!File.Exists(this.filePathTextBox.Text))
+            {
+                MessageBox.Show(string.Join(Environment.NewLine, new string[] { this.filePathTextBox.Text, "File not found." }), "Import", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.DialogResult = DialogResult.None;
+            }
+            else
+            {
+                this.ImportFilePath = this.filePathTextBox.Text;
+                this.DialogResult = DialogResult.OK;
             }
         }
     }

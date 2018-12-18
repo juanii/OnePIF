@@ -27,7 +27,8 @@ namespace OnePIF.Records
             PwEntry pwEntry = base.CreatePwEntry(pwDatabase, userPrefs);
             pwEntry.IconId = PwIcon.Key;
 
-            pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, this.secureContents.password));
+            if (!string.IsNullOrEmpty(this.secureContents.password))
+                pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, this.secureContents.password));
 
             return pwEntry;
         }

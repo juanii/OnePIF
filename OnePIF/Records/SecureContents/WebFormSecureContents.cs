@@ -10,6 +10,8 @@ namespace OnePIF.Records
     public class WebFormField
     {
 #pragma warning disable IDE1006
+        public string id { get; set; }
+
         public string name { get; set; }
 
         public string value { get; set; }
@@ -26,6 +28,14 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         public IList<WebFormField> fields { get; set; }
+
+        public string htmlAction { get; set; }
+
+        public string htmlID { get; set; }
+
+        public string htmlMethod { get; set; }
+
+        public string htmlName { get; set; }
 #pragma warning restore IDE1006
 
         public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)

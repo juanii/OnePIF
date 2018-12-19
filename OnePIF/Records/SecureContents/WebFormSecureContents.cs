@@ -40,7 +40,7 @@ namespace OnePIF.Records
                         pwEntry.Strings.Set(PwDefs.UserNameField, new ProtectedString(pwDatabase.MemoryProtection.ProtectUserName, webFormField.value));
                     else if (webFormField.designation == FieldDesignation.password)
                         pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, webFormField.value));
-                    else
+                    else if (webFormField.type != WebFormFieldType.B && webFormField.type != WebFormFieldType.I) // Buttons and Submit elements are not relevant to the form
                         pwEntry.Strings.Set(string.Format("WebForm - {0}", webFormField.name), new ProtectedString((webFormField.type == Types.WebFormFieldType.P && pwDatabase.MemoryProtection.ProtectPassword) || (webFormField.type == Types.WebFormFieldType.U && pwDatabase.MemoryProtection.ProtectUrl), webFormField.value));
                 }
             }

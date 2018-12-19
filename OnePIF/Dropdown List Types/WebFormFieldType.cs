@@ -10,6 +10,10 @@
         N,      // Number
         TEL,    // Telephone
         C,      // Checkbox
-        U       // URL
+        U,      // URL
+        B,      // Button
+        I,      // Submit
+        S,      // Select (Combo)
+        RNG     // Range
     }
 }

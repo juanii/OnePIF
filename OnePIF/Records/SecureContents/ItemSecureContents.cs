@@ -119,79 +119,82 @@ namespace OnePIF.Records
                     if (section.name.Equals(LINKED_ITEMS_SECTION_NAME))
                         continue;
 
-                    string sectionTitle = section.title;
-                    if (string.IsNullOrEmpty(section.title) && USER_SECTION_NAME.IsMatch(section.name))
-                        sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
-
-                    foreach (SectionField field in section.fields)
+                    if (section.fields != null)
                     {
-                        string fieldLabel = field.t;
-                        string fieldValue = null;
+                        string sectionTitle = section.title;
+                        if (string.IsNullOrEmpty(section.title) && USER_SECTION_NAME.IsMatch(section.name))
+                            sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
 
-                        if (!string.IsNullOrEmpty(sectionTitle))
-                            fieldLabel = string.Concat(sectionTitle, " - ", field.t);
-
-                        if (field.k == SectionFieldType.address)
+                        foreach (SectionField field in section.fields)
                         {
-                            AddressSectionField addressSectionField = field as AddressSectionField;
-                            StringBuilder addressBuilder = new StringBuilder();
+                            string fieldLabel = field.t;
+                            string fieldValue = null;
 
-                            if (!string.IsNullOrEmpty(addressSectionField.v.street))
-                                addressBuilder.AppendLine(addressSectionField.v.street);
+                            if (!string.IsNullOrEmpty(sectionTitle))
+                                fieldLabel = string.Concat(sectionTitle, " - ", field.t);
 
-                            if (!string.IsNullOrEmpty(addressSectionField.v.zip))
-                                addressBuilder.AppendFormat("{0} ", addressSectionField.v.zip);
+                            if (field.k == SectionFieldType.address)
+                            {
+                                AddressSectionField addressSectionField = field as AddressSectionField;
+                                StringBuilder addressBuilder = new StringBuilder();
 
-                            if (!string.IsNullOrEmpty(addressSectionField.v.city))
-                                addressBuilder.AppendLine(addressSectionField.v.city);
-                            else if (!string.IsNullOrEmpty(addressSectionField.v.zip))
-                                addressBuilder.AppendLine();
+                                if (!string.IsNullOrEmpty(addressSectionField.v.street))
+                                    addressBuilder.AppendLine(addressSectionField.v.street);
 
-                            if (!string.IsNullOrEmpty(addressSectionField.v.state))
-                                addressBuilder.AppendLine(addressSectionField.v.state);
+                                if (!string.IsNullOrEmpty(addressSectionField.v.zip))
+                                    addressBuilder.AppendFormat("{0} ", addressSectionField.v.zip);
 
-                            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                            if (!string.IsNullOrEmpty(addressSectionField.v.country))
-                                addressBuilder.Append(Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", addressSectionField.v.country.Replace('-', '_') })));
+                                if (!string.IsNullOrEmpty(addressSectionField.v.city))
+                                    addressBuilder.AppendLine(addressSectionField.v.city);
+                                else if (!string.IsNullOrEmpty(addressSectionField.v.zip))
+                                    addressBuilder.AppendLine();
 
-                            fieldValue = addressBuilder.ToString();
+                                if (!string.IsNullOrEmpty(addressSectionField.v.state))
+                                    addressBuilder.AppendLine(addressSectionField.v.state);
+
+                                // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+                                if (!string.IsNullOrEmpty(addressSectionField.v.country))
+                                    addressBuilder.Append(Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", addressSectionField.v.country.Replace('-', '_') })));
+
+                                fieldValue = addressBuilder.ToString();
+                            }
+                            else if (field.k == SectionFieldType.date)
+                            {
+                                DateSectionField dateSectionField = field as DateSectionField;
+
+                                if (!DateTime.MinValue.Equals(dateSectionField.v))
+                                    fieldValue = DateTimeFormatter.FormatDate(dateSectionField.v, userPrefs.DateFormat);
+                            }
+                            else if (field.k == SectionFieldType.monthYear)
+                            {
+                                MonthYearSectionField monthYearSectionField = field as MonthYearSectionField;
+
+                                if (!DateTime.MinValue.Equals(monthYearSectionField.v))
+                                    fieldValue = DateTimeFormatter.FormatMonthYear(monthYearSectionField.v, userPrefs.DateFormat);
+                            }
+                            else if (field.k == SectionFieldType.menu || field.k == SectionFieldType.cctype || field.k == SectionFieldType.gender)
+                            {
+                                GeneralSectionField generalSectionField = field as GeneralSectionField;
+
+                                // Combo-box values can't be empty
+                                if (!string.IsNullOrEmpty(generalSectionField.v))
+                                    fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", generalSectionField.n, generalSectionField.v }));
+                            }
+                            else
+                            {
+                                fieldValue = (field as GeneralSectionField).v;
+                            }
+
+                            if (field.a != null && field.a.multiline)
+                                fieldValue = StringExt.FixNewLines(fieldValue);
+
+                            // No point in importing a field the user didn't fill
+                            if (fieldValue == null)
+                                continue;
+
+                            bool protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);
+                            pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue));
                         }
-                        else if (field.k == SectionFieldType.date)
-                        {
-                            DateSectionField dateSectionField = field as DateSectionField;
-
-                            if (!DateTime.MinValue.Equals(dateSectionField.v))
-                                fieldValue = DateTimeFormatter.FormatDate(dateSectionField.v, userPrefs.DateFormat);
-                        }
-                        else if (field.k == SectionFieldType.monthYear)
-                        {
-                            MonthYearSectionField monthYearSectionField = field as MonthYearSectionField;
-
-                            if (!DateTime.MinValue.Equals(monthYearSectionField.v))
-                                fieldValue = DateTimeFormatter.FormatMonthYear(monthYearSectionField.v, userPrefs.DateFormat);
-                        }
-                        else if (field.k == SectionFieldType.menu || field.k == SectionFieldType.cctype || field.k == SectionFieldType.gender)
-                        {
-                            GeneralSectionField generalSectionField = field as GeneralSectionField;
-
-                            // Combo-box values can't be empty
-                            if (!string.IsNullOrEmpty(generalSectionField.v))
-                                fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", generalSectionField.n, generalSectionField.v }));
-                        }
-                        else
-                        {
-                            fieldValue = (field as GeneralSectionField).v;
-                        }
-
-                        if (field.a != null && field.a.multiline)
-                            fieldValue = StringExt.FixNewLines(fieldValue);
-                        
-                        // No point in importing a field the user didn't fill
-                        if (fieldValue == null)
-                            continue;
-
-                        bool protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);
-                        pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue));
                     }
                 }
             }

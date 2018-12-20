@@ -50,6 +50,19 @@ namespace OnePIF
 
         public string ImportFilePath { get; private set; }
 
+        public OTPFormat OTPFormat
+        {
+            get
+            {
+                if (this.otpKeeWebRadioButton.Checked)
+                    return OTPFormat.KeeWeb;
+                else if (this.otpTrayTOTPradioButton.Checked)
+                    return OTPFormat.TrayTOTP;
+                else
+                    return OTPFormat.KeeOtp;
+            }
+        }
+
         public UserPrefs GetUserPrefs()
         {
             return new UserPrefs()
@@ -58,7 +71,8 @@ namespace OnePIF
                 DateFormat = this.DateFormat,
                 KeepTrashedItems = this.KeepTrashedItems,
                 CreateParentFolder = this.CreateParentFolder,
-                ImportFilePath = this.ImportFilePath
+                ImportFilePath = this.ImportFilePath,
+                OTPFormat = this.OTPFormat
             };
         }
 

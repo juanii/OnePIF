@@ -47,12 +47,19 @@
             this.filePathTextBox = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
             this.fileGroupBox = new System.Windows.Forms.GroupBox();
+            this.otpFormatGroupBox = new System.Windows.Forms.GroupBox();
+            this.otpFormatFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.otpKeeWebRadioButton = new System.Windows.Forms.RadioButton();
+            this.otpKeeOtpRadioButton = new System.Windows.Forms.RadioButton();
+            this.otpTrayTOTPradioButton = new System.Windows.Forms.RadioButton();
             this.folderStructureGroupBox.SuspendLayout();
             this.folderLayoutFlowLayoutPanel.SuspendLayout();
             this.parentFolderFlowLayoutPanel.SuspendLayout();
             this.dateFormatGroupBox.SuspendLayout();
             this.dateFormatFlowLayoutPanel.SuspendLayout();
             this.fileGroupBox.SuspendLayout();
+            this.otpFormatGroupBox.SuspendLayout();
+            this.otpFormatFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // folderStructureGroupBox
@@ -179,7 +186,7 @@
             this.importButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.importButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.importButton.Enabled = false;
-            this.importButton.Location = new System.Drawing.Point(207, 216);
+            this.importButton.Location = new System.Drawing.Point(207, 273);
             this.importButton.Name = "importButton";
             this.importButton.Size = new System.Drawing.Size(75, 23);
             this.importButton.TabIndex = 5;
@@ -191,7 +198,7 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(126, 216);
+            this.cancelButton.Location = new System.Drawing.Point(126, 273);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 6;
@@ -231,19 +238,80 @@
             // 
             this.fileGroupBox.Controls.Add(this.filePathTextBox);
             this.fileGroupBox.Controls.Add(this.browseButton);
-            this.fileGroupBox.Location = new System.Drawing.Point(12, 155);
+            this.fileGroupBox.Location = new System.Drawing.Point(12, 211);
             this.fileGroupBox.Name = "fileGroupBox";
             this.fileGroupBox.Size = new System.Drawing.Size(270, 50);
             this.fileGroupBox.TabIndex = 9;
             this.fileGroupBox.TabStop = false;
             this.fileGroupBox.Text = "File";
             // 
+            // otpFormatGroupBox
+            // 
+            this.otpFormatGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.otpFormatGroupBox.Controls.Add(this.otpFormatFlowLayoutPanel);
+            this.otpFormatGroupBox.Location = new System.Drawing.Point(12, 155);
+            this.otpFormatGroupBox.Name = "otpFormatGroupBox";
+            this.otpFormatGroupBox.Size = new System.Drawing.Size(270, 50);
+            this.otpFormatGroupBox.TabIndex = 4;
+            this.otpFormatGroupBox.TabStop = false;
+            this.otpFormatGroupBox.Text = "OTP format";
+            // 
+            // otpFormatFlowLayoutPanel
+            // 
+            this.otpFormatFlowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.otpFormatFlowLayoutPanel.Controls.Add(this.otpKeeWebRadioButton);
+            this.otpFormatFlowLayoutPanel.Controls.Add(this.otpTrayTOTPradioButton);
+            this.otpFormatFlowLayoutPanel.Controls.Add(this.otpKeeOtpRadioButton);
+            this.otpFormatFlowLayoutPanel.Location = new System.Drawing.Point(6, 19);
+            this.otpFormatFlowLayoutPanel.Name = "otpFormatFlowLayoutPanel";
+            this.otpFormatFlowLayoutPanel.Size = new System.Drawing.Size(258, 25);
+            this.otpFormatFlowLayoutPanel.TabIndex = 3;
+            // 
+            // otpKeeWebRadioButton
+            // 
+            this.otpKeeWebRadioButton.AutoSize = true;
+            this.otpKeeWebRadioButton.Checked = true;
+            this.otpKeeWebRadioButton.Location = new System.Drawing.Point(3, 3);
+            this.otpKeeWebRadioButton.Name = "otpKeeWebRadioButton";
+            this.otpKeeWebRadioButton.Size = new System.Drawing.Size(67, 17);
+            this.otpKeeWebRadioButton.TabIndex = 0;
+            this.otpKeeWebRadioButton.TabStop = true;
+            this.otpKeeWebRadioButton.Text = "KeeWeb";
+            this.toolTip.SetToolTip(this.otpKeeWebRadioButton, "Single \"otp\" field with otpauth URI");
+            this.otpKeeWebRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // otpKeeOtpRadioButton
+            // 
+            this.otpKeeOtpRadioButton.AutoSize = true;
+            this.otpKeeOtpRadioButton.Location = new System.Drawing.Point(160, 3);
+            this.otpKeeOtpRadioButton.Name = "otpKeeOtpRadioButton";
+            this.otpKeeOtpRadioButton.Size = new System.Drawing.Size(61, 17);
+            this.otpKeeOtpRadioButton.TabIndex = 1;
+            this.otpKeeOtpRadioButton.Text = "KeeOtp";
+            this.toolTip.SetToolTip(this.otpKeeOtpRadioButton, "Locale");
+            this.otpKeeOtpRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // otpTrayTOTPradioButton
+            // 
+            this.otpTrayTOTPradioButton.AutoSize = true;
+            this.otpTrayTOTPradioButton.Location = new System.Drawing.Point(76, 3);
+            this.otpTrayTOTPradioButton.Name = "otpTrayTOTPradioButton";
+            this.otpTrayTOTPradioButton.Size = new System.Drawing.Size(78, 17);
+            this.otpTrayTOTPradioButton.TabIndex = 2;
+            this.otpTrayTOTPradioButton.Text = "Tray TOTP";
+            this.toolTip.SetToolTip(this.otpTrayTOTPradioButton, "\"TOTP Seed\" and \"TOTP Settings\" fields");
+            this.otpTrayTOTPradioButton.UseVisualStyleBackColor = true;
+            // 
             // ConfigurationForm
             // 
             this.AcceptButton = this.importButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 251);
+            this.ClientSize = new System.Drawing.Size(294, 308);
+            this.Controls.Add(this.otpFormatGroupBox);
             this.Controls.Add(this.fileGroupBox);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.importButton);
@@ -267,6 +335,9 @@
             this.dateFormatFlowLayoutPanel.PerformLayout();
             this.fileGroupBox.ResumeLayout(false);
             this.fileGroupBox.PerformLayout();
+            this.otpFormatGroupBox.ResumeLayout(false);
+            this.otpFormatFlowLayoutPanel.ResumeLayout(false);
+            this.otpFormatFlowLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -290,5 +361,10 @@
         private System.Windows.Forms.TextBox filePathTextBox;
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.GroupBox fileGroupBox;
+        private System.Windows.Forms.GroupBox otpFormatGroupBox;
+        private System.Windows.Forms.FlowLayoutPanel otpFormatFlowLayoutPanel;
+        private System.Windows.Forms.RadioButton otpKeeWebRadioButton;
+        private System.Windows.Forms.RadioButton otpKeeOtpRadioButton;
+        private System.Windows.Forms.RadioButton otpTrayTOTPradioButton;
     }
 }

@@ -131,6 +131,7 @@
     <Compile Include="Records\RecordType.cs" />
     <Compile Include="Dropdown List Types\SectionFieldType.cs" />
     <Compile Include="Dropdown List Types\WirelessSecurity.cs" />
+    <Compile Include="UriExt.cs" />
     <Compile Include="UserPrefs.cs" />
   </ItemGroup>
   <ItemGroup>

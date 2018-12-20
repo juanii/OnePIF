@@ -106,6 +106,58 @@ namespace OnePIF.Records
 
         private static readonly Regex USER_SECTION_NAME = new Regex("^Section_[0-9A-F]{32}$", RegexOptions.Compiled);
 
+        private static readonly Regex OTP_FIELD_NAME = new Regex("^TOTP_[0-9A-F]{32}$", RegexOptions.Compiled);
+
+        private static readonly string OTP_DEFAULT_PERIOD = "30";
+
+        private static readonly string OTP_DEFAULT_DIGITS = "6";
+
+        private void setupOTPField(PwEntry pwEntry, bool protectSecret, GeneralSectionField sectionField, OTPFormat otpFormat)
+        {
+            if (otpFormat == OTPFormat.KeeWeb)
+            {
+                // KeeWeb uses the otpauth URI, same as 1Password
+                pwEntry.Strings.Set("otp", new ProtectedString(protectSecret, sectionField.v));
+            }
+            else
+            {
+                // Decompose otpauth URI
+                if (!Uri.IsWellFormedUriString(sectionField.v, UriKind.RelativeOrAbsolute))
+                    return;
+
+                Uri totpUri = new Uri(sectionField.v);
+                string queryString = totpUri.Query;
+                Dictionary<string, string> totpParams = UriExt.GetParams(queryString);
+
+                string secret = null, period = null, digits = null;
+
+                if (!totpParams.TryGetValue("secret", out secret))
+                    return;
+
+                totpParams.TryGetValue("period", out period);
+                totpParams.TryGetValue("digits", out digits);
+
+                if (otpFormat == OTPFormat.KeeOtp)
+                {
+                    StringBuilder keeOtpString = new StringBuilder();
+                    keeOtpString.AppendFormat("key={0}", secret);
+
+                    if (!string.IsNullOrEmpty(period))
+                        keeOtpString.AppendFormat("&step={0}", period);
+                    if (!string.IsNullOrEmpty(digits))
+                        keeOtpString.AppendFormat("&size={0}", digits);
+
+                    pwEntry.Strings.Set("otp", new ProtectedString(protectSecret, keeOtpString.ToString()));
+                }
+                else if (otpFormat == OTPFormat.TrayTOTP)
+                {
+                    pwEntry.Strings.Set("TOTP Seed", new ProtectedString(protectSecret, secret));
+                    // Some Kee* implementations don't show the OTP if these optional values are missing
+                    pwEntry.Strings.Set("TOTP Settings", new ProtectedString(false, string.Join(";", new string[] { period ?? OTP_DEFAULT_PERIOD, digits ?? OTP_DEFAULT_DIGITS })));
+                }
+            }
+        }
+
         public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
             base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
@@ -131,6 +183,12 @@ namespace OnePIF.Records
                         {
                             string fieldLabel = field.t;
                             string fieldValue = null;
+
+                            if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
+                            {
+                                this.setupOTPField(pwEntry, pwDatabase.MemoryProtection.ProtectPassword, field as GeneralSectionField, userPrefs.OTPFormat);
+                                continue;
+                            }
 
                             if (!string.IsNullOrEmpty(sectionTitle))
                                 fieldLabel = string.Concat(sectionTitle, " - ", field.t);

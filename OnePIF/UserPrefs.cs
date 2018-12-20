@@ -14,6 +14,13 @@
         Epoch
     }
 
+    public enum OTPFormat
+    {
+        KeeWeb,
+        TrayTOTP,
+        KeeOtp
+    }
+
     public class UserPrefs
     {
         public FolderLayout FolderLayout { get; set; }
@@ -25,5 +32,7 @@
         public bool CreateParentFolder { get; set; }
 
         public string ImportFilePath { get; set; }
+
+        public OTPFormat OTPFormat { get; set; }
     }
 }

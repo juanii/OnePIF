@@ -45,7 +45,8 @@ namespace OnePIF.Records
                 LastModificationTime = this.updatedAt
             };
 
-            entry.Strings.Set(PwDefs.TitleField, new ProtectedString(pwStorage.MemoryProtection.ProtectTitle, this.title));
+            if (!string.IsNullOrEmpty(this.title))
+                entry.Strings.Set(PwDefs.TitleField, new ProtectedString(pwStorage.MemoryProtection.ProtectTitle, this.title));
 
             return entry;
         }

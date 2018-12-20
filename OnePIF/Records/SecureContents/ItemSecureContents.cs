@@ -122,7 +122,9 @@ namespace OnePIF.Records
                     if (section.fields != null)
                     {
                         string sectionTitle = section.title;
-                        if (string.IsNullOrEmpty(section.title) && USER_SECTION_NAME.IsMatch(section.name))
+                        bool isUserSection = USER_SECTION_NAME.IsMatch(section.name);
+
+                        if (string.IsNullOrEmpty(section.title) && isUserSection)
                             sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
 
                         foreach (SectionField field in section.fields)
@@ -188,12 +190,13 @@ namespace OnePIF.Records
                             if (field.a != null && field.a.multiline)
                                 fieldValue = StringExt.FixNewLines(fieldValue);
 
-                            // No point in importing a field the user didn't fill
-                            if (fieldValue == null)
+                            // No point in importing an empty template field.
+                            // But, if it's a user-defined field, it might be there for a reason.
+                            if (fieldValue == null && !isUserSection)
                                 continue;
 
                             bool protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);
-                            pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue));
+                            pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue ?? string.Empty));
                         }
                     }
                 }

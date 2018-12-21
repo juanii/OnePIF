@@ -17,6 +17,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
   - Trashed items.
   - Custom user-provided icons<sup id="a2">[2](#f2)</sup> (not the rich icons provided by AgileBits).
   - File attachments.
+  - TOTP fields formatted for KeeWeb, Tray TOTP or KeeOtp.
 * Organizes items into the standard 1Password categories or using preexistent user-defined folders.
 * Proper handling of line endings in multiline fields.
 * Customizable date formats: ISO 8601 or user locale.

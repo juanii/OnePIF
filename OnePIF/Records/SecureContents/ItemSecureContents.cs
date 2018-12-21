@@ -70,6 +70,8 @@ namespace OnePIF.Records
         public string state { get; set; }
 
         public string country { get; set; }
+
+        public string region { get; set; }
     }
 
     public class AddressSectionField : SectionField

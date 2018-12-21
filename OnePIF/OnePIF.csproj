@@ -54,6 +54,11 @@
     <Compile Include="JSON Converters\SectionFieldConverter.cs" />
     <Compile Include="DateTimeFormatter.cs" />
     <Compile Include="JPropertyExt.cs" />
+    <Compile Include="Properties\CompactAddressFormat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompactAddressFormat.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Icons.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,6 +145,10 @@
   <ItemGroup>
     <EmbeddedResource Include="ConfigurationForm.resx">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\CompactAddressFormat.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CompactAddressFormat.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Icons.resx">
       <Generator>ResXFileCodeGenerator</Generator>

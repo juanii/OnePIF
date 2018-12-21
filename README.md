@@ -21,6 +21,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 * Organizes items into the standard 1Password categories or using preexistent user-defined folders.
 * Proper handling of line endings in multiline fields.
 * Customizable date formats: ISO 8601 or user locale.
+* Customizable address formats: condensed in a single field or one field for each address component.
 
 ### (Un)tested and (un)supported file formats and platforms
 

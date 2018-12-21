@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.0](https://github.com/juanii/OnePIF/releases/0.3.0) - 2018-12-21
+
+### Added
+
+* Option to import addresses in compact (one field) or expanded (multiple fields) format.
+
+### Changed
+
+* Proper setup of OTP fields using KeeWeb, Tray TOTP or KeeOtp format.
+* Custom address layout by country.
+
+### Fixed
+
+* Error while importing a section without fields.
+* The "region" field of an address was ignored.
+
 ## [0.2.0](https://github.com/juanii/OnePIF/releases/0.2.0) - 2018-12-19
 
 ### Added

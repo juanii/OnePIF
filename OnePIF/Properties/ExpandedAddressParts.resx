@@ -1,0 +1,3516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Address_kr_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_kr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cf_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_td_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_td_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_td_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_td_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_td_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cg_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_no_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_no_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_no_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_no_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ch_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ch_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ch_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ch_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_np_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_np_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_np_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_np_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_np_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ci_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ci_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ci_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ci_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ci_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tg_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kw_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_kw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nr_state" xml:space="preserve">
+    <value>district</value>
+  </data>
+  <data name="Address_nr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_th_state" xml:space="preserve">
+    <value>district_subdivision</value>
+  </data>
+  <data name="Address_th_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_th_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_th_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_th_city" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_cl_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ky_state" xml:space="preserve">
+    <value>island_name</value>
+  </data>
+  <data name="Address_ky_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ky_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ky_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ky_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tj_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tj_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tj_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tj_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tj_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kz_region" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_kz_state" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_kz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cn_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_cn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fi_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fi_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_fi_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fi_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_id_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_id_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_id_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_id_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_id_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_za_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_za_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_za_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_za_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_za_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tl_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_co_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_co_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_co_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_co_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_co_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fj_state" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_fj_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fj_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_fj_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fj_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ie_state" xml:space="preserve">
+    <value>county</value>
+  </data>
+  <data name="Address_ie_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ie_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ie_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ie_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_la_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_la_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_la_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_la_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_la_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fk_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_fk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_fk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tn_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lb_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lb_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lb_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lb_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_to_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_to_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_to_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_to_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_to_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lc_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_lc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cr_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_fm_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_fm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nz_state" xml:space="preserve">
+    <value>suburb</value>
+  </data>
+  <data name="Address_nz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fo_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_fo_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fo_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_fo_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fo_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tr_state" xml:space="preserve">
+    <value>district</value>
+  </data>
+  <data name="Address_tr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cu_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_il_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_il_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_il_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_il_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cv_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cv_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cv_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cv_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cv_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tt_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_im_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_im_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_im_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_im_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_im_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_fr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_fr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_fr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_fr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_in_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_in_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_in_zip" xml:space="preserve">
+    <value>pincode</value>
+  </data>
+  <data name="Address_in_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_in_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_li_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_li_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_li_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_li_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tv_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tv_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tv_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tv_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tv_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cy_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cy_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cy_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cy_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cy_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tw_state" xml:space="preserve">
+    <value>county_city_taiwan</value>
+  </data>
+  <data name="Address_tw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tw_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_tw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tw_city" xml:space="preserve">
+    <value>township_district</value>
+  </data>
+  <data name="Address_lk_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_lk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ad_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ad_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ad_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ad_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ad_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_zm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_zm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_zm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_zm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_zm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ws_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ws_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ws_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ws_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ws_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_iq_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_iq_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_iq_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_iq_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_iq_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ae_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ae_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ae_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ae_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ir_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ir_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ir_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ir_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ir_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_af_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_af_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_af_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tz_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_tz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_is_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_is_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_is_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_is_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_is_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ag_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ag_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ag_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ag_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ag_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_it_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_it_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_it_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_it_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_it_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_re_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_re_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_re_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_re_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ua_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ua_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_ua_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ua_region" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_ua_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ua_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_de_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_de_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_de_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_de_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lr_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_lr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ga_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ga_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ga_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ga_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ga_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_om_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_om_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_om_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_om_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_om_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ls_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ls_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ls_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ls_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ls_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_al_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_al_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_al_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_al_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_al_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lt_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_lt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_am_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_am_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_am_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_am_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_am_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_zw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_zw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_zw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_zw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_zw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gd_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gd_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gd_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gd_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gd_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_lv_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_lv_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_lv_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_lv_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_lv_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ao_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ao_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ao_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ao_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ao_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_dj_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_dj_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_dj_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_dj_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_dj_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ge_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ge_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ge_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ge_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ge_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ug_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ug_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ug_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ug_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ug_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_jp_street" xml:space="preserve">
+    <value>further_divisions</value>
+  </data>
+  <data name="Address_jp_state" xml:space="preserve">
+    <value>prefecture</value>
+  </data>
+  <data name="Address_jp_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_jp_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_jp_city" xml:space="preserve">
+    <value>county_city_japan</value>
+  </data>
+  <data name="Address_dk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_dk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_dk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_dk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ly_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ly_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ly_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ly_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ly_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ar_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_ar_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ar_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ar_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ar_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_dm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_dm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_dm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_dm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_dm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gi_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gi_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gi_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ro_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ro_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ro_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ro_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_uk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_uk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_uk_state" xml:space="preserve">
+    <value>county</value>
+  </data>
+  <data name="Address_uk_zip" xml:space="preserve">
+    <value>postcode</value>
+  </data>
+  <data name="Address_uk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gb_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gb_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gb_state" xml:space="preserve">
+    <value>county</value>
+  </data>
+  <data name="Address_gb_zip" xml:space="preserve">
+    <value>postcode</value>
+  </data>
+  <data name="Address_gb_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_at_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_at_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_at_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_at_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_do_state" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_do_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_do_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_do_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_do_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_au_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_au_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_au_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_au_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_au_city" xml:space="preserve">
+    <value>suburb</value>
+  </data>
+  <data name="Address_ma_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ma_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ma_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ma_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ma_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_rs_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_rs_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_rs_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_rs_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_rs_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gl_city" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_mc_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ru_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_ru_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ru_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ru_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ru_city" xml:space="preserve">
+    <value>city_region</value>
+  </data>
+  <data name="Address_md_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_md_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_md_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_md_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_md_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gn_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_me_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_me_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_me_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_me_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_me_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_rw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_rw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_rw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_rw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_rw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_az_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_az_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_az_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_az_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_az_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pa_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_pa_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pa_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pa_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pa_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gp_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gp_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gp_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gp_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_us_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_us_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_us_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_us_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_us_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gq_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gq_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gq_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gq_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gq_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mg_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ba_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ba_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ba_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ba_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_jm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_jm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_jm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_jm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_jm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mh_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gs_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gs_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gs_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gs_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gs_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bb_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_bb_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bb_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bb_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bb_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gt_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_jo_region" xml:space="preserve">
+    <value>region</value>
+  </data>
+  <data name="Address_jo_state" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_jo_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_jo_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_jo_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_jo_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pe_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_pe_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pe_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pe_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pe_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bd_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bd_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bd_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bd_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bd_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_dz_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_dz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_dz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_dz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_dz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pf_state" xml:space="preserve">
+    <value>island_name</value>
+  </data>
+  <data name="Address_pf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sa_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sa_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sa_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sa_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ml_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ml_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ml_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ml_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ml_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_be_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_be_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_be_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_be_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pg_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_pg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sb_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sb_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sb_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sb_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sb_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_uy_state" xml:space="preserve">
+    <value>geographicaldepartment</value>
+  </data>
+  <data name="Address_uy_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_uy_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_uy_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_uy_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bf_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mm_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ph_state" xml:space="preserve">
+    <value>district_subdivision</value>
+  </data>
+  <data name="Address_ph_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ph_zip" xml:space="preserve">
+    <value>postcode</value>
+  </data>
+  <data name="Address_ph_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ph_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sc_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mn_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sd_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sd_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sd_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sd_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sd_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_uz_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_uz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_uz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_uz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_uz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gy_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_gy_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gy_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gy_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gy_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bh_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ec_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ec_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ec_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ec_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ec_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mo_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mo_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mo_zip" xml:space="preserve">
+    <value>district</value>
+  </data>
+  <data name="Address_mo_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mo_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_se_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_se_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_se_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_se_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pk_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_pk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bi_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bi_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bi_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bi_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bi_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_va_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_va_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_va_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_va_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_va_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mq_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mq_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mq_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mq_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bj_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bj_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bj_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bj_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bj_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ee_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ee_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ee_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ee_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ee_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pl_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_pl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mr_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sh_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sh_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_vc_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_vc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_vc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_vc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_vc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_si_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_si_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_si_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_si_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_eg_state" xml:space="preserve">
+    <value>district</value>
+  </data>
+  <data name="Address_eg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_eg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_eg_city" xml:space="preserve">
+    <value>governorate</value>
+  </data>
+  <data name="Address_mt_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bm_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_bm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ve_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ve_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ve_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ve_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ve_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mu_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bn_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mv_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mv_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mv_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mv_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mv_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bo_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_bo_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bo_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bo_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bo_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sl_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pr_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_pr_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_pr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sm_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_sm_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sm_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sm_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sm_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mx_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_mx_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mx_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mx_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mx_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ps_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ps_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ps_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ps_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sn_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_vi_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_vi_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_vi_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_vi_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_vi_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_my_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_my_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_my_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_my_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_my_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_br_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_br_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_br_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_br_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_br_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_so_state" xml:space="preserve">
+    <value>region</value>
+  </data>
+  <data name="Address_so_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_so_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_so_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_so_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ye_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ye_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ye_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ye_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_mz_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_mz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_mz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_mz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_mz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bs_state" xml:space="preserve">
+    <value>island_name</value>
+  </data>
+  <data name="Address_bs_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bs_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bs_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bs_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ke_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ke_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ke_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ke_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ke_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bt_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_pw_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_pw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_hk_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_hk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_hk_zip" xml:space="preserve">
+    <value>district</value>
+  </data>
+  <data name="Address_hk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_hk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_na_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_na_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_na_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_na_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_na_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sr_state" xml:space="preserve">
+    <value>postaldistrict</value>
+  </data>
+  <data name="Address_sr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_vn_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_vn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_vn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_vn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_vn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kg_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_kg_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kg_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kg_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kg_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_py_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_py_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_py_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_py_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_py_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kh_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_kh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kh_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bw_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_bw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_er_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_er_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_er_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_er_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_er_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_st_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_st_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_st_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_st_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_st_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_hn_state" xml:space="preserve">
+    <value>department</value>
+  </data>
+  <data name="Address_hn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_hn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_hn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_hn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ki_state" xml:space="preserve">
+    <value>island_name</value>
+  </data>
+  <data name="Address_ki_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ki_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ki_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ki_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_es_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_es_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_es_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_es_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_es_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_es_es-cn" xml:space="preserve">
+    <value>es-cn</value>
+  </data>
+  <data name="Address_sv_state" xml:space="preserve">
+    <value>department</value>
+  </data>
+  <data name="Address_sv_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sv_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sv_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sv_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_by_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_by_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_by_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_by_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_by_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ne_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ne_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ne_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ne_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_et_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_et_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_et_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_et_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_et_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_bz_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_bz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_bz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_bz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_bz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_qa_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_qa_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_qa_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_qa_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ng_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ng_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ng_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ng_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ng_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sy_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sy_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sy_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sy_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_hr_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_hr_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_hr_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_hr_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ca_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_ca_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ca_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ca_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ca_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_km_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_km_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_km_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_km_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_km_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sz_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_sz_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sz_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sz_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sz_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kn_state" xml:space="preserve">
+    <value>island_name</value>
+  </data>
+  <data name="Address_kn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ni_state" xml:space="preserve">
+    <value>department</value>
+  </data>
+  <data name="Address_ni_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ni_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ni_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ni_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_vu_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_vu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_vu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_vu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_vu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ht_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_ht_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ht_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ht_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ht_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_hu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_hu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_hu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_hu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cd_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cd_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cd_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cd_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cd_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_kp_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_kp_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_kp_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_kp_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_kp_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nl_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nl_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nl_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nl_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ai_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ai_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ai_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ai_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_aw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_aw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_aw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_aw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cc_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cc_city" xml:space="preserve">
+    <value>suburb</value>
+  </data>
+  <data name="Address_ck_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ck_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ck_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ck_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cw_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cw_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cw_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cw_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_cx_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_cx_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_cx_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_cx_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_cx_city" xml:space="preserve">
+    <value>suburb</value>
+  </data>
+  <data name="Address_eh_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_eh_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_eh_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_eh_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_gu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_gu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_gu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_gu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ms_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ms_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ms_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ms_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_nu_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_nu_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_nu_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_nu_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_pn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_pn_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_pn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_pn_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sj_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sj_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sj_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sj_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_ss_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_ss_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_ss_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_ss_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_sx_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_sx_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_sx_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_sx_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tc_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tc_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tc_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tc_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_tk_state" xml:space="preserve">
+    <value>suburb</value>
+  </data>
+  <data name="Address_tk_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_tk_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_tk_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_tk_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_um_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_um_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_um_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_um_zip" xml:space="preserve">
+    <value>zip</value>
+  </data>
+  <data name="Address_um_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_wf_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_wf_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_wf_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_wf_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_yt_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_yt_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_yt_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_yt_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_as_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_as_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_as_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_as_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_je_city" xml:space="preserve">
+    <value>city</value>
+  </data>
+  <data name="Address_je_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_je_state" xml:space="preserve">
+    <value>state</value>
+  </data>
+  <data name="Address_je_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_je_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+</root>

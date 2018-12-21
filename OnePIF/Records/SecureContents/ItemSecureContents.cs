@@ -115,7 +115,7 @@ namespace OnePIF.Records
 
         private static readonly string OTP_DEFAULT_DIGITS = "6";
 
-        private void setupOTPField(PwEntry pwEntry, bool protectSecret, GeneralSectionField sectionField, OTPFormat otpFormat)
+        private void setOTPField(PwEntry pwEntry, bool protectSecret, GeneralSectionField sectionField, OTPFormat otpFormat)
         {
             if (otpFormat == OTPFormat.KeeWeb)
             {
@@ -161,6 +161,86 @@ namespace OnePIF.Records
             }
         }
 
+        private void setCompactAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        {
+            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+            string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
+
+            if (string.IsNullOrEmpty(addressFormat))
+                addressFormat = Properties.CompactAddressFormat.Country_us;
+
+            string[] tokens = addressFormat.Split(new char[] { '|' });
+            List<string> components = new List<string>();
+
+            foreach (string token in tokens)
+            {
+                string[] subtokens = token.Split(new char[] { ' ' });
+                List<string> subcomponents = new List<string>();
+
+                foreach (string subtoken in subtokens)
+                {
+                    PropertyInfo propertyInfo = addressSectionField.v.GetType().GetProperty(subtoken);
+                    if (propertyInfo != null)
+                    {
+                        string tokenValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
+
+                        // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+                        if (subtoken.Equals("country") && !string.IsNullOrEmpty(tokenValue))
+                            tokenValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", tokenValue.Replace('-', '_') }));
+
+                        if (!string.IsNullOrEmpty(tokenValue))
+                            subcomponents.Add(tokenValue);
+                    }
+                }
+
+                if (subcomponents.Count > 0)
+                    components.Add(string.Join(" ", subcomponents.ToArray()));
+            }
+
+            string fieldValue = string.Join(", ", components.ToArray());
+
+            if (!string.IsNullOrEmpty(fieldValue))
+            {
+                string fieldLabel = addressSectionField.t;
+
+                if (!string.IsNullOrEmpty(sectionTitle))
+                    fieldLabel = string.Concat(sectionTitle, " - ", addressSectionField.t);
+
+                pwEntry.Strings.Set(fieldLabel, new ProtectedString(false, fieldValue));
+            }
+        }
+
+        public void setExpandedAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        {
+            string country = addressSectionField.v.country;
+
+            foreach (PropertyInfo propertyInfo in addressSectionField.v.GetType().GetProperties())
+            {
+                string fieldValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
+
+                // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+                if (propertyInfo.Name.Equals("country") && !string.IsNullOrEmpty(fieldValue))
+                    fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", fieldValue.Replace('-', '_') }));
+
+                if (!string.IsNullOrEmpty(fieldValue))
+                {
+                    string fieldLabel = null;
+                    string addressPartName = Properties.ExpandedAddressParts.ResourceManager.GetString(string.Join("_", new string[] { "Address", country ?? "us", propertyInfo.Name }));
+
+                    if (!string.IsNullOrEmpty(addressPartName))
+                        fieldLabel = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Address", addressPartName }));
+
+                    if (string.IsNullOrEmpty(fieldLabel))
+                        fieldLabel = propertyInfo.Name;
+
+                    if (!string.IsNullOrEmpty(sectionTitle))
+                        fieldLabel = string.Concat(sectionTitle, " - ", fieldLabel);
+
+                    pwEntry.Strings.Set(fieldLabel, new ProtectedString(false, fieldValue));
+                }
+            }
+        }
+
         public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
             base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
@@ -187,56 +267,26 @@ namespace OnePIF.Records
                             string fieldLabel = field.t;
                             string fieldValue = null;
 
-                            if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
-                            {
-                                this.setupOTPField(pwEntry, pwDatabase.MemoryProtection.ProtectPassword, field as GeneralSectionField, userPrefs.OTPFormat);
-                                continue;
-                            }
-
                             if (!string.IsNullOrEmpty(sectionTitle))
                                 fieldLabel = string.Concat(sectionTitle, " - ", field.t);
 
-                            if (field.k == SectionFieldType.address)
+                            // Special treatment fields
+                            if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
                             {
-                                AddressSectionField addressSectionField = field as AddressSectionField;
-
-                                // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                                string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
-
-                                if (string.IsNullOrEmpty(addressFormat))
-                                    addressFormat = Properties.CompactAddressFormat.Country_us;
-
-                                string[] tokens = addressFormat.Split(new char[] { '|' });
-                                List<string> components = new List<string>();
-
-                                foreach (string token in tokens)
-                                {
-                                    string[] subtokens = token.Split(new char[] { ' ' });
-                                    List<string> subcomponents = new List<string>();
-
-                                    foreach (string subtoken in subtokens)
-                                    {
-                                        PropertyInfo propertyInfo = addressSectionField.v.GetType().GetProperty(subtoken);
-                                        if (propertyInfo != null)
-                                        {
-                                            string tokenValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
-
-                                            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                                            if (subtoken.Equals("country") && !string.IsNullOrEmpty(tokenValue))
-                                                tokenValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", tokenValue.Replace('-', '_') }));
-
-                                            if (!string.IsNullOrEmpty(tokenValue))
-                                                subcomponents.Add(tokenValue);
-                                        }
-                                    }
-                                    
-                                    if (subcomponents.Count > 0)
-                                        components.Add(string.Join(" ", subcomponents.ToArray()));
-                                }
-
-                                fieldValue = string.Join(", ", components.ToArray());
+                                this.setOTPField(pwEntry, pwDatabase.MemoryProtection.ProtectPassword, field as GeneralSectionField, userPrefs.OTPFormat);
+                                continue;
                             }
-                            else if (field.k == SectionFieldType.date)
+                            else if (field.k == SectionFieldType.address)
+                            {
+                                if (userPrefs.AddressFormat == AddressFormat.Compact)
+                                    this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                                else
+                                    this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+
+                                continue;
+                            }
+
+                            if (field.k == SectionFieldType.date)
                             {
                                 DateSectionField dateSectionField = field as DateSectionField;
 

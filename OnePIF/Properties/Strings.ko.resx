@@ -1104,4 +1104,79 @@
   <data name="Section_Title" xml:space="preserve">
     <value>섹션</value>
   </data>
+  <data name="Address_city" xml:space="preserve">
+    <value>도시</value>
+  </data>
+  <data name="Address_city_region" xml:space="preserve">
+    <value>도시/지역</value>
+  </data>
+  <data name="Address_country" xml:space="preserve">
+    <value>국가</value>
+  </data>
+  <data name="Address_county" xml:space="preserve">
+    <value>군</value>
+  </data>
+  <data name="Address_county_city_japan" xml:space="preserve">
+    <value>일본 도도부현/시정촌</value>
+  </data>
+  <data name="Address_county_city_taiwan" xml:space="preserve">
+    <value>대만 시/현</value>
+  </data>
+  <data name="Address_department" xml:space="preserve">
+    <value>시</value>
+  </data>
+  <data name="Address_district" xml:space="preserve">
+    <value>지구</value>
+  </data>
+  <data name="Address_district_subdivision" xml:space="preserve">
+    <value>지구/세부지구</value>
+  </data>
+  <data name="Address_further_divisions" xml:space="preserve">
+    <value>세부지구</value>
+  </data>
+  <data name="Address_geographicaldepartment" xml:space="preserve">
+    <value>지리적 행정구</value>
+  </data>
+  <data name="Address_governorate" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Address_island_name" xml:space="preserve">
+    <value>섬 이름</value>
+  </data>
+  <data name="Address_pincode" xml:space="preserve">
+    <value>PIN 코드</value>
+  </data>
+  <data name="Address_postalcode" xml:space="preserve">
+    <value>우편번호</value>
+  </data>
+  <data name="Address_postaldistrict" xml:space="preserve">
+    <value>우편 구역</value>
+  </data>
+  <data name="Address_postcode" xml:space="preserve">
+    <value>우편번호</value>
+  </data>
+  <data name="Address_prefecture" xml:space="preserve">
+    <value>행정구역/도/현</value>
+  </data>
+  <data name="Address_province" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Address_region" xml:space="preserve">
+    <value>지역</value>
+  </data>
+  <data name="Address_state" xml:space="preserve">
+    <value>주</value>
+  </data>
+  <data name="Address_street" xml:space="preserve">
+    <value>거리</value>
+  </data>
+  <data name="Address_suburb" xml:space="preserve">
+    <value>근교</value>
+  </data>
+  <data name="Address_township_district" xml:space="preserve">
+    <value>군구/지구</value>
+  </data>
+  <data name="Address_zip" xml:space="preserve">
+    <value>우편번호</value>
+  </data>
 </root>

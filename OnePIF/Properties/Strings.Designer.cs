@@ -61,6 +61,231 @@ namespace OnePIF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        internal static string Address_city {
+            get {
+                return ResourceManager.GetString("Address_city", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City/Region.
+        /// </summary>
+        internal static string Address_city_region {
+            get {
+                return ResourceManager.GetString("Address_city_region", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country.
+        /// </summary>
+        internal static string Address_country {
+            get {
+                return ResourceManager.GetString("Address_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to County.
+        /// </summary>
+        internal static string Address_county {
+            get {
+                return ResourceManager.GetString("Address_county", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to County/City Japan.
+        /// </summary>
+        internal static string Address_county_city_japan {
+            get {
+                return ResourceManager.GetString("Address_county_city_japan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to County/City Taiwan.
+        /// </summary>
+        internal static string Address_county_city_taiwan {
+            get {
+                return ResourceManager.GetString("Address_county_city_taiwan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department.
+        /// </summary>
+        internal static string Address_department {
+            get {
+                return ResourceManager.GetString("Address_department", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District.
+        /// </summary>
+        internal static string Address_district {
+            get {
+                return ResourceManager.GetString("Address_district", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District/Subdivision.
+        /// </summary>
+        internal static string Address_district_subdivision {
+            get {
+                return ResourceManager.GetString("Address_district_subdivision", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Further Divisions.
+        /// </summary>
+        internal static string Address_further_divisions {
+            get {
+                return ResourceManager.GetString("Address_further_divisions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Geographical Department.
+        /// </summary>
+        internal static string Address_geographicaldepartment {
+            get {
+                return ResourceManager.GetString("Address_geographicaldepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Governorate.
+        /// </summary>
+        internal static string Address_governorate {
+            get {
+                return ResourceManager.GetString("Address_governorate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Island Name.
+        /// </summary>
+        internal static string Address_island_name {
+            get {
+                return ResourceManager.GetString("Address_island_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIN Code.
+        /// </summary>
+        internal static string Address_pincode {
+            get {
+                return ResourceManager.GetString("Address_pincode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal Code.
+        /// </summary>
+        internal static string Address_postalcode {
+            get {
+                return ResourceManager.GetString("Address_postalcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal District.
+        /// </summary>
+        internal static string Address_postaldistrict {
+            get {
+                return ResourceManager.GetString("Address_postaldistrict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postcode.
+        /// </summary>
+        internal static string Address_postcode {
+            get {
+                return ResourceManager.GetString("Address_postcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prefecture.
+        /// </summary>
+        internal static string Address_prefecture {
+            get {
+                return ResourceManager.GetString("Address_prefecture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Province.
+        /// </summary>
+        internal static string Address_province {
+            get {
+                return ResourceManager.GetString("Address_province", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region.
+        /// </summary>
+        internal static string Address_region {
+            get {
+                return ResourceManager.GetString("Address_region", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to State.
+        /// </summary>
+        internal static string Address_state {
+            get {
+                return ResourceManager.GetString("Address_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street.
+        /// </summary>
+        internal static string Address_street {
+            get {
+                return ResourceManager.GetString("Address_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suburb.
+        /// </summary>
+        internal static string Address_suburb {
+            get {
+                return ResourceManager.GetString("Address_suburb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Township/District.
+        /// </summary>
+        internal static string Address_township_district {
+            get {
+                return ResourceManager.GetString("Address_township_district", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZIP.
+        /// </summary>
+        internal static string Address_zip {
+            get {
+                return ResourceManager.GetString("Address_zip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bank Accounts.
         /// </summary>
         internal static string FolderName_BankAccounts {

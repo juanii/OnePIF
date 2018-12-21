@@ -1107,4 +1107,79 @@
   <data name="Section_Title" xml:space="preserve">
     <value>Sektion</value>
   </data>
+  <data name="Address_city" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="Address_city_region" xml:space="preserve">
+    <value>Stad/region</value>
+  </data>
+  <data name="Address_country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="Address_county" xml:space="preserve">
+    <value>Län</value>
+  </data>
+  <data name="Address_county_city_japan" xml:space="preserve">
+    <value>Stad/ort Japan</value>
+  </data>
+  <data name="Address_county_city_taiwan" xml:space="preserve">
+    <value>Stad/ort Taiwan</value>
+  </data>
+  <data name="Address_department" xml:space="preserve">
+    <value>Avdelning</value>
+  </data>
+  <data name="Address_district" xml:space="preserve">
+    <value>Område</value>
+  </data>
+  <data name="Address_district_subdivision" xml:space="preserve">
+    <value>Område/underavdelning</value>
+  </data>
+  <data name="Address_further_divisions" xml:space="preserve">
+    <value>Ytterligare avdelningar</value>
+  </data>
+  <data name="Address_geographicaldepartment" xml:space="preserve">
+    <value>Geografiskt departement</value>
+  </data>
+  <data name="Address_governorate" xml:space="preserve">
+    <value>Governorate</value>
+  </data>
+  <data name="Address_island_name" xml:space="preserve">
+    <value>Önamn</value>
+  </data>
+  <data name="Address_pincode" xml:space="preserve">
+    <value>PIN-kod</value>
+  </data>
+  <data name="Address_postalcode" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="Address_postaldistrict" xml:space="preserve">
+    <value>Postdistrikt</value>
+  </data>
+  <data name="Address_postcode" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="Address_prefecture" xml:space="preserve">
+    <value>Prefektur</value>
+  </data>
+  <data name="Address_province" xml:space="preserve">
+    <value>Provins</value>
+  </data>
+  <data name="Address_region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Address_state" xml:space="preserve">
+    <value>Delstat</value>
+  </data>
+  <data name="Address_street" xml:space="preserve">
+    <value>Gata</value>
+  </data>
+  <data name="Address_suburb" xml:space="preserve">
+    <value>Förort</value>
+  </data>
+  <data name="Address_township_district" xml:space="preserve">
+    <value>Township/District</value>
+  </data>
+  <data name="Address_zip" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
 </root>

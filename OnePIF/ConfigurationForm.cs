@@ -63,6 +63,17 @@ namespace OnePIF
             }
         }
 
+        public AddressFormat AddressFormat
+        {
+            get
+            {
+                if (this.addressCompactRadioButton.Checked)
+                    return AddressFormat.Compact;
+                else
+                    return AddressFormat.Expanded;
+            }
+        }
+
         public UserPrefs GetUserPrefs()
         {
             return new UserPrefs()
@@ -72,7 +83,8 @@ namespace OnePIF
                 KeepTrashedItems = this.KeepTrashedItems,
                 CreateParentFolder = this.CreateParentFolder,
                 ImportFilePath = this.ImportFilePath,
-                OTPFormat = this.OTPFormat
+                OTPFormat = this.OTPFormat,
+                AddressFormat = this.AddressFormat
             };
         }
 

@@ -1104,4 +1104,79 @@
   <data name="Section_Title" xml:space="preserve">
     <value>セクション</value>
   </data>
+  <data name="Address_city" xml:space="preserve">
+    <value>市</value>
+  </data>
+  <data name="Address_city_region" xml:space="preserve">
+    <value>City/Region</value>
+  </data>
+  <data name="Address_country" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="Address_county" xml:space="preserve">
+    <value>County</value>
+  </data>
+  <data name="Address_county_city_japan" xml:space="preserve">
+    <value>County/City Japan</value>
+  </data>
+  <data name="Address_county_city_taiwan" xml:space="preserve">
+    <value>County/City Taiwan</value>
+  </data>
+  <data name="Address_department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Address_district" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="Address_district_subdivision" xml:space="preserve">
+    <value>District/Subdivision</value>
+  </data>
+  <data name="Address_further_divisions" xml:space="preserve">
+    <value>Further Divisions</value>
+  </data>
+  <data name="Address_geographicaldepartment" xml:space="preserve">
+    <value>Geographical Department</value>
+  </data>
+  <data name="Address_governorate" xml:space="preserve">
+    <value>Governorate</value>
+  </data>
+  <data name="Address_island_name" xml:space="preserve">
+    <value>Island Name</value>
+  </data>
+  <data name="Address_pincode" xml:space="preserve">
+    <value>暗証番号</value>
+  </data>
+  <data name="Address_postalcode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="Address_postaldistrict" xml:space="preserve">
+    <value>Postal District</value>
+  </data>
+  <data name="Address_postcode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Address_prefecture" xml:space="preserve">
+    <value>Prefecture</value>
+  </data>
+  <data name="Address_province" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="Address_region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Address_state" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Address_street" xml:space="preserve">
+    <value>番地</value>
+  </data>
+  <data name="Address_suburb" xml:space="preserve">
+    <value>Suburb</value>
+  </data>
+  <data name="Address_township_district" xml:space="preserve">
+    <value>Township/District</value>
+  </data>
+  <data name="Address_zip" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
 </root>

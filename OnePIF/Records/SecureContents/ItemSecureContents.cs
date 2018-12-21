@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -198,27 +199,42 @@ namespace OnePIF.Records
                             if (field.k == SectionFieldType.address)
                             {
                                 AddressSectionField addressSectionField = field as AddressSectionField;
-                                StringBuilder addressBuilder = new StringBuilder();
-
-                                if (!string.IsNullOrEmpty(addressSectionField.v.street))
-                                    addressBuilder.AppendLine(addressSectionField.v.street);
-
-                                if (!string.IsNullOrEmpty(addressSectionField.v.zip))
-                                    addressBuilder.AppendFormat("{0} ", addressSectionField.v.zip);
-
-                                if (!string.IsNullOrEmpty(addressSectionField.v.city))
-                                    addressBuilder.AppendLine(addressSectionField.v.city);
-                                else if (!string.IsNullOrEmpty(addressSectionField.v.zip))
-                                    addressBuilder.AppendLine();
-
-                                if (!string.IsNullOrEmpty(addressSectionField.v.state))
-                                    addressBuilder.AppendLine(addressSectionField.v.state);
 
                                 // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                                if (!string.IsNullOrEmpty(addressSectionField.v.country))
-                                    addressBuilder.Append(Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", addressSectionField.v.country.Replace('-', '_') })));
+                                string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
 
-                                fieldValue = addressBuilder.ToString();
+                                if (string.IsNullOrEmpty(addressFormat))
+                                    addressFormat = Properties.CompactAddressFormat.Country_us;
+
+                                string[] tokens = addressFormat.Split(new char[] { '|' });
+                                List<string> components = new List<string>();
+
+                                foreach (string token in tokens)
+                                {
+                                    string[] subtokens = token.Split(new char[] { ' ' });
+                                    List<string> subcomponents = new List<string>();
+
+                                    foreach (string subtoken in subtokens)
+                                    {
+                                        PropertyInfo propertyInfo = addressSectionField.v.GetType().GetProperty(subtoken);
+                                        if (propertyInfo != null)
+                                        {
+                                            string tokenValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
+
+                                            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+                                            if (subtoken.Equals("country") && !string.IsNullOrEmpty(tokenValue))
+                                                tokenValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", tokenValue.Replace('-', '_') }));
+
+                                            if (!string.IsNullOrEmpty(tokenValue))
+                                                subcomponents.Add(tokenValue);
+                                        }
+                                    }
+                                    
+                                    if (subcomponents.Count > 0)
+                                        components.Add(string.Join(" ", subcomponents.ToArray()));
+                                }
+
+                                fieldValue = string.Join(", ", components.ToArray());
                             }
                             else if (field.k == SectionFieldType.date)
                             {

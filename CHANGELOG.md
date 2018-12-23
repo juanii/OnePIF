@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/juanii/OnePIF/releases/0.3.1) - 2018-12-22
+
+### Fixed
+
+* Wrong data types in entity classes to parse 1pif causing crashes.
+* Crash when parsing incomplete address fields.
+* Tab order in configuration window.
+
 ## [0.3.0](https://github.com/juanii/OnePIF/releases/0.3.0) - 2018-12-21
 
 ### Added

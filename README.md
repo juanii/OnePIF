@@ -33,6 +33,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 
 I expect to keep fixing bugs, adding some features and broadening support for more variants of 1pif files. Here are some of the plans, in no particular order:
 
+* General error handling.
 * Better mapping of 1Password fields to standard KeePass fields.
 * Log/summary of import errors.
 

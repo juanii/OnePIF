@@ -46,6 +46,8 @@
             this.otpKeeWebRadioButton = new System.Windows.Forms.RadioButton();
             this.otpKeeOtpRadioButton = new System.Windows.Forms.RadioButton();
             this.otpTrayTOTPradioButton = new System.Windows.Forms.RadioButton();
+            this.addressCompactRadioButton = new System.Windows.Forms.RadioButton();
+            this.addressExpandedRadioButton = new System.Windows.Forms.RadioButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.filePathTextBox = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
@@ -54,8 +56,6 @@
             this.otpFormatFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.addressFormatGroupBox = new System.Windows.Forms.GroupBox();
             this.addressFormatFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.addressCompactRadioButton = new System.Windows.Forms.RadioButton();
-            this.addressExpandedRadioButton = new System.Windows.Forms.RadioButton();
             this.folderStructureGroupBox.SuspendLayout();
             this.folderLayoutFlowLayoutPanel.SuspendLayout();
             this.parentFolderFlowLayoutPanel.SuspendLayout();
@@ -250,6 +250,31 @@
             this.toolTip.SetToolTip(this.otpTrayTOTPradioButton, "\"TOTP Seed\" and \"TOTP Settings\" fields");
             this.otpTrayTOTPradioButton.UseVisualStyleBackColor = true;
             // 
+            // addressCompactRadioButton
+            // 
+            this.addressCompactRadioButton.AutoSize = true;
+            this.addressCompactRadioButton.Checked = true;
+            this.addressCompactRadioButton.Location = new System.Drawing.Point(3, 3);
+            this.addressCompactRadioButton.Name = "addressCompactRadioButton";
+            this.addressCompactRadioButton.Size = new System.Drawing.Size(67, 17);
+            this.addressCompactRadioButton.TabIndex = 0;
+            this.addressCompactRadioButton.TabStop = true;
+            this.addressCompactRadioButton.Text = "Compact";
+            this.toolTip.SetToolTip(this.addressCompactRadioButton, "42 Wallaby Way, Sydney, NSW, 2073, Australia");
+            this.addressCompactRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // addressExpandedRadioButton
+            // 
+            this.addressExpandedRadioButton.AutoSize = true;
+            this.addressExpandedRadioButton.Location = new System.Drawing.Point(76, 3);
+            this.addressExpandedRadioButton.Name = "addressExpandedRadioButton";
+            this.addressExpandedRadioButton.Size = new System.Drawing.Size(73, 17);
+            this.addressExpandedRadioButton.TabIndex = 1;
+            this.addressExpandedRadioButton.Text = "Expanded";
+            this.toolTip.SetToolTip(this.addressExpandedRadioButton, "Street: 42 Wallaby Way\r\nCity: Sydney\r\nState: NSW\r\nPostal Code: 2073\r\nCountry: Aus" +
+        "tralia");
+            this.addressExpandedRadioButton.UseVisualStyleBackColor = true;
+            // 
             // openFileDialog
             // 
             this.openFileDialog.Filter = "1PIF files|*.1pif|All files|*.*";
@@ -334,30 +359,6 @@
             this.addressFormatFlowLayoutPanel.Name = "addressFormatFlowLayoutPanel";
             this.addressFormatFlowLayoutPanel.Size = new System.Drawing.Size(258, 25);
             this.addressFormatFlowLayoutPanel.TabIndex = 0;
-            // 
-            // addressCompactRadioButton
-            // 
-            this.addressCompactRadioButton.AutoSize = true;
-            this.addressCompactRadioButton.Checked = true;
-            this.addressCompactRadioButton.Location = new System.Drawing.Point(3, 3);
-            this.addressCompactRadioButton.Name = "addressCompactRadioButton";
-            this.addressCompactRadioButton.Size = new System.Drawing.Size(67, 17);
-            this.addressCompactRadioButton.TabIndex = 0;
-            this.addressCompactRadioButton.TabStop = true;
-            this.addressCompactRadioButton.Text = "Compact";
-            this.toolTip.SetToolTip(this.addressCompactRadioButton, "Single \"otp\" field with otpauth URI");
-            this.addressCompactRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // addressExpandedRadioButton
-            // 
-            this.addressExpandedRadioButton.AutoSize = true;
-            this.addressExpandedRadioButton.Location = new System.Drawing.Point(76, 3);
-            this.addressExpandedRadioButton.Name = "addressExpandedRadioButton";
-            this.addressExpandedRadioButton.Size = new System.Drawing.Size(73, 17);
-            this.addressExpandedRadioButton.TabIndex = 1;
-            this.addressExpandedRadioButton.Text = "Expanded";
-            this.toolTip.SetToolTip(this.addressExpandedRadioButton, "\"TOTP Seed\" and \"TOTP Settings\" fields");
-            this.addressExpandedRadioButton.UseVisualStyleBackColor = true;
             // 
             // ConfigurationForm
             // 

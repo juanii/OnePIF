@@ -163,8 +163,11 @@ namespace OnePIF.Records
 
         private void setCompactAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
         {
+            string addressFormat = null;
+
             // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-            string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
+            if (!string.IsNullOrEmpty(addressSectionField.v.country))
+                addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
 
             if (string.IsNullOrEmpty(addressFormat))
                 addressFormat = Properties.CompactAddressFormat.Country_us;
@@ -212,7 +215,7 @@ namespace OnePIF.Records
 
         public void setExpandedAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
         {
-            string country = addressSectionField.v.country;
+            string country = addressSectionField.v.country ?? "us";
 
             foreach (PropertyInfo propertyInfo in addressSectionField.v.GetType().GetProperties())
             {
@@ -225,7 +228,7 @@ namespace OnePIF.Records
                 if (!string.IsNullOrEmpty(fieldValue))
                 {
                     string fieldLabel = null;
-                    string addressPartName = Properties.ExpandedAddressParts.ResourceManager.GetString(string.Join("_", new string[] { "Address", country ?? "us", propertyInfo.Name }));
+                    string addressPartName = Properties.ExpandedAddressParts.ResourceManager.GetString(string.Join("_", new string[] { "Address", country, propertyInfo.Name }));
 
                     if (!string.IsNullOrEmpty(addressPartName))
                         fieldLabel = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Address", addressPartName }));
@@ -278,10 +281,13 @@ namespace OnePIF.Records
                             }
                             else if (field.k == SectionFieldType.address)
                             {
-                                if (userPrefs.AddressFormat == AddressFormat.Compact)
-                                    this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
-                                else
-                                    this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                                if ((field as AddressSectionField).v != null)
+                                {
+                                    if (userPrefs.AddressFormat == AddressFormat.Compact)
+                                        this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                                    else
+                                        this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                                }
 
                                 continue;
                             }

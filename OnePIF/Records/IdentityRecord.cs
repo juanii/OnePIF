@@ -21,11 +21,11 @@ namespace OnePIF.Records
         public Gender sex { get; set; }
 
         #region Birth date
-        public int birthdate_yy { get; set; }
+        public string birthdate_yy { get; set; }
 
-        public int birthdate_mm { get; set; }
+        public string birthdate_mm { get; set; }
 
-        public int birthdate_dd { get; set; }
+        public string birthdate_dd { get; set; }
         #endregion
 
         #region Job
@@ -37,8 +37,6 @@ namespace OnePIF.Records
 
         public string jobtitle { get; set; }
         #endregion
-#pragma warning disable IDE1006
-#pragma warning disable IDE1006
         #endregion
 
         #region Address

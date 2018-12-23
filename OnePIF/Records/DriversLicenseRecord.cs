@@ -14,11 +14,11 @@ namespace OnePIF.Records
         public string address { get; set; }
 
         #region Date of birth
-        public int birthdate_yy { get; set; }
+        public string birthdate_yy { get; set; }
 
-        public int birthdate_mm { get; set; }
+        public string birthdate_mm { get; set; }
 
-        public int birthdate_dd { get; set; }
+        public string birthdate_dd { get; set; }
         #endregion
 
         [JsonConverter(typeof(EnumConverter<Gender>))]
@@ -37,9 +37,9 @@ namespace OnePIF.Records
         public string country { get; set; }
 
         #region Expiration Date
-        public int expiry_date_yy { get; set; }
+        public string expiry_date_yy { get; set; }
 
-        public int expiry_date_mm { get; set; }
+        public string expiry_date_mm { get; set; }
         #endregion
         #endregion
 #pragma warning restore IDE1006

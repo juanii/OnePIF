@@ -15,15 +15,15 @@ namespace OnePIF.Records
         public string member_name { get; set; }
 
         #region Member Since
-        public int member_since_yy { get; set; }
+        public string member_since_yy { get; set; }
 
-        public int member_since_mm { get; set; }
+        public string member_since_mm { get; set; }
         #endregion
 
         #region Expiration Date
-        public int expiry_date_yy { get; set; }
+        public string expiry_date_yy { get; set; }
 
-        public int expiry_date_mm { get; set; }
+        public string expiry_date_mm { get; set; }
         #endregion
 
         public string membership_no { get; set; }

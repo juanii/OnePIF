@@ -20,9 +20,9 @@ namespace OnePIF.Records
         public string additional_no { get; set; }
 
         #region Member Since
-        public int member_since_yy { get; set; }
+        public string member_since_yy { get; set; }
 
-        public int member_since_mm { get; set; }
+        public string member_since_mm { get; set; }
         #endregion
 
         public string customer_service_phone { get; set; }

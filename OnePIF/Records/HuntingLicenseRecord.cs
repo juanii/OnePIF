@@ -9,19 +9,19 @@ namespace OnePIF.Records
         public string name { get; set; }
 
         #region Valid From
-        public int valid_from_yy { get; set; }
+        public string valid_from_yy { get; set; }
 
-        public int valid_from_mm { get; set; }
+        public string valid_from_mm { get; set; }
 
-        public int valid_from_dd { get; set; }
+        public string valid_from_dd { get; set; }
         #endregion
 
         #region Expiration Date
-        public int expires_yy { get; set; }
+        public string expires_yy { get; set; }
 
-        public int expires_mm { get; set; }
+        public string expires_mm { get; set; }
 
-        public int expires_dd { get; set; }
+        public string expires_dd { get; set; }
         #endregion
 
         public string game { get; set; }

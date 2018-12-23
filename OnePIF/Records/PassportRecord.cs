@@ -25,29 +25,29 @@ namespace OnePIF.Records
         public string issuing_authority { get; set; }
 
         #region Birth Date
-        public int birthdate_yy { get; set; }
+        public string birthdate_yy { get; set; }
 
-        public int birthdate_mm { get; set; }
+        public string birthdate_mm { get; set; }
 
-        public int birthdate_dd { get; set; }
+        public string birthdate_dd { get; set; }
         #endregion
 
         public string birthplace { get; set; }
 
         #region Issue Date
-        public int issue_date_yy { get; set; }
+        public string issue_date_yy { get; set; }
 
-        public int issue_date_mm { get; set; }
+        public string issue_date_mm { get; set; }
 
-        public int issue_date_dd { get; set; }
+        public string issue_date_dd { get; set; }
         #endregion
 
         #region Expiration Date
-        public int expiry_date_yy { get; set; }
+        public string expiry_date_yy { get; set; }
 
-        public int expiry_date_mm { get; set; }
+        public string expiry_date_mm { get; set; }
 
-        public int expiry_date_dd { get; set; }
+        public string expiry_date_dd { get; set; }
         #endregion
         #endregion
 #pragma warning restore IDE1006

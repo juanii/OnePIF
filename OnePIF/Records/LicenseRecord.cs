@@ -33,7 +33,7 @@ namespace OnePIF.Records
 
         #region Order
         #region Purchase Date
-        public int order_date_yy { get; set; }
+        public string order_date_yy { get; set; }
 
         public string order_date_mm { get; set; }
         

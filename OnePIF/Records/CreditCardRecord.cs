@@ -19,15 +19,15 @@ namespace OnePIF.Records
         public string cvv { get; set; }
 
         #region Expiration date
-        public int expiry_yy { get; set; }
+        public string expiry_yy { get; set; }
 
-        public int expiry_mm { get; set; }
+        public string expiry_mm { get; set; }
         #endregion
 
         #region Valid from
-        public int validFrom_yy { get; set; }
+        public string validFrom_yy { get; set; }
 
-        public int validFrom_mm { get; set; }
+        public string validFrom_mm { get; set; }
         #endregion
         #endregion
 

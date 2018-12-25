@@ -30,9 +30,9 @@ namespace OnePIF.Records
                 int i = 1;
 
                 string mainURLString = null;
-                ProtectedString mainURL = pwEntry.Strings.Get(PwDefs.UrlField);
-                if (mainURL != null)
-                    mainURLString = mainURL.ReadString();
+
+                if (pwEntry.Strings.Exists(PwDefs.UrlField))
+                    mainURLString = pwEntry.Strings.Get(PwDefs.UrlField).ReadString();
 
                 foreach (URL url in this.URLs)
                 {

@@ -16,9 +16,9 @@ namespace OnePIF.Records
 
         protected virtual OpenContents GetOpenContents() { return null; }
 
-        public override PwEntry CreatePwEntry(PwDatabase pwDatabase, UserPrefs userPrefs)
+        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
-            PwEntry pwEntry = base.CreatePwEntry(pwDatabase, userPrefs);
+            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
 
             SecureContents secureContents = this.GetSecureContents();
             if (secureContents != null)
@@ -40,7 +40,6 @@ namespace OnePIF.Records
                     pwEntry.Binaries.Set(Path.GetFileName(itemAttachmentPath), new ProtectedBinary(false, File.ReadAllBytes(itemAttachmentPath)));
             }
 
-            return pwEntry;
         }
 
         public virtual PwCustomIcon GetPwCustomIcon()

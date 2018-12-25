@@ -37,18 +37,22 @@ namespace OnePIF.Records
         public DateTime updatedAt { get; set; }
 #pragma warning restore IDE1006
 
-        public virtual PwEntry CreatePwEntry(PwDatabase pwStorage, UserPrefs userPrefs)
+        public PwEntry CreatePwEntry(PwDatabase pwStorage, UserPrefs userPrefs)
         {
-            PwEntry entry = new PwEntry(true, true)
-            {
-                CreationTime = this.createdAt,
-                LastModificationTime = this.updatedAt
-            };
+            PwEntry pwEntry = new PwEntry(true, true);
+
+            this.PopulateEntry(pwEntry, pwStorage, userPrefs);
+
+            return pwEntry;
+        }
+
+        public virtual void PopulateEntry(PwEntry pwEntry, PwDatabase pwStorage, UserPrefs userPrefs)
+        {
+            pwEntry.CreationTime = this.createdAt;
+            pwEntry.LastModificationTime = this.updatedAt;
 
             if (!string.IsNullOrEmpty(this.title))
-                entry.Strings.Set(PwDefs.TitleField, new ProtectedString(pwStorage.MemoryProtection.ProtectTitle, this.title));
-
-            return entry;
+                pwEntry.Strings.Set(PwDefs.TitleField, new ProtectedString(pwStorage.MemoryProtection.ProtectTitle, this.title));
         }
     }
 }

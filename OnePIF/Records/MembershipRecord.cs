@@ -45,12 +45,10 @@ namespace OnePIF.Records
 
         protected override OpenContents GetOpenContents() { return this.openContents; }
 
-        public override PwEntry CreatePwEntry(PwDatabase pwDatabase, UserPrefs userPrefs)
+        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
-            PwEntry pwEntry = base.CreatePwEntry(pwDatabase, userPrefs);
+            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
             pwEntry.IconId = PwIcon.Certificate;
-
-            return pwEntry;
         }
     }
 }

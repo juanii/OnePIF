@@ -11,14 +11,13 @@ namespace OnePIF.Records
         public string location { get; set; }
 #pragma warning restore IDE1006
 
-        public override PwEntry CreatePwEntry(PwDatabase pwStorage, UserPrefs userPrefs)
+        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
-            PwEntry pwEntry = base.CreatePwEntry(pwStorage, userPrefs);
-
+            // Fill the URL before processing the rest of the fields so duplicate URLs can be detected
             if (!string.IsNullOrEmpty(this.location))
-                pwEntry.Strings.Set(PwDefs.UrlField, new ProtectedString(pwStorage.MemoryProtection.ProtectUrl, this.location));
+                pwEntry.Strings.Set(PwDefs.UrlField, new ProtectedString(pwDatabase.MemoryProtection.ProtectUrl, this.location));
 
-            return pwEntry;
+            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
         }
     }
 }

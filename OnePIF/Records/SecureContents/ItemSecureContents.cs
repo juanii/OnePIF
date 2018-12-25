@@ -105,6 +105,8 @@ namespace OnePIF.Records
         public byte[] customIcon { get; set; }
 #pragma warning restore IDE1006
 
+        public PwCustomIcon PwCustomIcon { get; private set; }
+
         private static readonly string LINKED_ITEMS_SECTION_NAME = "linked items";
 
         private static readonly Regex USER_SECTION_NAME = new Regex("^Section_[0-9A-F]{32}$", RegexOptions.Compiled);
@@ -336,14 +338,8 @@ namespace OnePIF.Records
 
             if (!string.IsNullOrEmpty(this.notesPlain))
                 pwEntry.Strings.Set(PwDefs.NotesField, new ProtectedString(pwDatabase.MemoryProtection.ProtectNotes, StringExt.FixNewLines(this.notesPlain)));
-        }
 
-        // Ugly
-        public override PwCustomIcon GetCustomIcon()
-        {
-            PwCustomIcon pwCustomIcon = null;
-
-            if (this.customIcon != null && this.customIcon.Length > 0)
+            if (this.customIcon != null)
             {
                 byte[] customIconData = null;
 
@@ -359,7 +355,8 @@ namespace OnePIF.Records
                         using (MD5 md5 = MD5.Create())
                         {
                             PwUuid customIconUuid = new PwUuid(md5.ComputeHash(customIconData));
-                            pwCustomIcon = new PwCustomIcon(customIconUuid, customIconData);
+                            this.PwCustomIcon = new PwCustomIcon(customIconUuid, customIconData);
+                            pwEntry.CustomIconUuid = customIconUuid;
                         }
                     }
                 }
@@ -368,8 +365,6 @@ namespace OnePIF.Records
                     // Image format is not supported or one of its dimensions is bigger than 65,535
                 }
             }
-
-            return pwCustomIcon;
         }
     }
 }

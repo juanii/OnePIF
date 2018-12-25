@@ -139,7 +139,6 @@ namespace OnePIF
                         if (!pwDatabase.CustomIcons.Exists(icon => icon.Uuid.Equals(customIcon.Uuid)))
                             pwDatabase.CustomIcons.Add(customIcon);
 
-                        entry.CustomIconUuid = customIcon.Uuid;
                         pwDatabase.UINeedsIconUpdate = true;
                     }
 

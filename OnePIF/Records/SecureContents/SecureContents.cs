@@ -9,10 +9,5 @@ namespace OnePIF.Records
         {
             return;
         }
-
-        public virtual PwCustomIcon GetCustomIcon()
-        {
-            return null;
-        }
     }
 }

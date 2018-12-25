@@ -45,13 +45,12 @@ namespace OnePIF.Records
 
         public virtual PwCustomIcon GetPwCustomIcon()
         {
-            PwCustomIcon pwCustomIcon = null;
+            ItemSecureContents itemSecureContents = this.GetSecureContents() as ItemSecureContents;
 
-            SecureContents secureContents = this.GetSecureContents();
-            if (secureContents != null)
-                pwCustomIcon = secureContents.GetCustomIcon();
+            if (itemSecureContents != null)
+                return itemSecureContents.PwCustomIcon;
 
-            return pwCustomIcon;
+            return null;
         }
     }
 }

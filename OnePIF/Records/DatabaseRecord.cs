@@ -29,6 +29,8 @@ namespace OnePIF.Records
         public string options { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "password"; }
     }
 
     public class DatabaseRecord : ItemRecord

@@ -32,6 +32,8 @@ namespace OnePIF.Records
         public string website { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "pin"; }
     }
 
     public class RewardProgramRecord : ItemRecord

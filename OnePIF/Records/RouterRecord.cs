@@ -27,6 +27,8 @@ namespace OnePIF.Records
         public string disk_password { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "password"; }
     }
 
     public class RouterRecord : ItemRecord

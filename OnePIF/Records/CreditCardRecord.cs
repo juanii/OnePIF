@@ -55,6 +55,8 @@ namespace OnePIF.Records
         public string issuenumber { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "cvv"; }
     }
 
     public class CreditCardRecord : ItemRecord

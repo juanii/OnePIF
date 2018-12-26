@@ -53,6 +53,8 @@ namespace OnePIF.Records
         public string phone_tollfree { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "pop_password"; }
     }
 
     public class EmailV2Record : ItemRecord

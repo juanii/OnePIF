@@ -33,6 +33,8 @@ namespace OnePIF.Records
         public string branchAddress { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "telephonePin"; }
     }
 
     public class BankAccountUsRecord : ItemRecord

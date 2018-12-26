@@ -9,6 +9,8 @@ namespace OnePIF.Records
 
         public string number { get; set; }
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "number"; }
     }
 
     public class SsnUsRecord : ItemRecord

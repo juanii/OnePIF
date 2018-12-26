@@ -31,6 +31,8 @@ namespace OnePIF.Records
         public string support_contact_phone { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override string GetPasswordFieldName() { return "password"; }
     }
 
     public class UnixServerRecord : ItemRecord

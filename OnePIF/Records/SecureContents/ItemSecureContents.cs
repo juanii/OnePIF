@@ -215,7 +215,7 @@ namespace OnePIF.Records
             }
         }
 
-        public void setExpandedAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        private void setExpandedAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
         {
             string country = addressSectionField.v.country ?? "us";
 
@@ -246,6 +246,11 @@ namespace OnePIF.Records
             }
         }
 
+        protected bool IsUserSection(SecureContentsSection section)
+        {
+            return section.name != null && USER_SECTION_NAME.IsMatch(section.name);
+        }
+
         public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
             base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
@@ -262,9 +267,8 @@ namespace OnePIF.Records
                     if (section.fields != null)
                     {
                         string sectionTitle = section.title;
-                        bool isUserSection = USER_SECTION_NAME.IsMatch(section.name);
 
-                        if (string.IsNullOrEmpty(section.title) && isUserSection)
+                        if (this.IsUserSection(section))
                             sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
 
                         foreach (SectionField field in section.fields)
@@ -274,6 +278,9 @@ namespace OnePIF.Records
 
                             if (!string.IsNullOrEmpty(sectionTitle))
                                 fieldLabel = string.Concat(sectionTitle, " - ", field.t);
+
+                            if (pwEntry.Strings.Exists(fieldLabel))
+                                continue;
 
                             // Special treatment fields
                             if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
@@ -326,7 +333,7 @@ namespace OnePIF.Records
 
                             // No point in importing an empty template field.
                             // But, if it's a user-defined field, it might be there for a reason.
-                            if (fieldValue == null && !isUserSection)
+                            if (fieldValue == null && !this.IsUserSection(section))
                                 continue;
 
                             bool protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);

@@ -40,6 +40,8 @@ namespace OnePIF.Records
                     pwEntry.Binaries.Set(Path.GetFileName(itemAttachmentPath), new ProtectedBinary(false, File.ReadAllBytes(itemAttachmentPath)));
             }
 
+            if (secureContents is PasswordHistorySecureContents)
+                (secureContents as PasswordHistorySecureContents).CreateHistoryEntries(pwEntry, pwDatabase, userPrefs);
         }
 
         public virtual PwCustomIcon GetPwCustomIcon()

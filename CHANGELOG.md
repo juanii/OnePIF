@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.2](https://github.com/juanii/OnePIF/releases/0.3.2) - 2018-12-25
+
+### Changed
+
+* Previously used passwords are handled the KeePass way: each history entry is fully populated (using main entry data).
+
+* The main concealed field of each item type is set as the entry password, and the original field contains a placeholder to the entry password.
+
+### Fixed
+
+* The main item URL was also being added as a secondary URL.
+
 ## [0.3.1](https://github.com/juanii/OnePIF/releases/0.3.1) - 2018-12-22
 
 ### Fixed

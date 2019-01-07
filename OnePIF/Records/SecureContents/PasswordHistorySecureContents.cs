@@ -40,7 +40,7 @@ namespace OnePIF.Records
             {
                 foreach (SecureContentsSection section in this.sections)
                 {
-                    if (!this.IsUserSection(section) && string.IsNullOrEmpty(section.title))
+                    if (section.fields != null && !this.IsUserSection(section) && string.IsNullOrEmpty(section.title))
                     {
                         foreach (SectionField field in section.fields)
                         {
@@ -52,7 +52,8 @@ namespace OnePIF.Records
                                 if (!pwEntry.Strings.Exists(PwDefs.PasswordField) && !pwEntry.Strings.Exists(fieldLabel) && !string.IsNullOrEmpty(passwordField.v))
                                 {
                                     pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, passwordField.v));
-                                    pwEntry.Strings.Set(fieldLabel, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, "{PASSWORD}"));
+                                    if (!string.Equals(PwDefs.PasswordField, fieldLabel))
+                                        pwEntry.Strings.Set(fieldLabel, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, "{PASSWORD}"));
                                 }
                             }
                         }

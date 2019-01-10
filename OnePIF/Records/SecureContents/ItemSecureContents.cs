@@ -268,7 +268,7 @@ namespace OnePIF.Records
                     {
                         string sectionTitle = section.title;
 
-                        if (this.IsUserSection(section))
+                        if (string.IsNullOrEmpty(section.title) && this.IsUserSection(section))
                             sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
 
                         foreach (SectionField field in section.fields)

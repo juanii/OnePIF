@@ -25,7 +25,17 @@ namespace OnePIF.Converters
             { "wallet.computer.UnixServer", Records.RecordType.UnixServer },
             { "wallet.government.SsnUS", Records.RecordType.SsnUS },
             { "wallet.computer.Router", Records.RecordType.Router },
-            { "wallet.computer.License", Records.RecordType.License }
+            { "wallet.computer.License", Records.RecordType.License },
+            // Legacy
+            { "wallet.onlineservices.Email", Records.RecordType.Email },
+            { "wallet.onlineservices.iTunes", Records.RecordType.iTunes },
+            { "wallet.computer.MySQLConnection", Records.RecordType.MySQLConnection },
+            { "wallet.onlineservices.FTP", Records.RecordType.FTP },
+            { "wallet.onlineservices.DotMac", Records.RecordType.DotMac },
+            { "wallet.onlineservices.GenericAccount", Records.RecordType.GenericAccount },
+            { "wallet.onlineservices.InstantMessenger", Records.RecordType.InstantMessenger },
+            { "wallet.onlineservices.ISP", Records.RecordType.ISP },
+            { "wallet.onlineservices.AmazonS3", Records.RecordType.AmazonS3 }
         };
 
         public override bool CanWrite { get { return false; } }

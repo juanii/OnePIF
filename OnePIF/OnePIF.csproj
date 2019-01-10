@@ -49,6 +49,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dropdown List Types\EMailPOPAuthentication.cs" />
+    <Compile Include="Dropdown List Types\EMailPOPType.cs" />
+    <Compile Include="Dropdown List Types\EMailPOPUseSSL.cs" />
+    <Compile Include="Dropdown List Types\EMailSMTPAuthentication.cs" />
+    <Compile Include="Dropdown List Types\EMailSMTPUseSSL.cs" />
+    <Compile Include="Dropdown List Types\InstantMessengerAccountType.cs" />
     <Compile Include="JSON Converters\BaseRecordConverter.cs" />
     <Compile Include="JSON Converters\EnumConverter.cs" />
     <Compile Include="JSON Converters\SectionFieldConverter.cs" />
@@ -82,11 +88,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="Records\AmazonS3Record.cs" />
     <Compile Include="Records\BankAccountUsRecord.cs" />
     <Compile Include="Records\BaseRecord.cs" />
     <Compile Include="JSON Converters\FlexibleBooleanConverter.cs" />
     <Compile Include="JSON Converters\MonthYearConverter.cs" />
+    <Compile Include="Records\DotMacRecord.cs" />
+    <Compile Include="Records\EMailRecord.cs" />
+    <Compile Include="Records\FTPRecord.cs" />
+    <Compile Include="Records\GenericAccountRecord.cs" />
+    <Compile Include="Records\InstantMessengerRecord.cs" />
+    <Compile Include="Records\ISPRecord.cs" />
     <Compile Include="Records\ItemRecord.cs" />
+    <Compile Include="Records\ITunesRecord.cs" />
+    <Compile Include="Records\MySQLConnectionRecord.cs" />
     <Compile Include="Records\SecureContents\ItemSecureContents.cs" />
     <Compile Include="Records\SecureContents\PasswordHistorySecureContents.cs" />
     <Compile Include="Records\SecureContents\SavedSearchSecureContents.cs" />

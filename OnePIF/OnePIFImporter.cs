@@ -25,7 +25,17 @@ namespace OnePIF
             { Records.RecordType.UnixServer, ItemCategory.Servers },
             { Records.RecordType.SsnUS, ItemCategory.SocialSecurityNumbers },
             { Records.RecordType.Router, ItemCategory.WirelessRouters },
-            { Records.RecordType.License, ItemCategory.SoftwareLicenses }
+            { Records.RecordType.License, ItemCategory.SoftwareLicenses },
+            // Legacy
+            { Records.RecordType.Email, ItemCategory.EmailAccounts },
+            { Records.RecordType.iTunes, ItemCategory.iTunes },
+            { Records.RecordType.MySQLConnection, ItemCategory.MySQLDatabase },
+            { Records.RecordType.FTP, ItemCategory.FTPAccount },
+            { Records.RecordType.DotMac, ItemCategory.iCloud },
+            { Records.RecordType.GenericAccount, ItemCategory.GenericAccount },
+            { Records.RecordType.InstantMessenger, ItemCategory.InstantMessenger },
+            { Records.RecordType.ISP, ItemCategory.InternetProvider },
+            { Records.RecordType.AmazonS3, ItemCategory.AmazonS3 }
         };
 
         public void Import(List<Records.BaseRecord> records, PwDatabase pwDatabase, IStatusLogger statusLogger, UserPrefs userPrefs)

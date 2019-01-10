@@ -27,7 +27,16 @@ namespace OnePIF
         Servers,
         SocialSecurityNumbers,
         WirelessRouters,
-        SoftwareLicenses
+        SoftwareLicenses,
+        // Legacy
+        iTunes,
+        MySQLDatabase,
+        FTPAccount,
+        iCloud,
+        GenericAccount,
+        InstantMessenger,
+        InternetProvider,
+        AmazonS3
     }
 
     public class OnePIFFormatProvider : FileFormatProvider

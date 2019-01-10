@@ -28,7 +28,17 @@ namespace OnePIF.Converters
             { "wallet.computer.UnixServer", typeof(UnixServerRecord) },
             { "wallet.government.SsnUS", typeof(SsnUsRecord) },
             { "wallet.computer.Router", typeof(RouterRecord) },
-            { "wallet.computer.License", typeof(LicenseRecord) }
+            { "wallet.computer.License", typeof(LicenseRecord) },
+            // Legacy
+            { "wallet.onlineservices.Email", typeof(EMailRecord) },
+            { "wallet.onlineservices.iTunes", typeof(ITunesRecord) },
+            { "wallet.computer.MySQLConnection", typeof(MySQLConnectionRecord) },
+            { "wallet.onlineservices.FTP", typeof(FTPRecord) },
+            { "wallet.onlineservices.DotMac", typeof(DotMacRecord) },
+            { "wallet.onlineservices.GenericAccount", typeof(GenericAccountRecord) },
+            { "wallet.onlineservices.InstantMessenger", typeof(InstantMessengerRecord) },
+            { "wallet.onlineservices.ISP", typeof(ISPRecord) },
+            { "wallet.onlineservices.AmazonS3", typeof(AmazonS3Record) }
         };
 
         private static Dictionary<string, string> itemTypeByCategory = new Dictionary<string, string>()

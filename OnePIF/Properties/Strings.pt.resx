@@ -1182,4 +1182,88 @@
   <data name="Address_zip" xml:space="preserve">
     <value>CEP</value>
   </data>
+  <data name="Menu_account_type_aol" xml:space="preserve">
+    <value>AOL Instant Messenger</value>
+  </data>
+  <data name="Menu_account_type_jabber" xml:space="preserve">
+    <value>Jabber</value>
+  </data>
+  <data name="Menu_account_type_msn" xml:space="preserve">
+    <value>MSN Messenger</value>
+  </data>
+  <data name="Menu_account_type_yahoo" xml:space="preserve">
+    <value>Yahoo! Messenger</value>
+  </data>
+  <data name="Menu_account_type_mobileme" xml:space="preserve">
+    <value>iCloud</value>
+  </data>
+  <data name="Menu_account_type_dotmac" xml:space="preserve">
+    <value>Mac.com</value>
+  </data>
+  <data name="Menu_account_type_gadu" xml:space="preserve">
+    <value>Gadu-Gadu</value>
+  </data>
+  <data name="Menu_account_type_gtalk" xml:space="preserve">
+    <value>Google Talk</value>
+  </data>
+  <data name="Menu_account_type_icq" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="Menu_account_type_livejournal" xml:space="preserve">
+    <value>LiveJournal</value>
+  </data>
+  <data name="Menu_account_type_sametime" xml:space="preserve">
+    <value>Lotus Sametime</value>
+  </data>
+  <data name="Menu_account_type_groupwise" xml:space="preserve">
+    <value>Novell GroupWise</value>
+  </data>
+  <data name="Menu_account_type_qq" xml:space="preserve">
+    <value>QQ</value>
+  </data>
+  <data name="Menu_account_type_sip" xml:space="preserve">
+    <value>SIP / SIMPLE</value>
+  </data>
+  <data name="Menu_account_type_skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="Menu_account_type_gizmo" xml:space="preserve">
+    <value>Gizmo</value>
+  </data>
+  <data name="Menu_pop_use_ssl_no" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="Menu_pop_use_ssl_yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="Menu_smtp_use_ssl_no" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="Menu_smtp_use_ssl_yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="FolderName_AmazonS3" xml:space="preserve">
+    <value>Amazon S3</value>
+  </data>
+  <data name="FolderName_FTPAccount" xml:space="preserve">
+    <value>Conta de FTP</value>
+  </data>
+  <data name="FolderName_GenericAccount" xml:space="preserve">
+    <value>Conta genérica</value>
+  </data>
+  <data name="FolderName_InstantMessenger" xml:space="preserve">
+    <value>Serviço de mensagens instantâneas</value>
+  </data>
+  <data name="FolderName_InternetProvider" xml:space="preserve">
+    <value>Fornecedor de Internet</value>
+  </data>
+  <data name="FolderName_MySQLDatabase" xml:space="preserve">
+    <value>Base de dados MySQL</value>
+  </data>
+  <data name="FolderName_iCloud" xml:space="preserve">
+    <value>iCloud</value>
+  </data>
+  <data name="FolderName_iTunes" xml:space="preserve">
+    <value>iTunes</value>
+  </data>
 </root>

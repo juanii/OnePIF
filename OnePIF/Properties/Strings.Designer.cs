@@ -286,6 +286,15 @@ namespace OnePIF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Amazon S3.
+        /// </summary>
+        internal static string FolderName_AmazonS3 {
+            get {
+                return ResourceManager.GetString("FolderName_AmazonS3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bank Accounts.
         /// </summary>
         internal static string FolderName_BankAccounts {
@@ -331,11 +340,65 @@ namespace OnePIF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FTP Account.
+        /// </summary>
+        internal static string FolderName_FTPAccount {
+            get {
+                return ResourceManager.GetString("FolderName_FTPAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Generic Account.
+        /// </summary>
+        internal static string FolderName_GenericAccount {
+            get {
+                return ResourceManager.GetString("FolderName_GenericAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iCloud.
+        /// </summary>
+        internal static string FolderName_iCloud {
+            get {
+                return ResourceManager.GetString("FolderName_iCloud", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Identities.
         /// </summary>
         internal static string FolderName_Identities {
             get {
                 return ResourceManager.GetString("FolderName_Identities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Instant Messenger.
+        /// </summary>
+        internal static string FolderName_InstantMessenger {
+            get {
+                return ResourceManager.GetString("FolderName_InstantMessenger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internet Provider.
+        /// </summary>
+        internal static string FolderName_InternetProvider {
+            get {
+                return ResourceManager.GetString("FolderName_InternetProvider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iTunes.
+        /// </summary>
+        internal static string FolderName_iTunes {
+            get {
+                return ResourceManager.GetString("FolderName_iTunes", resourceCulture);
             }
         }
         
@@ -354,6 +417,15 @@ namespace OnePIF.Properties {
         internal static string FolderName_Memberships {
             get {
                 return ResourceManager.GetString("FolderName_Memberships", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MySQL Database.
+        /// </summary>
+        internal static string FolderName_MySQLDatabase {
+            get {
+                return ResourceManager.GetString("FolderName_MySQLDatabase", resourceCulture);
             }
         }
         
@@ -453,6 +525,150 @@ namespace OnePIF.Properties {
         internal static string FolderName_WirelessRouters {
             get {
                 return ResourceManager.GetString("FolderName_WirelessRouters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AOL Instant Messenger.
+        /// </summary>
+        internal static string Menu_account_type_aol {
+            get {
+                return ResourceManager.GetString("Menu_account_type_aol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mac.com.
+        /// </summary>
+        internal static string Menu_account_type_dotmac {
+            get {
+                return ResourceManager.GetString("Menu_account_type_dotmac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gadu-Gadu.
+        /// </summary>
+        internal static string Menu_account_type_gadu {
+            get {
+                return ResourceManager.GetString("Menu_account_type_gadu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gizmo.
+        /// </summary>
+        internal static string Menu_account_type_gizmo {
+            get {
+                return ResourceManager.GetString("Menu_account_type_gizmo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Novell GroupWise.
+        /// </summary>
+        internal static string Menu_account_type_groupwise {
+            get {
+                return ResourceManager.GetString("Menu_account_type_groupwise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Google Talk.
+        /// </summary>
+        internal static string Menu_account_type_gtalk {
+            get {
+                return ResourceManager.GetString("Menu_account_type_gtalk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ICQ.
+        /// </summary>
+        internal static string Menu_account_type_icq {
+            get {
+                return ResourceManager.GetString("Menu_account_type_icq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jabber.
+        /// </summary>
+        internal static string Menu_account_type_jabber {
+            get {
+                return ResourceManager.GetString("Menu_account_type_jabber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LiveJournal.
+        /// </summary>
+        internal static string Menu_account_type_livejournal {
+            get {
+                return ResourceManager.GetString("Menu_account_type_livejournal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to iCloud.
+        /// </summary>
+        internal static string Menu_account_type_mobileme {
+            get {
+                return ResourceManager.GetString("Menu_account_type_mobileme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSN Messenger.
+        /// </summary>
+        internal static string Menu_account_type_msn {
+            get {
+                return ResourceManager.GetString("Menu_account_type_msn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QQ.
+        /// </summary>
+        internal static string Menu_account_type_qq {
+            get {
+                return ResourceManager.GetString("Menu_account_type_qq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lotus Sametime.
+        /// </summary>
+        internal static string Menu_account_type_sametime {
+            get {
+                return ResourceManager.GetString("Menu_account_type_sametime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SIP / SIMPLE.
+        /// </summary>
+        internal static string Menu_account_type_sip {
+            get {
+                return ResourceManager.GetString("Menu_account_type_sip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skype.
+        /// </summary>
+        internal static string Menu_account_type_skype {
+            get {
+                return ResourceManager.GetString("Menu_account_type_skype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yahoo! Messenger.
+        /// </summary>
+        internal static string Menu_account_type_yahoo {
+            get {
+                return ResourceManager.GetString("Menu_account_type_yahoo", resourceCulture);
             }
         }
         
@@ -2968,6 +3184,24 @@ namespace OnePIF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string Menu_pop_use_ssl_no {
+            get {
+                return ResourceManager.GetString("Menu_pop_use_ssl_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string Menu_pop_use_ssl_yes {
+            get {
+                return ResourceManager.GetString("Menu_pop_use_ssl_yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Female.
         /// </summary>
         internal static string Menu_sex_female {
@@ -3072,6 +3306,24 @@ namespace OnePIF.Properties {
         internal static string Menu_smtp_security_TLS {
             get {
                 return ResourceManager.GetString("Menu_smtp_security_TLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string Menu_smtp_use_ssl_no {
+            get {
+                return ResourceManager.GetString("Menu_smtp_use_ssl_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string Menu_smtp_use_ssl_yes {
+            get {
+                return ResourceManager.GetString("Menu_smtp_use_ssl_yes", resourceCulture);
             }
         }
         

@@ -21,6 +21,16 @@
         SsnUS,
         Router,
         License,
-        SavedSearch
+        SavedSearch,
+        // Legacy
+        Email,
+        iTunes,
+        MySQLConnection,
+        FTP,
+        DotMac,
+        GenericAccount,
+        InstantMessenger,
+        ISP,
+        AmazonS3
     }
 }

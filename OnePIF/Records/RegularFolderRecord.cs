@@ -12,6 +12,7 @@ namespace OnePIF.Records
 
         private static readonly Dictionary<ItemCategory, PwIcon> iconsByCategory = new Dictionary<ItemCategory, PwIcon>()
         {
+            { ItemCategory.Unknown, PwIcon.Warning },
             { ItemCategory.Logins, PwIcon.World },
             { ItemCategory.SecureNotes, PwIcon.Note },
             { ItemCategory.CreditCards, PwIcon.Money },
@@ -29,7 +30,15 @@ namespace OnePIF.Records
             { ItemCategory.SocialSecurityNumbers, PwIcon.Identity },
             { ItemCategory.WirelessRouters, PwIcon.IRCommunication },
             { ItemCategory.SoftwareLicenses, PwIcon.Certificate },
-            { ItemCategory.Unknown, PwIcon.Warning }
+            // Legacy
+            { ItemCategory.iTunes, PwIcon.Apple },
+            { ItemCategory.MySQLDatabase, PwIcon.Drive },
+            { ItemCategory.FTPAccount, PwIcon.NetworkServer },
+            { ItemCategory.iCloud, PwIcon.Apple },
+            { ItemCategory.GenericAccount, PwIcon.Key },
+            { ItemCategory.InstantMessenger, PwIcon.UserCommunication },
+            { ItemCategory.InternetProvider, PwIcon.WorldComputer },
+            { ItemCategory.AmazonS3, PwIcon.NetworkServer }
         };
 
         private static Dictionary<Guid, PwIcon> iconsByUuid = new Dictionary<Guid, PwIcon>();

@@ -14,6 +14,7 @@
         B,      // Button
         I,      // Submit
         S,      // Select (Combo)
-        RNG     // Range
+        RNG,    // Range
+        A       // Text area
     }
 }

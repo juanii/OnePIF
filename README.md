@@ -57,9 +57,9 @@ You don't have to actually compile anything, just build the `PackagePLGX` projec
 
 ### Building the DLL version
 
-Build the `OnePIF` project and you're ready to go.
+Build the `OnePIF` project using the `Release` configuration and you're ready to go.
 
-To install, copy the plugin DLL along with the the dependecies and (optionally) the localization satellite DLLs to the _root_ KeePass installation path. Do not place the files inside the Plugins directory. If KeePass finds the satellite DLLs in the Plugins directory, it will try (and fail) to load them as plugins.<sup id="a5">[5](#f5)</sup>
+To install, copy the plugin DLL along with the dependecies and (optionally) the localization satellite DLLs to the KeePass Plugins path<sup id="a5">[5](#f5).
 
 ### Debugging
 
@@ -79,4 +79,4 @@ This software is provided as-is without any warranty of any kind. I take no resp
 
 <b id="f4">4</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [:leftwards_arrow_with_hook:](#a4)
 
-<b id="f5">5</b> An upcoming release of KeePass (> 2.40) will include a fix for the satellite DLLs issue. [:leftwards_arrow_with_hook:](#a5)
+<b id="f5">5</b> If you want to use the localization satellite DLLs and you're using KeePass version 2.40 or older, copy all the files to the _root_ KeePass installation path. Otherwise it will try (and fail) to load the satellite DLLs as plugins themselves. [:leftwards_arrow_with_hook:](#a5)

@@ -2725,20 +2725,56 @@ namespace OnePIF.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to city.
+        /// </summary>
+        internal static string Address_es_cn_city {
+            get {
+                return ResourceManager.GetString("Address_es_cn_city", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to country.
+        /// </summary>
+        internal static string Address_es_cn_country {
+            get {
+                return ResourceManager.GetString("Address_es_cn_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to province.
+        /// </summary>
+        internal static string Address_es_cn_state {
+            get {
+                return ResourceManager.GetString("Address_es_cn_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to street.
+        /// </summary>
+        internal static string Address_es_cn_street {
+            get {
+                return ResourceManager.GetString("Address_es_cn_street", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to postalcode.
+        /// </summary>
+        internal static string Address_es_cn_zip {
+            get {
+                return ResourceManager.GetString("Address_es_cn_zip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to country.
         /// </summary>
         internal static string Address_es_country {
             get {
                 return ResourceManager.GetString("Address_es_country", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to es-cn.
-        /// </summary>
-        internal static string Address_es_es_cn {
-            get {
-                return ResourceManager.GetString("Address_es_es-cn", resourceCulture);
             }
         }
         

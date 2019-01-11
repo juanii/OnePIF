@@ -2937,8 +2937,8 @@
   <data name="Address_es_city" xml:space="preserve">
     <value>city</value>
   </data>
-  <data name="Address_es_es-cn" xml:space="preserve">
-    <value>es-cn</value>
+  <data name="Address_es_cn_city" xml:space="preserve">
+    <value>city</value>
   </data>
   <data name="Address_sv_state" xml:space="preserve">
     <value>department</value>
@@ -3511,6 +3511,18 @@
     <value>street</value>
   </data>
   <data name="Address_je_zip" xml:space="preserve">
+    <value>postalcode</value>
+  </data>
+  <data name="Address_es_cn_country" xml:space="preserve">
+    <value>country</value>
+  </data>
+  <data name="Address_es_cn_state" xml:space="preserve">
+    <value>province</value>
+  </data>
+  <data name="Address_es_cn_street" xml:space="preserve">
+    <value>street</value>
+  </data>
+  <data name="Address_es_cn_zip" xml:space="preserve">
     <value>postalcode</value>
   </data>
 </root>

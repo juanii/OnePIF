@@ -12,6 +12,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace OnePIF.Records
 {
@@ -165,12 +166,16 @@ namespace OnePIF.Records
 
         private void setCompactAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
         {
-            string addressFormat = null;
+            string addressLocale = addressSectionField.v.country;
 
+            if (string.IsNullOrEmpty(addressLocale))
+                addressLocale = "us";
+
+            // Find the address format used in the country where this address is located
             // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-            if (!string.IsNullOrEmpty(addressSectionField.v.country))
-                addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressSectionField.v.country.Replace('-', '_') }));
+            string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressLocale.Replace('-', '_') })); ;
 
+            // If we couldn't find a specific format for the country, use a generic one
             if (string.IsNullOrEmpty(addressFormat))
                 addressFormat = Properties.CompactAddressFormat.Country_us;
 
@@ -189,12 +194,26 @@ namespace OnePIF.Records
                     {
                         string tokenValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
 
-                        // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                        if (subtoken.Equals("country") && !string.IsNullOrEmpty(tokenValue))
+                        if (string.IsNullOrEmpty(tokenValue))
+                            continue;
+
+                        // Find the localized country name
+                        if (subtoken.Equals("country"))
+                        {
+                            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
                             tokenValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", tokenValue.Replace('-', '_') }));
 
-                        if (!string.IsNullOrEmpty(tokenValue))
-                            subcomponents.Add(tokenValue);
+                            // If no localized country name is found, use the ISO country code
+                            if (string.IsNullOrEmpty(tokenValue))
+                                tokenValue = tokenValue.ToUpper().Replace('_', ' ');
+                        }
+                        else if (subtoken.Equals("street"))
+                        {
+                            // Older format had two address lines, which may be joined with a new line
+                            tokenValue = StringExt.ReplaceNewLines(tokenValue, " ");
+                        }
+
+                        subcomponents.Add(tokenValue);
                     }
                 }
 
@@ -208,6 +227,7 @@ namespace OnePIF.Records
             {
                 string fieldLabel = addressSectionField.t;
 
+                // If the field is in a named section, prefix its name to avoid collisions
                 if (!string.IsNullOrEmpty(sectionTitle))
                     fieldLabel = string.Concat(sectionTitle, " - ", addressSectionField.t);
 
@@ -217,32 +237,63 @@ namespace OnePIF.Records
 
         private void setExpandedAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
         {
-            string country = addressSectionField.v.country ?? "us";
+            string addressLocale = addressSectionField.v.country;
+
+            if (string.IsNullOrEmpty(addressLocale))
+                addressLocale = "us";
 
             foreach (PropertyInfo propertyInfo in addressSectionField.v.GetType().GetProperties())
             {
+                List<string> fieldLabelParts = new List<string>();
+                string fieldLabel = null;
                 string fieldValue = propertyInfo.GetValue(addressSectionField.v, null) as string;
 
-                // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-                if (propertyInfo.Name.Equals("country") && !string.IsNullOrEmpty(fieldValue))
+                // Skip the field if it's empty
+                if (string.IsNullOrEmpty(fieldValue))
+                    continue;
+
+                // Find how this address part is called in the country where this address is located
+                string addressPartName = Properties.ExpandedAddressParts.ResourceManager.GetString(string.Join("_", new string[] { "Address", addressLocale.Replace('-', '_'), propertyInfo.Name }));
+
+                // Find the localized address part name
+                if (!string.IsNullOrEmpty(addressPartName))
+                    fieldLabel = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Address", addressPartName }));
+
+                // If no localized version of the address part name is found, use the generic field name
+                if (string.IsNullOrEmpty(fieldLabel))
+                    fieldLabel = CultureInfo.CurrentUICulture.TextInfo.ToTitleCase(propertyInfo.Name.ToLower());
+
+                // If the field is in a named section, prefix its name to avoid collisions
+                if (!string.IsNullOrEmpty(sectionTitle))
+                    fieldLabelParts.Add(sectionTitle);
+
+                // Then add the field title, if it has one
+                if (!string.IsNullOrEmpty(addressSectionField.t))
+                    fieldLabelParts.Add(addressSectionField.t);
+
+                // And finally the address part name
+                fieldLabelParts.Add(fieldLabel);
+
+                // Join all parts together
+                fieldLabel = string.Join(" - ", fieldLabelParts.ToArray());
+
+                // Find the localized country name
+                if (propertyInfo.Name.Equals("country"))
+                {
+                    // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
                     fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", "country", fieldValue.Replace('-', '_') }));
 
-                if (!string.IsNullOrEmpty(fieldValue))
-                {
-                    string fieldLabel = null;
-                    string addressPartName = Properties.ExpandedAddressParts.ResourceManager.GetString(string.Join("_", new string[] { "Address", country, propertyInfo.Name }));
-
-                    if (!string.IsNullOrEmpty(addressPartName))
-                        fieldLabel = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Address", addressPartName }));
-
-                    if (string.IsNullOrEmpty(fieldLabel))
-                        fieldLabel = propertyInfo.Name;
-
-                    if (!string.IsNullOrEmpty(sectionTitle))
-                        fieldLabel = string.Concat(sectionTitle, " - ", fieldLabel);
-
-                    pwEntry.Strings.Set(fieldLabel, new ProtectedString(false, fieldValue));
+                    // If no localized country name is found, use the ISO country code
+                    if (string.IsNullOrEmpty(fieldValue))
+                        fieldValue = fieldValue.ToUpper();
                 }
+                else if (propertyInfo.Name.Equals("street"))
+                {
+                    // Older format had two address lines, which may be joined with a new line
+                    fieldValue = StringExt.ReplaceNewLines(fieldValue, " ");
+                }
+
+                pwEntry.Strings.Set(fieldLabel, new ProtectedString(false, fieldValue));
             }
         }
 

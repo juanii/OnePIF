@@ -56,7 +56,7 @@ namespace OnePIF.Records
         #endregion
 #pragma warning restore IDE1006
 
-        protected override string GetPasswordFieldName() { return "cvv"; }
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "cvv"); }
     }
 
     public class CreditCardRecord : ItemRecord

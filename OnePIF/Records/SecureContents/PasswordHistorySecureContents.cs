@@ -32,38 +32,6 @@ namespace OnePIF.Records
         public IList<PasswordHistory> passwordHistory { get; set; }
 #pragma warning restore IDE1006
 
-        protected virtual string GetPasswordFieldName() { return null; }
-
-        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
-        {
-            if (this.sections != null)
-            {
-                foreach (SecureContentsSection section in this.sections)
-                {
-                    if (section.fields != null && !this.IsUserSection(section) && string.IsNullOrEmpty(section.title))
-                    {
-                        foreach (SectionField field in section.fields)
-                        {
-                            if (field is GeneralSectionField && string.Equals(field.n, this.GetPasswordFieldName()))
-                            {
-                                GeneralSectionField passwordField = field as GeneralSectionField;
-                                string fieldLabel = passwordField.t;
-
-                                if (!pwEntry.Strings.Exists(PwDefs.PasswordField) && !pwEntry.Strings.Exists(fieldLabel) && !string.IsNullOrEmpty(passwordField.v))
-                                {
-                                    pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, passwordField.v));
-                                    if (!string.Equals(PwDefs.PasswordField, fieldLabel))
-                                        pwEntry.Strings.Set(fieldLabel, new ProtectedString(pwDatabase.MemoryProtection.ProtectPassword, "{PASSWORD}"));
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
-        }
-
         public void CreateHistoryEntries(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
         {
             if (this.passwordHistory != null)

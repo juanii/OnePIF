@@ -34,7 +34,7 @@ namespace OnePIF.Records
         #endregion
 #pragma warning restore IDE1006
 
-        protected override string GetPasswordFieldName() { return "telephonePin"; }
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "telephonePin"); }
     }
 
     public class BankAccountUsRecord : ItemRecord

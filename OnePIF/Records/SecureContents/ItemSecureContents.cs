@@ -118,6 +118,30 @@ namespace OnePIF.Records
 
         private static readonly string OTP_DEFAULT_DIGITS = "6";
 
+        protected class SectionFieldLocator
+        {
+            public string SectionName { get; private set; }
+
+            public string FieldName { get; private set; }
+
+            public SectionFieldLocator(string sectionName, string fieldName)
+            {
+                this.SectionName = sectionName;
+                this.FieldName = fieldName;
+            }
+
+            public bool Equals(string sectionName, string fieldName)
+            {
+                return this.SectionName.Equals(sectionName) && this.FieldName.Equals(fieldName);
+            }
+        }
+
+        protected virtual SectionFieldLocator GetUsernameFieldLocator() { return null; }
+
+        protected virtual SectionFieldLocator GetPasswordFieldLocator() { return null; }
+
+        protected virtual SectionFieldLocator GetURLFieldLocator() { return null; }
+
         private void setOTPField(PwEntry pwEntry, bool protectSecret, GeneralSectionField sectionField, OTPFormat otpFormat)
         {
             if (otpFormat == OTPFormat.KeeWeb)
@@ -137,6 +161,7 @@ namespace OnePIF.Records
 
                 string secret = null, period = null, digits = null;
 
+                // If we have no secret, it's not worth setting the OTP field
                 if (!totpParams.TryGetValue("secret", out secret))
                     return;
 
@@ -158,7 +183,7 @@ namespace OnePIF.Records
                 else if (otpFormat == OTPFormat.TrayTOTP)
                 {
                     pwEntry.Strings.Set("TOTP Seed", new ProtectedString(protectSecret, secret));
-                    // Some Kee* implementations don't show the OTP if these optional values are missing
+                    // Some Kee* implementations don't show the OTP unless these optional values are set
                     pwEntry.Strings.Set("TOTP Settings", new ProtectedString(false, string.Join(";", new string[] { period ?? OTP_DEFAULT_PERIOD, digits ?? OTP_DEFAULT_DIGITS })));
                 }
             }
@@ -308,88 +333,119 @@ namespace OnePIF.Records
 
             if (this.sections != null)
             {
-                int i = 1;
+                int unnamedSectionNumber = 1;
+                SectionFieldLocator usernameFieldLocator = this.GetUsernameFieldLocator();
+                SectionFieldLocator passwordFieldLocator = this.GetPasswordFieldLocator();
+                SectionFieldLocator urlFieldLocator = this.GetURLFieldLocator();
 
                 foreach (SecureContentsSection section in this.sections)
                 {
+                    // Linked items are not supported
                     if (section.name.Equals(LINKED_ITEMS_SECTION_NAME))
                         continue;
 
-                    if (section.fields != null)
+                    // Section without fields, nothing to import
+                    if (section.fields == null)
+                        continue;
+
+                    string sectionTitle = section.title;
+
+                    // If it's an unnamed user-defined section, set a generic unique name (prevents field name collisions)
+                    if (string.IsNullOrEmpty(section.title) && this.IsUserSection(section))
+                        sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, unnamedSectionNumber++);
+
+                    foreach (SectionField field in section.fields)
                     {
-                        string sectionTitle = section.title;
-
-                        if (string.IsNullOrEmpty(section.title) && this.IsUserSection(section))
-                            sectionTitle = string.Format("{0} {1}", Properties.Strings.Section_Title, i++);
-
-                        foreach (SectionField field in section.fields)
+                        // Special treatment fields
+                        if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
                         {
-                            string fieldLabel = field.t;
-                            string fieldValue = null;
-
-                            if (!string.IsNullOrEmpty(sectionTitle))
-                                fieldLabel = string.Concat(sectionTitle, " - ", field.t);
-
-                            if (pwEntry.Strings.Exists(fieldLabel))
-                                continue;
-
-                            // Special treatment fields
-                            if (field.k == SectionFieldType.concealed && OTP_FIELD_NAME.IsMatch(field.n ?? string.Empty))
-                            {
-                                this.setOTPField(pwEntry, pwDatabase.MemoryProtection.ProtectPassword, field as GeneralSectionField, userPrefs.OTPFormat);
-                                continue;
-                            }
-                            else if (field.k == SectionFieldType.address)
-                            {
-                                if ((field as AddressSectionField).v != null)
-                                {
-                                    if (userPrefs.AddressFormat == AddressFormat.Compact)
-                                        this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
-                                    else
-                                        this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
-                                }
-
-                                continue;
-                            }
-
-                            if (field.k == SectionFieldType.date)
-                            {
-                                DateSectionField dateSectionField = field as DateSectionField;
-
-                                if (!DateTime.MinValue.Equals(dateSectionField.v))
-                                    fieldValue = DateTimeFormatter.FormatDate(dateSectionField.v, userPrefs.DateFormat);
-                            }
-                            else if (field.k == SectionFieldType.monthYear)
-                            {
-                                MonthYearSectionField monthYearSectionField = field as MonthYearSectionField;
-
-                                if (!DateTime.MinValue.Equals(monthYearSectionField.v))
-                                    fieldValue = DateTimeFormatter.FormatMonthYear(monthYearSectionField.v, userPrefs.DateFormat);
-                            }
-                            else if (field.k == SectionFieldType.menu || field.k == SectionFieldType.cctype || field.k == SectionFieldType.gender)
-                            {
-                                GeneralSectionField generalSectionField = field as GeneralSectionField;
-
-                                // Combo-box values can't be empty
-                                if (!string.IsNullOrEmpty(generalSectionField.v))
-                                    fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", generalSectionField.n, generalSectionField.v }));
-                            }
-                            else
-                            {
-                                fieldValue = (field as GeneralSectionField).v;
-                            }
-
-                            if (field.a != null && field.a.multiline)
-                                fieldValue = StringExt.FixNewLines(fieldValue);
-
-                            // No point in importing an empty template field.
-                            // But, if it's a user-defined field, it might be there for a reason.
-                            if (fieldValue == null && !this.IsUserSection(section))
-                                continue;
-
-                            bool protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);
-                            pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue ?? string.Empty));
+                            // OTP fields must be formatted to comply with one of the OTP plugins
+                            this.setOTPField(pwEntry, pwDatabase.MemoryProtection.ProtectPassword, field as GeneralSectionField, userPrefs.OTPFormat);
+                            continue;
                         }
+                        else if (field.k == SectionFieldType.address && (field as AddressSectionField).v != null)
+                        {
+                            // Addresses can be imported as a single composite field or splitting each component in a separate field
+                            if (userPrefs.AddressFormat == AddressFormat.Compact)
+                                this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                            else
+                                this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+
+                            continue;
+                        }
+
+                        string fieldLabel = field.t;
+                        string fieldValue = null;
+
+                        // If the field is in a named section, prefix its name to avoid collisions
+                        if (!string.IsNullOrEmpty(sectionTitle))
+                            fieldLabel = string.Concat(sectionTitle, " - ", field.t);
+
+                        // Format the field value according to its type
+                        if (field.k == SectionFieldType.date)
+                        {
+                            DateSectionField dateSectionField = field as DateSectionField;
+
+                            if (!DateTime.MinValue.Equals(dateSectionField.v))
+                                fieldValue = DateTimeFormatter.FormatDate(dateSectionField.v, userPrefs.DateFormat);
+                        }
+                        else if (field.k == SectionFieldType.monthYear)
+                        {
+                            MonthYearSectionField monthYearSectionField = field as MonthYearSectionField;
+
+                            if (!DateTime.MinValue.Equals(monthYearSectionField.v))
+                                fieldValue = DateTimeFormatter.FormatMonthYear(monthYearSectionField.v, userPrefs.DateFormat);
+                        }
+                        else if (field.k == SectionFieldType.menu || field.k == SectionFieldType.cctype || field.k == SectionFieldType.gender)
+                        {
+                            GeneralSectionField generalSectionField = field as GeneralSectionField;
+
+                            // Combo-box values can't be empty
+                            if (!string.IsNullOrEmpty(generalSectionField.v))
+                                fieldValue = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "Menu", generalSectionField.n, generalSectionField.v }));
+                        }
+                        else
+                        {
+                            fieldValue = (field as GeneralSectionField).v;
+                        }
+
+                        // Use the proper line terminator in multiline values
+                        if (field.a != null && field.a.multiline)
+                            fieldValue = StringExt.FixNewLines(fieldValue);
+
+                        // No point in importing an empty template field. If it's user-defined it might be there for a reason.
+                        if (string.IsNullOrEmpty(fieldValue) && !this.IsUserSection(section))
+                            continue;
+
+                        bool protect;
+
+                        if (usernameFieldLocator != null && usernameFieldLocator.Equals(section.name, field.n))
+                        {
+                            protect = pwDatabase.MemoryProtection.ProtectUserName;
+                            pwEntry.Strings.Set(PwDefs.UserNameField, new ProtectedString(protect, fieldValue ?? string.Empty));
+                            fieldValue = "{USERNAME}";
+                        }
+                        else if (passwordFieldLocator != null && passwordFieldLocator.Equals(section.name, field.n))
+                        {
+                            protect = pwDatabase.MemoryProtection.ProtectPassword;
+                            pwEntry.Strings.Set(PwDefs.PasswordField, new ProtectedString(protect, fieldValue ?? string.Empty));
+                            fieldValue = "{PASSWORD}";
+                        }
+                        else if (urlFieldLocator != null && urlFieldLocator.Equals(section.name, field.n))
+                        {
+                            protect = pwDatabase.MemoryProtection.ProtectUrl;
+                            pwEntry.Strings.Set(PwDefs.UrlField, new ProtectedString(protect, fieldValue ?? string.Empty));
+                            fieldValue = "{URL}";
+                        }
+                        else
+                        {
+                            protect = (field.k == SectionFieldType.concealed && pwDatabase.MemoryProtection.ProtectPassword) || (field.k == SectionFieldType.URL && pwDatabase.MemoryProtection.ProtectUrl);
+                        }
+
+                        // If it's one of the three special fields (username, password, url) and the 1Password field
+                        // has the same name as the KeePass entry field, don't overwrite its value with the placeholder.
+                        if (!pwEntry.Strings.Exists(fieldLabel))
+                            pwEntry.Strings.Set(fieldLabel, new ProtectedString(protect, fieldValue ?? string.Empty));
                     }
                 }
             }

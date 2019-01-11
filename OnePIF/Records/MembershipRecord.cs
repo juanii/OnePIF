@@ -32,7 +32,9 @@ namespace OnePIF.Records
         #endregion
 #pragma warning restore IDE1006
 
-        protected override string GetPasswordFieldName() { return "pin"; }
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "pin"); }
+
+        protected override SectionFieldLocator GetURLFieldLocator() { return new SectionFieldLocator(string.Empty, "website"); }
     }
 
     public class MembershipRecord : ItemRecord

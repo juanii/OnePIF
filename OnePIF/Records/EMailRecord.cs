@@ -53,6 +53,12 @@ namespace OnePIF.Records
         public string phone_tollfree { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override SectionFieldLocator GetUsernameFieldLocator() { return new SectionFieldLocator(string.Empty, "pop_username"); }
+
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "pop_password"); }
+
+        protected override SectionFieldLocator GetURLFieldLocator() { return new SectionFieldLocator(string.Empty, "pop_server"); }
     }
 
     public class EMailRecord : ItemRecord

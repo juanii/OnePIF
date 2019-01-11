@@ -29,6 +29,10 @@ namespace OnePIF.Records
         public string activation_key { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override SectionFieldLocator GetUsernameFieldLocator() { return new SectionFieldLocator(string.Empty, "email"); }
+
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "password"); }
     }
 
     public class DotMacRecord : ItemRecord

@@ -10,7 +10,7 @@ namespace OnePIF.Records
         public string number { get; set; }
 #pragma warning restore IDE1006
 
-        protected override string GetPasswordFieldName() { return "number"; }
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "number"); }
     }
 
     public class SsnUsRecord : ItemRecord

@@ -28,7 +28,9 @@ namespace OnePIF.Records
         #endregion
 #pragma warning restore IDE1006
 
-        protected override string GetPasswordFieldName() { return "password"; }
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "password"); }
+
+        protected override SectionFieldLocator GetURLFieldLocator() { return new SectionFieldLocator(string.Empty, "name"); }
     }
 
     public class RouterRecord : ItemRecord

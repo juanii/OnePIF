@@ -26,6 +26,10 @@ namespace OnePIF.Records
         public string phone_tollfree { get; set; }
         #endregion
 #pragma warning restore IDE1006
+
+        protected override SectionFieldLocator GetUsernameFieldLocator() { return new SectionFieldLocator(string.Empty, "userid"); }
+
+        protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "password"); }
     }
 
     public class ISPRecord : ItemRecord

@@ -48,6 +48,7 @@
             this.otpTrayTOTPradioButton = new System.Windows.Forms.RadioButton();
             this.addressCompactRadioButton = new System.Windows.Forms.RadioButton();
             this.addressExpandedRadioButton = new System.Windows.Forms.RadioButton();
+            this.addressMultilineRadioButton = new System.Windows.Forms.RadioButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.filePathTextBox = new System.Windows.Forms.TextBox();
             this.browseButton = new System.Windows.Forms.Button();
@@ -258,7 +259,6 @@
             this.addressCompactRadioButton.Name = "addressCompactRadioButton";
             this.addressCompactRadioButton.Size = new System.Drawing.Size(67, 17);
             this.addressCompactRadioButton.TabIndex = 0;
-            this.addressCompactRadioButton.TabStop = true;
             this.addressCompactRadioButton.Text = "Compact";
             this.toolTip.SetToolTip(this.addressCompactRadioButton, "42 Wallaby Way, Sydney, NSW, 2073, Australia");
             this.addressCompactRadioButton.UseVisualStyleBackColor = true;
@@ -266,14 +266,25 @@
             // addressExpandedRadioButton
             // 
             this.addressExpandedRadioButton.AutoSize = true;
-            this.addressExpandedRadioButton.Location = new System.Drawing.Point(76, 3);
+            this.addressExpandedRadioButton.Location = new System.Drawing.Point(145, 3);
             this.addressExpandedRadioButton.Name = "addressExpandedRadioButton";
             this.addressExpandedRadioButton.Size = new System.Drawing.Size(73, 17);
-            this.addressExpandedRadioButton.TabIndex = 1;
+            this.addressExpandedRadioButton.TabIndex = 2;
             this.addressExpandedRadioButton.Text = "Expanded";
             this.toolTip.SetToolTip(this.addressExpandedRadioButton, "Street: 42 Wallaby Way\r\nCity: Sydney\r\nState: NSW\r\nPostal Code: 2073\r\nCountry: Aus" +
         "tralia");
             this.addressExpandedRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // addressMultilineRadioButton
+            // 
+            this.addressMultilineRadioButton.AutoSize = true;
+            this.addressMultilineRadioButton.Location = new System.Drawing.Point(76, 3);
+            this.addressMultilineRadioButton.Name = "addressMultilineRadioButton";
+            this.addressMultilineRadioButton.Size = new System.Drawing.Size(63, 17);
+            this.addressMultilineRadioButton.TabIndex = 1;
+            this.addressMultilineRadioButton.Text = "Multiline";
+            this.toolTip.SetToolTip(this.addressMultilineRadioButton, "42 Wallaby Way\r\nSydney NSW 2073\r\nAustralia");
+            this.addressMultilineRadioButton.UseVisualStyleBackColor = true;
             // 
             // openFileDialog
             // 
@@ -354,6 +365,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.addressFormatFlowLayoutPanel.Controls.Add(this.addressCompactRadioButton);
+            this.addressFormatFlowLayoutPanel.Controls.Add(this.addressMultilineRadioButton);
             this.addressFormatFlowLayoutPanel.Controls.Add(this.addressExpandedRadioButton);
             this.addressFormatFlowLayoutPanel.Location = new System.Drawing.Point(6, 19);
             this.addressFormatFlowLayoutPanel.Name = "addressFormatFlowLayoutPanel";
@@ -429,5 +441,6 @@
         private System.Windows.Forms.FlowLayoutPanel addressFormatFlowLayoutPanel;
         private System.Windows.Forms.RadioButton addressCompactRadioButton;
         private System.Windows.Forms.RadioButton addressExpandedRadioButton;
+        private System.Windows.Forms.RadioButton addressMultilineRadioButton;
     }
 }

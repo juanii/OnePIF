@@ -189,22 +189,9 @@ namespace OnePIF.Records
             }
         }
 
-        private void setCompactAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        private List<string> getTokenizedAddressComponents(string addressFormatString, AddressSectionField addressSectionField)
         {
-            string addressLocale = addressSectionField.v.country;
-
-            if (string.IsNullOrEmpty(addressLocale))
-                addressLocale = "us";
-
-            // Find the address format used in the country where this address is located
-            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
-            string addressFormat = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressLocale.Replace('-', '_') })); ;
-
-            // If we couldn't find a specific format for the country, use a generic one
-            if (string.IsNullOrEmpty(addressFormat))
-                addressFormat = Properties.CompactAddressFormat.Country_us;
-
-            string[] tokens = addressFormat.Split(new char[] { '|' });
+            string[] tokens = addressFormatString.Split(new char[] { '|' });
             List<string> components = new List<string>();
 
             foreach (string token in tokens)
@@ -246,10 +233,59 @@ namespace OnePIF.Records
                     components.Add(string.Join(" ", subcomponents.ToArray()));
             }
 
-            string fieldValue = string.Join(", ", components.ToArray());
+            return components;
+        }
 
-            if (!string.IsNullOrEmpty(fieldValue))
+        private void setCompactAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        {
+            string addressLocale = addressSectionField.v.country;
+
+            if (string.IsNullOrEmpty(addressLocale))
+                addressLocale = "us";
+
+            // Find the address format used in the country where this address is located
+            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+            string addressFormatString = Properties.CompactAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressLocale.Replace('-', '_') }));
+
+            // If we couldn't find a specific format for the country, use a generic one
+            if (string.IsNullOrEmpty(addressFormatString))
+                addressFormatString = Properties.CompactAddressFormat.Country_us;
+
+            List<string> components = this.getTokenizedAddressComponents(addressFormatString, addressSectionField);
+
+            if (components.Count > 0)
             {
+                string fieldValue = string.Join(", ", components.ToArray());
+                string fieldLabel = addressSectionField.t;
+
+                // If the field is in a named section, prefix its name to avoid collisions
+                if (!string.IsNullOrEmpty(sectionTitle))
+                    fieldLabel = string.Concat(sectionTitle, " - ", addressSectionField.t);
+
+                pwEntry.Strings.Set(fieldLabel, new ProtectedString(false, fieldValue));
+            }
+        }
+
+        private void setMultilineAddressField(PwEntry pwEntry, string sectionTitle, AddressSectionField addressSectionField)
+        {
+            string addressLocale = addressSectionField.v.country;
+
+            if (string.IsNullOrEmpty(addressLocale))
+                addressLocale = "us";
+
+            // Find the address format used in the country where this address is located
+            // Locale IDs can contain dashes (-) which are illegal characters in resource files, so they're replaced with underscores (_)
+            string addressFormatString = Properties.MultilineAddressFormat.ResourceManager.GetString(string.Join("_", new string[] { "Country", addressLocale.Replace('-', '_') }));
+
+            // If we couldn't find a specific format for the country, use a generic one
+            if (string.IsNullOrEmpty(addressFormatString))
+                addressFormatString = Properties.MultilineAddressFormat.Country_us;
+
+            List<string> components = this.getTokenizedAddressComponents(addressFormatString, addressSectionField);
+
+            if (components.Count > 0)
+            {
+                string fieldValue = string.Join(Environment.NewLine, components.ToArray());
                 string fieldLabel = addressSectionField.t;
 
                 // If the field is in a named section, prefix its name to avoid collisions
@@ -368,6 +404,8 @@ namespace OnePIF.Records
                             // Addresses can be imported as a single composite field or splitting each component in a separate field
                             if (userPrefs.AddressFormat == AddressFormat.Compact)
                                 this.setCompactAddressField(pwEntry, sectionTitle, field as AddressSectionField);
+                            else if (userPrefs.AddressFormat == AddressFormat.Multiline)
+                                this.setMultilineAddressField(pwEntry, sectionTitle, field as AddressSectionField);
                             else
                                 this.setExpandedAddressField(pwEntry, sectionTitle, field as AddressSectionField);
 

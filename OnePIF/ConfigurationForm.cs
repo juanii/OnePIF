@@ -69,6 +69,8 @@ namespace OnePIF
             {
                 if (this.addressCompactRadioButton.Checked)
                     return AddressFormat.Compact;
+                else if (this.addressMultilineRadioButton.Checked)
+                    return AddressFormat.Multiline;
                 else
                     return AddressFormat.Expanded;
             }

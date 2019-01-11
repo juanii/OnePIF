@@ -24,6 +24,7 @@
     public enum AddressFormat
     {
         Compact,
+        Multiline,
         Expanded
     }
 

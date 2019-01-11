@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Country_kr" xml:space="preserve">
+    <value>zip|country|state city|street</value>
+  </data>
+  <data name="Country_cf" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_td" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cg" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_no" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ch" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_np" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ci" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_tg" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_kw" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_nr" xml:space="preserve">
+    <value>street|city state|country</value>
+  </data>
+  <data name="Country_th" xml:space="preserve">
+    <value>street|state|city zip|country</value>
+  </data>
+  <data name="Country_cl" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ky" xml:space="preserve">
+    <value>street|state|country</value>
+  </data>
+  <data name="Country_cm" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_tj" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_kz" xml:space="preserve">
+    <value>street|city state|region|country|zip</value>
+  </data>
+  <data name="Country_cn" xml:space="preserve">
+    <value>country|state city|street|zip</value>
+  </data>
+  <data name="Country_fi" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_id" xml:space="preserve">
+    <value>street|city|state zip|country</value>
+  </data>
+  <data name="Country_za" xml:space="preserve">
+    <value>street|city|state|zip|country</value>
+  </data>
+  <data name="Country_tl" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_co" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_fj" xml:space="preserve">
+    <value>street|state|city|country</value>
+  </data>
+  <data name="Country_ie" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_tm" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_la" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_fk" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_tn" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_lb" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_to" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_lc" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cr" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_fm" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_nz" xml:space="preserve">
+    <value>street|state|city zip|country</value>
+  </data>
+  <data name="Country_cz" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_fo" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_tr" xml:space="preserve">
+    <value>street|zip state| city country</value>
+  </data>
+  <data name="Country_cu" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_il" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_cv" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_tt" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_im" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_fr" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_in" xml:space="preserve">
+    <value>street|state|city zip|country</value>
+  </data>
+  <data name="Country_li" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_tv" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cy" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_tw" xml:space="preserve">
+    <value>country|zip state city|street</value>
+  </data>
+  <data name="Country_lk" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_ad" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_zm" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ws" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_iq" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_ae" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ir" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_af" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_tz" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_is" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ag" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_it" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_re" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ua" xml:space="preserve">
+    <value>street|city region state|zip|country</value>
+  </data>
+  <data name="Country_de" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_lr" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ga" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_om" xml:space="preserve">
+    <value>street|zip|city|state|country</value>
+  </data>
+  <data name="Country_ls" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_al" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_lt" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_am" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_zw" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_lu" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gd" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_lv" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ao" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_dj" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ge" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ug" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_jp" xml:space="preserve">
+    <value>zip|state city|street|country</value>
+  </data>
+  <data name="Country_dk" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ly" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ar" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_dm" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_gh" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_gi" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ro" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_uk" xml:space="preserve">
+    <value>street|city|state|zip|country</value>
+  </data>
+  <data name="Country_gb" xml:space="preserve">
+    <value>street|city|state|zip|country</value>
+  </data>
+  <data name="Country_at" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_do" xml:space="preserve">
+    <value>street|state|zip city|country</value>
+  </data>
+  <data name="Country_au" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_ma" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_rs" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gl" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_mc" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gm" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ru" xml:space="preserve">
+    <value>street|city|state|country|zip</value>
+  </data>
+  <data name="Country_md" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gn" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_me" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_rw" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_az" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_mf" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_pa" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_gp" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_us" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_gq" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_mg" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gr" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ba" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_jm" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_mh" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gs" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_bb" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_gt" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_jo" xml:space="preserve">
+    <value>region|state|street|city zip|country</value>
+  </data>
+  <data name="Country_pe" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_mk" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_bd" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_dz" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_pf" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_sa" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ml" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_be" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_pg" xml:space="preserve">
+    <value>street|city zip state|country</value>
+  </data>
+  <data name="Country_sb" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_uy" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_gw" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_bf" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_mm" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ph" xml:space="preserve">
+    <value>street state|zip city|country</value>
+  </data>
+  <data name="Country_sc" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_mn" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_bg" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_sd" xml:space="preserve">
+    <value>street|zip|city|country</value>
+  </data>
+  <data name="Country_uz" xml:space="preserve">
+    <value>street|city|country|zip</value>
+  </data>
+  <data name="Country_gy" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_bh" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ec" xml:space="preserve">
+    <value>street|zip|city|country</value>
+  </data>
+  <data name="Country_mo" xml:space="preserve">
+    <value>country|zip city|street</value>
+  </data>
+  <data name="Country_se" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_pk" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_bi" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_va" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_mq" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_bj" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ee" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_pl" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_sg" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_mr" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_sh" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_vc" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_si" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_bl" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_eg" xml:space="preserve">
+    <value>street|state|city|country</value>
+  </data>
+  <data name="Country_mt" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_bm" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ve" xml:space="preserve">
+    <value>street|city zip state|country</value>
+  </data>
+  <data name="Country_mu" xml:space="preserve">
+    <value>street|zip|city|country</value>
+  </data>
+  <data name="Country_bn" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_sk" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_mv" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_bo" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_sl" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_mw" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_pr" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_sm" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_mx" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_ps" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_sn" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_vi" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_my" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_br" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_pt" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_so" xml:space="preserve">
+    <value>street|city state  zip|country</value>
+  </data>
+  <data name="Country_ye" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_mz" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_bs" xml:space="preserve">
+    <value>street|city state|country</value>
+  </data>
+  <data name="Country_ke" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_bt" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_pw" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_hk" xml:space="preserve">
+    <value>country|zip city|street</value>
+  </data>
+  <data name="Country_na" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_sr" xml:space="preserve">
+    <value>street|city|state|country</value>
+  </data>
+  <data name="Country_vn" xml:space="preserve">
+    <value>street|state|city zip|country</value>
+  </data>
+  <data name="Country_kg" xml:space="preserve">
+    <value>zip city|street|country</value>
+  </data>
+  <data name="Country_py" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_kh" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_bw" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_nc" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_er" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_st" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_hn" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ki" xml:space="preserve">
+    <value>street|city|state|country</value>
+  </data>
+  <data name="Country_es" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_es_cn" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_sv" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_by" xml:space="preserve">
+    <value>street|zip city|state|country</value>
+  </data>
+  <data name="Country_ne" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_et" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_bz" xml:space="preserve">
+    <value>street|city|state|country</value>
+  </data>
+  <data name="Country_qa" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ng" xml:space="preserve">
+    <value>street|city zip|state|country</value>
+  </data>
+  <data name="Country_sy" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_hr" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ca" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_km" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_sz" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_kn" xml:space="preserve">
+    <value>street|zip city state|country</value>
+  </data>
+  <data name="Country_ni" xml:space="preserve">
+    <value>street|zip|city state|country</value>
+  </data>
+  <data name="Country_vu" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_ht" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_hu" xml:space="preserve">
+    <value>zip city|street|country</value>
+  </data>
+  <data name="Country_cd" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_kp" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_nl" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ai" xml:space="preserve">
+    <value>street|city|zip country</value>
+  </data>
+  <data name="Country_aw" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cc" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_ck" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cw" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_cx" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_eh" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_gf" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_gu" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_ms" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_nf" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_nu" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_pn" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_sj" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_ss" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_sx" xml:space="preserve">
+    <value>street|city|country</value>
+  </data>
+  <data name="Country_tc" xml:space="preserve">
+    <value>street|city|zip|country</value>
+  </data>
+  <data name="Country_tk" xml:space="preserve">
+    <value>street|state|city zip|country</value>
+  </data>
+  <data name="Country_um" xml:space="preserve">
+    <value>street|city state zip|country</value>
+  </data>
+  <data name="Country_wf" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_yt" xml:space="preserve">
+    <value>street|zip city|country</value>
+  </data>
+  <data name="Country_as" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+  <data name="Country_je" xml:space="preserve">
+    <value>street|city zip|country</value>
+  </data>
+</root>

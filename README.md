@@ -10,6 +10,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 
 * The plugin imports:
   - Most item types available in 1Password 6: Logins, Secure Notes, Credit Cards, Identities, Passwords, Bank Accounts, Databases, Driver Licenses, Email Accounts, Memberships, Outdoor Licenses, Passports, Reward Programs, Servers, Social Security Numbers, Software Licenses, Wireless Routers, User-defined Folders.<sup id="a1">[1](#f1)</sup>
+  - Legacy item types from 1Password 3: Email Account (v1), iTunes, MySQL Database, FTP Account, iCloud (a.k.a. MobileMe), Generic Account, Instant Messenger, Internet Provider, Amazon S3 (a.k.a. Amazon Web Services).
   - All template fields, web form fields and user-defined fields.
   - Previously used passwords list.
   - User-defined tags.
@@ -18,24 +19,24 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
   - Custom user-provided icons<sup id="a2">[2](#f2)</sup> (not the rich icons provided by AgileBits).
   - File attachments.
   - TOTP fields formatted for KeeWeb, Tray TOTP or KeeOtp.
-* Organizes items into the standard 1Password categories or using preexistent user-defined folders.
+* Organizes items into the standard 1Password categories or using pre-existent user-defined folders.
 * Proper handling of line endings in multiline fields.
 * Customizable date formats: ISO 8601 or user locale.
-* Customizable address formats: condensed in a single field or one field for each address component.
+* Customizable address formats: one-liner, multi-line in a single field or one field for each address component.
 
 ### (Un)tested and (un)supported file formats and platforms
 
-* The plugin was tested using files exported by 1Password 6 for macOS as well as 1Password 4 for Windows. All item types (from the above list in previous section) and template fields were tested.
-  - It was *not* tested with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
-* The plugin was tested with KeePass 2.40 running on Windows and KeePass 2.38 running on Ubuntu.
+* The plugin was tested using files created in 1Password 3 and 6 for macOS and 1Password 4 for Windows and exported by 1Password 6 and 7 for macOS as well as 1Password 4 for Windows. All item types (from the above list in previous section) and template fields were tested. Nevertheless the number of combinations for creating, updating, migrating and exporting items in different versions of 1Password creates a whole universe of possibilities, so you might still find errors while importing a file.
+  - Very limited testing was performed with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
+* The plugin was tested with KeePass 2.40+ running on Windows and KeePass 2.38 running on Ubuntu.
 
 ### What's next
 
 I expect to keep fixing bugs, adding some features and broadening support for more variants of 1pif files. Here are some of the plans, in no particular order:
 
 * General error handling.
-* Better mapping of 1Password fields to standard KeePass fields.
 * Log/summary of import errors.
+* Support for older 1pif formats (without sections).
 
 ## Download and installation
 
@@ -67,7 +68,7 @@ To debug the plugin, configure `OnePIF` project Debug settings to start the KeeP
 
 ## Disclaimer
 
-This software is provided as-is without any warranty of any kind. I take no responsability or liabiity for any damage it may cause. If it breaks your data you can keep its pieces.
+This software is provided as-is without any warranty of any kind. I take no responsability or liability for any damage it may cause. If it breaks your data you can keep its pieces.
 
 **Vaults often contain very sensitive information. Thoroughly check imported data for completeness and correctess before deleting the original files.**
 

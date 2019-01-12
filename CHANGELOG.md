@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.4.0](https://github.com/juanii/OnePIF/releases/0.4.0) - 2019-01-12
+
+### Added
+
+* Support for legacy item types: Email Account (v1), iTunes, MySQL Database, FTP Account, iCloud (a.k.a. MobileMe), Generic Account, Instant Messenger, Internet Provider and Amazon S3 (a.k.a. Amazon Web Services).
+* Multi-line address format in a single field.
+* Support for encoded item UUIDs in 1Password.com vaults.
+
+### Changed
+
+* The user name and URL/server fields of each item type (where applicable) is set as the entry username and URL. The original fields are filled with placeholders to the entry's username and URL.
+
+### Fixed
+
+* Regression importing non-empty user-defined section titles.
+* Several address formatting bugs.
+
 ## [0.3.3](https://github.com/juanii/OnePIF/releases/0.3.3) - 2019-01-07
 
 ### Fixed

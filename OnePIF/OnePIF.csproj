@@ -49,6 +49,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base32.cs" />
     <Compile Include="Dropdown List Types\EMailPOPAuthentication.cs" />
     <Compile Include="Dropdown List Types\EMailPOPType.cs" />
     <Compile Include="Dropdown List Types\EMailPOPUseSSL.cs" />

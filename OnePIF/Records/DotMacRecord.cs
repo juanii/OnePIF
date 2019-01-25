@@ -21,9 +21,9 @@ namespace OnePIF.Records
         #region Renewal date
         public string renewal_date_yy { get; set; }
 
-        public string renewal_hdate_mm { get; set; }
+        public string renewal_date_mm { get; set; }
 
-        public string renewal_hdate_dd { get; set; }
+        public string renewal_date_dd { get; set; }
         #endregion
 
         public string activation_key { get; set; }

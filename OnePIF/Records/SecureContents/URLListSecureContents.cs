@@ -18,7 +18,7 @@ namespace OnePIF.Records
     public class URLListSecureContents : PasswordHistorySecureContents
     {
 #pragma warning disable IDE1006
-        public IList<URL> URLs { get; set; }
+        public List<URL> URLs { get; set; }
 #pragma warning restore IDE1006
 
         public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)

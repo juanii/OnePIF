@@ -87,7 +87,7 @@ namespace OnePIF.Records
 
         public string title { get; set; }
 
-        public IList<SectionField> fields { get; set; }
+        public List<SectionField> fields { get; set; }
     }
 #pragma warning restore IDE1006
 
@@ -101,7 +101,7 @@ namespace OnePIF.Records
 #pragma warning disable IDE1006
         public string notesPlain { get; set; }
 
-        public IList<SecureContentsSection> sections { get; set; }
+        public List<SecureContentsSection> sections { get; set; }
 
         public byte[] customIcon { get; set; }
 #pragma warning restore IDE1006

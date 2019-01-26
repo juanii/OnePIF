@@ -27,7 +27,7 @@ namespace OnePIF.Records
     public class WebFormSecureContents : URLListSecureContents
     {
 #pragma warning disable IDE1006
-        public IList<WebFormField> fields { get; set; }
+        public List<WebFormField> fields { get; set; }
 
         public string htmlAction { get; set; }
 

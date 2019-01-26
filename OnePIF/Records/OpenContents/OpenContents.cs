@@ -7,7 +7,7 @@ namespace OnePIF.Records
     public class OpenContents
     {
 #pragma warning disable IDE1006
-        public IList<string> tags { get; set; }
+        public List<string> tags { get; set; }
 
         public int faveIndex { get; set; }
 #pragma warning restore IDE1006

@@ -29,7 +29,7 @@ namespace OnePIF.Records
     public class PasswordHistorySecureContents : ItemSecureContents
     {
 #pragma warning disable IDE1006
-        public IList<PasswordHistory> passwordHistory { get; set; }
+        public List<PasswordHistory> passwordHistory { get; set; }
 #pragma warning restore IDE1006
 
         public void CreateHistoryEntries(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)

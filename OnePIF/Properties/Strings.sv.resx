@@ -1266,4 +1266,736 @@
   <data name="FolderName_iTunes" xml:space="preserve">
     <value>iTunes</value>
   </data>
+  <data name="TemplateSection_BankAccountUS_branchInfo" xml:space="preserve">
+    <value>Bankkontor</value>
+  </data>
+  <data name="TemplateSection_CreditCard_contactInfo" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="TemplateSection_CreditCard_details" xml:space="preserve">
+    <value>Övriga uppgifter</value>
+  </data>
+  <data name="TemplateSection_EmailV2_SMTP" xml:space="preserve">
+    <value>SMTP</value>
+  </data>
+  <data name="TemplateSection_EmailV2_Contact_Information" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="TemplateSection_Identity_name" xml:space="preserve">
+    <value>Personuppgifter</value>
+  </data>
+  <data name="TemplateSection_Identity_internet" xml:space="preserve">
+    <value>Internetuppgifter</value>
+  </data>
+  <data name="TemplateSection_Identity_address" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="TemplateSection_RewardProgram_extra" xml:space="preserve">
+    <value>Mer information</value>
+  </data>
+  <data name="TemplateSection_UnixServer_admin_console" xml:space="preserve">
+    <value>Adminkonsol</value>
+  </data>
+  <data name="TemplateSection_UnixServer_hosting_provider_details" xml:space="preserve">
+    <value>Webbhotell</value>
+  </data>
+  <data name="TemplateSection_License_customer" xml:space="preserve">
+    <value>Kund</value>
+  </data>
+  <data name="TemplateSection_License_publisher" xml:space="preserve">
+    <value>Utgivare</value>
+  </data>
+  <data name="TemplateSection_License_order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_bankName" xml:space="preserve">
+    <value>bank</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_owner" xml:space="preserve">
+    <value>kontoinnehavare</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountType" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_routingNo" xml:space="preserve">
+    <value>routingnummer</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountNo" xml:space="preserve">
+    <value>kontonummer</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_swift" xml:space="preserve">
+    <value>SWIFT</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_iban" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchPhone" xml:space="preserve">
+    <value>telefon</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchAddress" xml:space="preserve">
+    <value>adress</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_telephonePin" xml:space="preserve">
+    <value>PIN-kod</value>
+  </data>
+  <data name="TemplateField_CreditCard_cardholder" xml:space="preserve">
+    <value>kortinnehavare</value>
+  </data>
+  <data name="TemplateField_CreditCard_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_CreditCard_ccnum" xml:space="preserve">
+    <value>nummer</value>
+  </data>
+  <data name="TemplateField_CreditCard_cvv" xml:space="preserve">
+    <value>säkerhetskod</value>
+  </data>
+  <data name="TemplateField_CreditCard_expiry" xml:space="preserve">
+    <value>utgångsdatum</value>
+  </data>
+  <data name="TemplateField_CreditCard_validFrom" xml:space="preserve">
+    <value>giltig från</value>
+  </data>
+  <data name="TemplateField_CreditCard_bank" xml:space="preserve">
+    <value>utfärdande bank</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneLocal" xml:space="preserve">
+    <value>telefon (lokalt)</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneTollFree" xml:space="preserve">
+    <value>telefon (avgiftsfritt)</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneIntl" xml:space="preserve">
+    <value>telefon (internationellt)</value>
+  </data>
+  <data name="TemplateField_CreditCard_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_CreditCard_pin" xml:space="preserve">
+    <value>PIN-kod</value>
+  </data>
+  <data name="TemplateField_CreditCard_creditLimit" xml:space="preserve">
+    <value>kreditgräns</value>
+  </data>
+  <data name="TemplateField_CreditCard_cashLimit" xml:space="preserve">
+    <value>uttagsgräns</value>
+  </data>
+  <data name="TemplateField_CreditCard_interest" xml:space="preserve">
+    <value>ränta</value>
+  </data>
+  <data name="TemplateField_CreditCard_issuenumber" xml:space="preserve">
+    <value>utfärdandenummer</value>
+  </data>
+  <data name="TemplateField_Database_hostname" xml:space="preserve">
+    <value>server</value>
+  </data>
+  <data name="TemplateField_Database_port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="TemplateField_Database_database" xml:space="preserve">
+    <value>databas</value>
+  </data>
+  <data name="TemplateField_Database_database_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_Database_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_Database_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_Database_sid" xml:space="preserve">
+    <value>SID</value>
+  </data>
+  <data name="TemplateField_Database_alias" xml:space="preserve">
+    <value>alias</value>
+  </data>
+  <data name="TemplateField_Database_options" xml:space="preserve">
+    <value>anslutningsalternativ</value>
+  </data>
+  <data name="TemplateField_DriversLicense_fullname" xml:space="preserve">
+    <value>fullständigt namn</value>
+  </data>
+  <data name="TemplateField_DriversLicense_address" xml:space="preserve">
+    <value>adress</value>
+  </data>
+  <data name="TemplateField_DriversLicense_birthdate" xml:space="preserve">
+    <value>födelsedatum</value>
+  </data>
+  <data name="TemplateField_DriversLicense_sex" xml:space="preserve">
+    <value>kön</value>
+  </data>
+  <data name="TemplateField_DriversLicense_height" xml:space="preserve">
+    <value>längd</value>
+  </data>
+  <data name="TemplateField_DriversLicense_number" xml:space="preserve">
+    <value>nummer</value>
+  </data>
+  <data name="TemplateField_DriversLicense_class" xml:space="preserve">
+    <value>förarbehörigheter</value>
+  </data>
+  <data name="TemplateField_DriversLicense_conditions" xml:space="preserve">
+    <value>villkor</value>
+  </data>
+  <data name="TemplateField_DriversLicense_state" xml:space="preserve">
+    <value>delstat</value>
+  </data>
+  <data name="TemplateField_DriversLicense_country" xml:space="preserve">
+    <value>land</value>
+  </data>
+  <data name="TemplateField_DriversLicense_expiry_date" xml:space="preserve">
+    <value>upphör att gälla</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_server" xml:space="preserve">
+    <value>server</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_security" xml:space="preserve">
+    <value>säkerhet</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_authentication" xml:space="preserve">
+    <value>autentiseringsmetod</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_server" xml:space="preserve">
+    <value>SMTP-server</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_security" xml:space="preserve">
+    <value>säkerhet</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_authentication" xml:space="preserve">
+    <value>autentiseringsmetod</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider" xml:space="preserve">
+    <value>leverantör</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider_website" xml:space="preserve">
+    <value>leverantörens webbplats</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_tollfree" xml:space="preserve">
+    <value>telefon (avgiftsfritt)</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_local" xml:space="preserve">
+    <value>telefon (lokalt)</value>
+  </data>
+  <data name="TemplateField_Identity_firstname" xml:space="preserve">
+    <value>förnamn</value>
+  </data>
+  <data name="TemplateField_Identity_initial" xml:space="preserve">
+    <value>initial</value>
+  </data>
+  <data name="TemplateField_Identity_lastname" xml:space="preserve">
+    <value>efternamn</value>
+  </data>
+  <data name="TemplateField_Identity_sex" xml:space="preserve">
+    <value>kön</value>
+  </data>
+  <data name="TemplateField_Identity_birthdate" xml:space="preserve">
+    <value>födelsedatum</value>
+  </data>
+  <data name="TemplateField_Identity_occupation" xml:space="preserve">
+    <value>yrke</value>
+  </data>
+  <data name="TemplateField_Identity_company" xml:space="preserve">
+    <value>företag</value>
+  </data>
+  <data name="TemplateField_Identity_department" xml:space="preserve">
+    <value>avdelning</value>
+  </data>
+  <data name="TemplateField_Identity_jobtitle" xml:space="preserve">
+    <value>yrkestitel</value>
+  </data>
+  <data name="TemplateField_Identity_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_Identity_reminderq" xml:space="preserve">
+    <value>säkerhetsfråga</value>
+  </data>
+  <data name="TemplateField_Identity_remindera" xml:space="preserve">
+    <value>säkerhetssvar</value>
+  </data>
+  <data name="TemplateField_Identity_email" xml:space="preserve">
+    <value>e-post</value>
+  </data>
+  <data name="TemplateField_Identity_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_Identity_icq" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="TemplateField_Identity_skype" xml:space="preserve">
+    <value>skype</value>
+  </data>
+  <data name="TemplateField_Identity_aim" xml:space="preserve">
+    <value>AOL/AIM</value>
+  </data>
+  <data name="TemplateField_Identity_yahoo" xml:space="preserve">
+    <value>Yahoo</value>
+  </data>
+  <data name="TemplateField_Identity_msn" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="TemplateField_Identity_forumsig" xml:space="preserve">
+    <value>forumsignatur</value>
+  </data>
+  <data name="TemplateField_Identity_address" xml:space="preserve">
+    <value>adress</value>
+  </data>
+  <data name="TemplateField_Identity_address1" xml:space="preserve">
+    <value>adressrad 1</value>
+  </data>
+  <data name="TemplateField_Identity_address2" xml:space="preserve">
+    <value>adressrad 2</value>
+  </data>
+  <data name="TemplateField_Identity_city" xml:space="preserve">
+    <value>stad/förort</value>
+  </data>
+  <data name="TemplateField_Identity_state" xml:space="preserve">
+    <value>delstat/provins</value>
+  </data>
+  <data name="TemplateField_Identity_zip" xml:space="preserve">
+    <value>postnummer</value>
+  </data>
+  <data name="TemplateField_Identity_country" xml:space="preserve">
+    <value>land</value>
+  </data>
+  <data name="TemplateField_Identity_location" xml:space="preserve">
+    <value>plats</value>
+  </data>
+  <data name="TemplateField_Identity_phone" xml:space="preserve">
+    <value>telefon</value>
+  </data>
+  <data name="TemplateField_Identity_defphone" xml:space="preserve">
+    <value>huvudnummer</value>
+  </data>
+  <data name="TemplateField_Identity_homephone" xml:space="preserve">
+    <value>hem</value>
+  </data>
+  <data name="TemplateField_Identity_cellphone" xml:space="preserve">
+    <value>mobil</value>
+  </data>
+  <data name="TemplateField_Identity_busphone" xml:space="preserve">
+    <value>arbete</value>
+  </data>
+  <data name="TemplateField_Membership_org_name" xml:space="preserve">
+    <value>grupp</value>
+  </data>
+  <data name="TemplateField_Membership_phone" xml:space="preserve">
+    <value>telefon</value>
+  </data>
+  <data name="TemplateField_Membership_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_Membership_member_name" xml:space="preserve">
+    <value>medlemsnamn</value>
+  </data>
+  <data name="TemplateField_Membership_member_since" xml:space="preserve">
+    <value>medlem sedan</value>
+  </data>
+  <data name="TemplateField_Membership_expiry_date" xml:space="preserve">
+    <value>sista giltighetsdag</value>
+  </data>
+  <data name="TemplateField_Membership_membership_no" xml:space="preserve">
+    <value>medlems-ID</value>
+  </data>
+  <data name="TemplateField_Membership_pin" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_Passport_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_Passport_fullname" xml:space="preserve">
+    <value>fullständigt namn</value>
+  </data>
+  <data name="TemplateField_Passport_number" xml:space="preserve">
+    <value>nummer</value>
+  </data>
+  <data name="TemplateField_Passport_birthdate" xml:space="preserve">
+    <value>födelsedatum</value>
+  </data>
+  <data name="TemplateField_Passport_birthplace" xml:space="preserve">
+    <value>födelseort</value>
+  </data>
+  <data name="TemplateField_Passport_nationality" xml:space="preserve">
+    <value>nationalitet</value>
+  </data>
+  <data name="TemplateField_Passport_code" xml:space="preserve">
+    <value>kod</value>
+  </data>
+  <data name="TemplateField_Passport_sex" xml:space="preserve">
+    <value>kön</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_country" xml:space="preserve">
+    <value>utfärdandeland</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_authority" xml:space="preserve">
+    <value>myndighet</value>
+  </data>
+  <data name="TemplateField_Passport_issue_date" xml:space="preserve">
+    <value>utfärdat</value>
+  </data>
+  <data name="TemplateField_Passport_expiry_date" xml:space="preserve">
+    <value>sista giltighetsdag</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_name" xml:space="preserve">
+    <value>fullständigt namn</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_valid_from" xml:space="preserve">
+    <value>giltig från</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_expires" xml:space="preserve">
+    <value>sista giltighetsdag</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_game" xml:space="preserve">
+    <value>godkända viltarter</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_quota" xml:space="preserve">
+    <value>maxkvot</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_state" xml:space="preserve">
+    <value>delstat</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_country" xml:space="preserve">
+    <value>land</value>
+  </data>
+  <data name="TemplateField_RewardProgram_company_name" xml:space="preserve">
+    <value>företagsnamn</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_name" xml:space="preserve">
+    <value>medlemsnamn</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_since" xml:space="preserve">
+    <value>medlem sedan</value>
+  </data>
+  <data name="TemplateField_RewardProgram_membership_no" xml:space="preserve">
+    <value>medlems-ID</value>
+  </data>
+  <data name="TemplateField_RewardProgram_additional_no" xml:space="preserve">
+    <value>medlems-ID (extra)</value>
+  </data>
+  <data name="TemplateField_RewardProgram_pin" xml:space="preserve">
+    <value>PIN-kod</value>
+  </data>
+  <data name="TemplateField_RewardProgram_customer_service_phone" xml:space="preserve">
+    <value>telefon för kundtjänst</value>
+  </data>
+  <data name="TemplateField_RewardProgram_reservations_phone" xml:space="preserve">
+    <value>telefon för reservationer</value>
+  </data>
+  <data name="TemplateField_RewardProgram_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_Router_network_name" xml:space="preserve">
+    <value>nätverksnamn</value>
+  </data>
+  <data name="TemplateField_Router_name" xml:space="preserve">
+    <value>basstationens namn</value>
+  </data>
+  <data name="TemplateField_Router_password" xml:space="preserve">
+    <value>basstationens lösenord</value>
+  </data>
+  <data name="TemplateField_Router_server" xml:space="preserve">
+    <value>server-/IP-adress</value>
+  </data>
+  <data name="TemplateField_Router_airport_id" xml:space="preserve">
+    <value>AirPort ID</value>
+  </data>
+  <data name="TemplateField_Router_wireless_security" xml:space="preserve">
+    <value>trådlös säkerhet</value>
+  </data>
+  <data name="TemplateField_Router_wireless_password" xml:space="preserve">
+    <value>lösenord för trådlöst nätverk</value>
+  </data>
+  <data name="TemplateField_Router_disk_password" xml:space="preserve">
+    <value>lösenord för extern hårddisk</value>
+  </data>
+  <data name="TemplateField_UnixServer_url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_UnixServer_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_url" xml:space="preserve">
+    <value>URL för adminkonsol</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_username" xml:space="preserve">
+    <value>användarnamn för adminkonsol</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_password" xml:space="preserve">
+    <value>konsollösenord</value>
+  </data>
+  <data name="TemplateField_UnixServer_name" xml:space="preserve">
+    <value>namn</value>
+  </data>
+  <data name="TemplateField_UnixServer_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_url" xml:space="preserve">
+    <value>support-URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_phone" xml:space="preserve">
+    <value>support-telefon</value>
+  </data>
+  <data name="TemplateField_SsnUS_name" xml:space="preserve">
+    <value>namn</value>
+  </data>
+  <data name="TemplateField_SsnUS_number" xml:space="preserve">
+    <value>nummer</value>
+  </data>
+  <data name="TemplateField_License_product_name" xml:space="preserve">
+    <value>produktnamn</value>
+  </data>
+  <data name="TemplateField_License_product_version" xml:space="preserve">
+    <value>version</value>
+  </data>
+  <data name="TemplateField_License_reg_name" xml:space="preserve">
+    <value>licensierat till</value>
+  </data>
+  <data name="TemplateField_License_reg_code" xml:space="preserve">
+    <value>licensnyckel</value>
+  </data>
+  <data name="TemplateField_License_reg_email" xml:space="preserve">
+    <value>registrerad e-post</value>
+  </data>
+  <data name="TemplateField_License_company" xml:space="preserve">
+    <value>företag</value>
+  </data>
+  <data name="TemplateField_License_download_link" xml:space="preserve">
+    <value>hämtningssida</value>
+  </data>
+  <data name="TemplateField_License_publisher_name" xml:space="preserve">
+    <value>utgivare</value>
+  </data>
+  <data name="TemplateField_License_retail_price" xml:space="preserve">
+    <value>pris</value>
+  </data>
+  <data name="TemplateField_License_publisher_website" xml:space="preserve">
+    <value>webbplats</value>
+  </data>
+  <data name="TemplateField_License_support_email" xml:space="preserve">
+    <value>e-post för support</value>
+  </data>
+  <data name="TemplateField_License_order_number" xml:space="preserve">
+    <value>ordernummer</value>
+  </data>
+  <data name="TemplateField_License_order_date" xml:space="preserve">
+    <value>köpdatum</value>
+  </data>
+  <data name="TemplateField_License_order_total" xml:space="preserve">
+    <value>totalsumma</value>
+  </data>
+  <data name="TemplateSection_Email_Contact_Information" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="TemplateSection_FTP_Contact_Information" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="TemplateSection_ISP_Contact_Information" xml:space="preserve">
+    <value>Kontaktuppgifter</value>
+  </data>
+  <data name="TemplateField_Email_pop_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_Email_pop_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_Email_pop_server" xml:space="preserve">
+    <value>server</value>
+  </data>
+  <data name="TemplateField_Email_pop_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_Email_pop_port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="TemplateField_Email_pop_authentication" xml:space="preserve">
+    <value>autentiseringsmetod</value>
+  </data>
+  <data name="TemplateField_Email_smtp_username" xml:space="preserve">
+    <value>användarnamn</value>
+  </data>
+  <data name="TemplateField_Email_smtp_password" xml:space="preserve">
+    <value>lösenord</value>
+  </data>
+  <data name="TemplateField_Email_smtp_server" xml:space="preserve">
+    <value>SMTP-server</value>
+  </data>
+  <data name="TemplateField_Email_smtp_type" xml:space="preserve">
+    <value>typ</value>
+  </data>
+  <data name="TemplateField_Email_smtp_port" xml:space="preserve">
+    <value>port</value>
+  </data>
+  <data name="TemplateField_Email_smtp_authentication" xml:space="preserve">
+    <value>autentiseringsmetod</value>
+  </data>
+  <data name="TemplateField_Email_provider" xml:space="preserve">
+    <value>leverantör</value>
+  </data>
+  <data name="TemplateField_Email_provider_website" xml:space="preserve">
+    <value>leverantörens webbplats</value>
+  </data>
+  <data name="TemplateField_Email_phone_tollfree" xml:space="preserve">
+    <value>telefon (avgiftsfritt)</value>
+  </data>
+  <data name="TemplateField_Email_phone_local" xml:space="preserve">
+    <value>telefon (lokalt)</value>
+  </data>
+  <data name="TemplateField_AmazonS3_path" xml:space="preserve">
+    <value>Sökväg</value>
+  </data>
+  <data name="TemplateField_AmazonS3_email" xml:space="preserve">
+    <value>E-post</value>
+  </data>
+  <data name="TemplateField_AmazonS3_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key_id" xml:space="preserve">
+    <value>Åtkomstnyckel-ID</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key" xml:space="preserve">
+    <value>Hemlig åtkomstnyckel</value>
+  </data>
+  <data name="TemplateField_FTP_server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="TemplateField_FTP_path" xml:space="preserve">
+    <value>Sökväg</value>
+  </data>
+  <data name="TemplateField_FTP_username" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="TemplateField_FTP_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_FTP_provider" xml:space="preserve">
+    <value>Leverantör</value>
+  </data>
+  <data name="TemplateField_FTP_provider_website" xml:space="preserve">
+    <value>Leverantörens webbplats</value>
+  </data>
+  <data name="TemplateField_FTP_phone_tollfree" xml:space="preserve">
+    <value>Telefonnummer (avgiftsfritt)</value>
+  </data>
+  <data name="TemplateField_FTP_phone_local" xml:space="preserve">
+    <value>Telefonnummer (fast)</value>
+  </data>
+  <data name="TemplateField_GenericAccount_username" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="TemplateField_GenericAccount_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_account_type" xml:space="preserve">
+    <value>Kontotyp</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_username" xml:space="preserve">
+    <value>Användarnamn / e-post / ID</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_port" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="TemplateField_ISP_userid" xml:space="preserve">
+    <value>Användar-ID</value>
+  </data>
+  <data name="TemplateField_ISP_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_ISP_pin" xml:space="preserve">
+    <value>PIN-kod</value>
+  </data>
+  <data name="TemplateField_ISP_dialup_number" xml:space="preserve">
+    <value>Modemnummer</value>
+  </data>
+  <data name="TemplateField_ISP_website" xml:space="preserve">
+    <value>Webbplats</value>
+  </data>
+  <data name="TemplateField_ISP_phone_local" xml:space="preserve">
+    <value>Telefon (fast)</value>
+  </data>
+  <data name="TemplateField_ISP_phone_tollfree" xml:space="preserve">
+    <value>Telefon (avgiftsfritt)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_hostname" xml:space="preserve">
+    <value>Värdnamn</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_port" xml:space="preserve">
+    <value>Port (3306)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_database" xml:space="preserve">
+    <value>Databas</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_username" xml:space="preserve">
+    <value>Användarnamn</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_DotMac_email" xml:space="preserve">
+    <value>E-post (namn@me.com)</value>
+  </data>
+  <data name="TemplateField_DotMac_member_name" xml:space="preserve">
+    <value>Medlem</value>
+  </data>
+  <data name="TemplateField_DotMac_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_DotMac_idisk_storage" xml:space="preserve">
+    <value>Tillgänglig iDisk lagringsutrymme</value>
+  </data>
+  <data name="TemplateField_DotMac_renewal_date" xml:space="preserve">
+    <value>Förnyelsedatum</value>
+  </data>
+  <data name="TemplateField_DotMac_activation_key" xml:space="preserve">
+    <value>Aktiveringskod</value>
+  </data>
+  <data name="TemplateField_iTunes_username" xml:space="preserve">
+    <value>Apple-ID (e-post)</value>
+  </data>
+  <data name="TemplateField_iTunes_password" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="TemplateField_iTunes_question" xml:space="preserve">
+    <value>Säkerhetsfråga</value>
+  </data>
+  <data name="TemplateField_iTunes_answer" xml:space="preserve">
+    <value>Säkerhetssvar</value>
+  </data>
+  <data name="TemplateField_Email_pop_use_ssl" xml:space="preserve">
+    <value>Använder SSL</value>
+  </data>
+  <data name="TemplateField_Email_smtp_use_ssl" xml:space="preserve">
+    <value>Använder SSL</value>
+  </data>
 </root>

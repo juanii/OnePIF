@@ -5,7 +5,7 @@ namespace OnePIF.Records
     //system.folder.Regular
     public class SecureContents
     {
-        public virtual void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
+        public virtual void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs, RecordType recordType)
         {
             return;
         }

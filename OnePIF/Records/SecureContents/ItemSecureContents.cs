@@ -363,18 +363,190 @@ namespace OnePIF.Records
             return section.name != null && USER_SECTION_NAME.IsMatch(section.name);
         }
 
-        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
+        private List<SecureContentsSection> createSectionsFromPlainFields(RecordType recordType)
         {
-            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
+            Dictionary<string, SecureContentsSection> sectionsByName = new Dictionary<string, SecureContentsSection>();
 
+            foreach (PropertyInfo propertyInfo in this.GetType().GetProperties(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance))
+            {
+                string fieldValue = Convert.ToString(propertyInfo.GetValue(this, null));
+                if (!Attribute.IsDefined(propertyInfo, typeof(ItemFieldAttribute)) || string.IsNullOrEmpty(fieldValue))
+                    continue;
+
+                ItemFieldAttribute itemFieldAttribute = Attribute.GetCustomAttribute(propertyInfo, typeof(ItemFieldAttribute)) as ItemFieldAttribute;
+
+                string sectionName = itemFieldAttribute.sectionName ?? string.Empty;
+
+                SecureContentsSection section;
+                if (!sectionsByName.TryGetValue(sectionName, out section))
+                {
+                    section = new SecureContentsSection()
+                    {
+                        name = sectionName,
+                        title = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "TemplateSection", Enum.GetName(typeof(RecordType), recordType), sectionName.Replace(" ", "_") })),
+                        fields = new List<SectionField>()
+                    };
+                    sectionsByName.Add(sectionName, section);
+                }
+
+                string fieldName = itemFieldAttribute.fieldName ?? propertyInfo.Name;
+
+                if (itemFieldAttribute.type == SectionFieldType.address && Attribute.IsDefined(propertyInfo, typeof(AddressComponentAttribute)))
+                {
+                    AddressSectionField addressSectionField = section.fields.Find(field => { return fieldName.Equals(field.n); }) as AddressSectionField;
+
+                    if (addressSectionField == null)
+                    {
+                        addressSectionField = new AddressSectionField()
+                        {
+                            n = fieldName,
+                            t = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "TemplateField", Enum.GetName(typeof(RecordType), recordType), fieldName.Replace(" ", "_") })),
+                            v = new AddressValue(),
+                            k = itemFieldAttribute.type
+                        };
+                        section.fields.Add(addressSectionField);
+                    }
+
+                    AddressComponentAttribute addressAttribute = Attribute.GetCustomAttribute(propertyInfo, typeof(AddressComponentAttribute)) as AddressComponentAttribute;
+
+                    switch (addressAttribute.addressPart)
+                    {
+                        case AddressComponentAttribute.AddressPart.Address1:
+                            addressSectionField.v.street = string.IsNullOrEmpty(addressSectionField.v.street) ? fieldValue : string.Join(Environment.NewLine, new string[] { fieldValue, addressSectionField.v.street });
+                            break;
+                        case AddressComponentAttribute.AddressPart.Address2:
+                            addressSectionField.v.street = string.IsNullOrEmpty(addressSectionField.v.street) ? fieldValue : string.Join(Environment.NewLine, new string[] { addressSectionField.v.street, fieldValue });
+                            break;
+                        case AddressComponentAttribute.AddressPart.ZIP:
+                            addressSectionField.v.zip = fieldValue;
+                            break;
+                        case AddressComponentAttribute.AddressPart.City:
+                            addressSectionField.v.city = fieldValue;
+                            break;
+                        case AddressComponentAttribute.AddressPart.State:
+                            addressSectionField.v.state = fieldValue;
+                            break;
+                        case AddressComponentAttribute.AddressPart.Region:
+                            addressSectionField.v.region = fieldValue;
+                            break;
+                        case AddressComponentAttribute.AddressPart.Country:
+                            addressSectionField.v.country = fieldValue;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                else if (itemFieldAttribute.type == SectionFieldType.date && Attribute.IsDefined(propertyInfo, typeof(DateComponentAttribute)))
+                {
+                    DateSectionField dateSectionField = section.fields.Find(field => { return fieldName.Equals(field.n); }) as DateSectionField;
+
+                    if (dateSectionField == null)
+                    {
+                        dateSectionField = new DateSectionField()
+                        {
+                            n = fieldName,
+                            t = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "TemplateField", Enum.GetName(typeof(RecordType), recordType), fieldName.Replace(" ", "_") })),
+                            // 2000 is a leap year and January has 31 days. This guarantees no matter the order in which we add days,
+                            // months or years to this base date, we won't get an invalid intermediate date (assuming a valid target date).
+                            v = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                            k = itemFieldAttribute.type
+                        };
+                        section.fields.Add(dateSectionField);
+                    }
+
+                    DateComponentAttribute dateAttribute = Attribute.GetCustomAttribute(propertyInfo, typeof(DateComponentAttribute)) as DateComponentAttribute;
+
+                    int intFieldValue;
+
+                    if (int.TryParse(fieldValue, out intFieldValue))
+                    {
+                        switch (dateAttribute.datePart)
+                        {
+                            case DateComponentAttribute.DatePart.Day:
+                                dateSectionField.v = dateSectionField.v.AddDays(intFieldValue - dateSectionField.v.Day);
+                                break;
+                            case DateComponentAttribute.DatePart.Month:
+                                dateSectionField.v = dateSectionField.v.AddMonths(intFieldValue - dateSectionField.v.Month);
+                                break;
+                            case DateComponentAttribute.DatePart.Year:
+                                dateSectionField.v = dateSectionField.v.AddYears(intFieldValue - dateSectionField.v.Year);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+                else if (itemFieldAttribute.type == SectionFieldType.monthYear && Attribute.IsDefined(propertyInfo, typeof(MonthYearComponentAttribute)))
+                {
+                    MonthYearSectionField monthYearSectionField = section.fields.Find(field => { return fieldName.Equals(field.n); }) as MonthYearSectionField;
+
+                    if (monthYearSectionField == null)
+                    {
+                        monthYearSectionField = new MonthYearSectionField()
+                        {
+                            n = fieldName,
+                            t = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "TemplateField", Enum.GetName(typeof(RecordType), recordType), fieldName.Replace(" ", "_") })),
+                            // 2000 is a leap year and January has 31 days. This guarantees no matter the order in which we add days,
+                            // months or years to this base date, we won't get an invalid intermediate date (assuming a valid target date).
+                            v = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                            k = itemFieldAttribute.type
+                        };
+                        section.fields.Add(monthYearSectionField);
+                    }
+
+                    MonthYearComponentAttribute monthYearAttribute = Attribute.GetCustomAttribute(propertyInfo, typeof(MonthYearComponentAttribute)) as MonthYearComponentAttribute;
+
+                    int intFieldValue;
+
+                    if (int.TryParse(fieldValue, out intFieldValue))
+                    {
+                        switch (monthYearAttribute.monthYearPart)
+                        {
+                            case MonthYearComponentAttribute.MonthYearPart.Month:
+                                monthYearSectionField.v = monthYearSectionField.v.AddMonths(intFieldValue - monthYearSectionField.v.Month);
+                                break;
+                            case MonthYearComponentAttribute.MonthYearPart.Year:
+                                monthYearSectionField.v = monthYearSectionField.v.AddYears(intFieldValue - monthYearSectionField.v.Year);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+                else // the remaining field types are all GeneralSectionFields
+                {
+                    section.fields.Add(new GeneralSectionField()
+                    {
+                        n = fieldName,
+                        t = Properties.Strings.ResourceManager.GetString(string.Join("_", new string[] { "TemplateField", Enum.GetName(typeof(RecordType), recordType), fieldName.Replace(" ", "_") })),
+                        v = fieldValue,
+                        k = itemFieldAttribute.type,
+                        a = new SectionFieldAttributes() { multiline = itemFieldAttribute.multiline }
+                    });
+                }
+            }
+
+            return new List<SecureContentsSection>(sectionsByName.Values);
+        }
+
+        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs, RecordType recordType)
+        {
+            base.PopulateEntry(pwEntry, pwDatabase, userPrefs, recordType);
+
+            List<SecureContentsSection> sections;
             if (this.sections != null)
+                sections = this.sections;
+            else
+                sections = this.createSectionsFromPlainFields(recordType);
+
+            if (sections != null)
             {
                 int unnamedSectionNumber = 1;
                 SectionFieldLocator usernameFieldLocator = this.GetUsernameFieldLocator();
                 SectionFieldLocator passwordFieldLocator = this.GetPasswordFieldLocator();
                 SectionFieldLocator urlFieldLocator = this.GetURLFieldLocator();
 
-                foreach (SecureContentsSection section in this.sections)
+                foreach (SecureContentsSection section in sections)
                 {
                     // Linked items are not supported
                     if (section.name.Equals(LINKED_ITEMS_SECTION_NAME))

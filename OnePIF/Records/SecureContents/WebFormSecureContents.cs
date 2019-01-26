@@ -38,9 +38,9 @@ namespace OnePIF.Records
         public string htmlName { get; set; }
 #pragma warning restore IDE1006
 
-        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs)
+        public override void PopulateEntry(PwEntry pwEntry, PwDatabase pwDatabase, UserPrefs userPrefs, RecordType recordType)
         {
-            base.PopulateEntry(pwEntry, pwDatabase, userPrefs);
+            base.PopulateEntry(pwEntry, pwDatabase, userPrefs, recordType);
 
             if (fields != null)
             {

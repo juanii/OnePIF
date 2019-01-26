@@ -1266,4 +1266,736 @@
   <data name="FolderName_iTunes" xml:space="preserve">
     <value>iTunes</value>
   </data>
+  <data name="TemplateSection_BankAccountUS_branchInfo" xml:space="preserve">
+    <value>Informações da filial</value>
+  </data>
+  <data name="TemplateSection_CreditCard_contactInfo" xml:space="preserve">
+    <value>Informações de contato</value>
+  </data>
+  <data name="TemplateSection_CreditCard_details" xml:space="preserve">
+    <value>Detalhes adicionais</value>
+  </data>
+  <data name="TemplateSection_EmailV2_SMTP" xml:space="preserve">
+    <value>SMTP</value>
+  </data>
+  <data name="TemplateSection_EmailV2_Contact_Information" xml:space="preserve">
+    <value>Informações de contato</value>
+  </data>
+  <data name="TemplateSection_Identity_name" xml:space="preserve">
+    <value>Identificação</value>
+  </data>
+  <data name="TemplateSection_Identity_internet" xml:space="preserve">
+    <value>Detalhes da Internet</value>
+  </data>
+  <data name="TemplateSection_Identity_address" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="TemplateSection_RewardProgram_extra" xml:space="preserve">
+    <value>Mais informações</value>
+  </data>
+  <data name="TemplateSection_UnixServer_admin_console" xml:space="preserve">
+    <value>Console de Administração</value>
+  </data>
+  <data name="TemplateSection_UnixServer_hosting_provider_details" xml:space="preserve">
+    <value>Provedor de Hospedagem</value>
+  </data>
+  <data name="TemplateSection_License_customer" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="TemplateSection_License_publisher" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="TemplateSection_License_order" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_bankName" xml:space="preserve">
+    <value>Nome do banco</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_owner" xml:space="preserve">
+    <value>Nome na conta</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountType" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_routingNo" xml:space="preserve">
+    <value>Número de roteamento</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountNo" xml:space="preserve">
+    <value>Número de conta</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_swift" xml:space="preserve">
+    <value>Código SWIFT</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_iban" xml:space="preserve">
+    <value>Número IBAN</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchPhone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchAddress" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_telephonePin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="TemplateField_CreditCard_cardholder" xml:space="preserve">
+    <value>Nome do titular</value>
+  </data>
+  <data name="TemplateField_CreditCard_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_CreditCard_ccnum" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="TemplateField_CreditCard_cvv" xml:space="preserve">
+    <value>Número de verificação</value>
+  </data>
+  <data name="TemplateField_CreditCard_expiry" xml:space="preserve">
+    <value>Data de validade</value>
+  </data>
+  <data name="TemplateField_CreditCard_validFrom" xml:space="preserve">
+    <value>Válido de</value>
+  </data>
+  <data name="TemplateField_CreditCard_bank" xml:space="preserve">
+    <value>Banco emissor</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneLocal" xml:space="preserve">
+    <value>Telefone (local)</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneTollFree" xml:space="preserve">
+    <value>Telefone (ligação gratuita)</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneIntl" xml:space="preserve">
+    <value>Telefone (internacional)</value>
+  </data>
+  <data name="TemplateField_CreditCard_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_CreditCard_pin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="TemplateField_CreditCard_creditLimit" xml:space="preserve">
+    <value>Limite de crédito</value>
+  </data>
+  <data name="TemplateField_CreditCard_cashLimit" xml:space="preserve">
+    <value>Limite de levantamento de dinheiro</value>
+  </data>
+  <data name="TemplateField_CreditCard_interest" xml:space="preserve">
+    <value>Taxa de juro</value>
+  </data>
+  <data name="TemplateField_CreditCard_issuenumber" xml:space="preserve">
+    <value>Número de emissão</value>
+  </data>
+  <data name="TemplateField_Database_hostname" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="TemplateField_Database_port" xml:space="preserve">
+    <value>Porta</value>
+  </data>
+  <data name="TemplateField_Database_database" xml:space="preserve">
+    <value>Banco de dados</value>
+  </data>
+  <data name="TemplateField_Database_database_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_Database_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_Database_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_Database_sid" xml:space="preserve">
+    <value>SID</value>
+  </data>
+  <data name="TemplateField_Database_alias" xml:space="preserve">
+    <value>Apelido</value>
+  </data>
+  <data name="TemplateField_Database_options" xml:space="preserve">
+    <value>Opções de conexão</value>
+  </data>
+  <data name="TemplateField_DriversLicense_fullname" xml:space="preserve">
+    <value>Nome completo</value>
+  </data>
+  <data name="TemplateField_DriversLicense_address" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="TemplateField_DriversLicense_birthdate" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="TemplateField_DriversLicense_sex" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="TemplateField_DriversLicense_height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="TemplateField_DriversLicense_number" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="TemplateField_DriversLicense_class" xml:space="preserve">
+    <value>classe de licença</value>
+  </data>
+  <data name="TemplateField_DriversLicense_conditions" xml:space="preserve">
+    <value>Condições / Restrições</value>
+  </data>
+  <data name="TemplateField_DriversLicense_state" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="TemplateField_DriversLicense_country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="TemplateField_DriversLicense_expiry_date" xml:space="preserve">
+    <value>Data de validade</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_port" xml:space="preserve">
+    <value>Número da porta</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_security" xml:space="preserve">
+    <value>Segurança</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_authentication" xml:space="preserve">
+    <value>método de autenticação</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_server" xml:space="preserve">
+    <value>Servidor SMTP</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_port" xml:space="preserve">
+    <value>Número da porta</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_security" xml:space="preserve">
+    <value>Segurança</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_authentication" xml:space="preserve">
+    <value>método de autenticação</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider" xml:space="preserve">
+    <value>Provedor</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider_website" xml:space="preserve">
+    <value>site do provedor</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_tollfree" xml:space="preserve">
+    <value>Telefone (ligação gratuita)</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_local" xml:space="preserve">
+    <value>Telefone (local)</value>
+  </data>
+  <data name="TemplateField_Identity_firstname" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="TemplateField_Identity_initial" xml:space="preserve">
+    <value>Inicial</value>
+  </data>
+  <data name="TemplateField_Identity_lastname" xml:space="preserve">
+    <value>Sobrenome</value>
+  </data>
+  <data name="TemplateField_Identity_sex" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="TemplateField_Identity_birthdate" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="TemplateField_Identity_occupation" xml:space="preserve">
+    <value>Ocupação</value>
+  </data>
+  <data name="TemplateField_Identity_company" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="TemplateField_Identity_department" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="TemplateField_Identity_jobtitle" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="TemplateField_Identity_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_Identity_reminderq" xml:space="preserve">
+    <value>Pergunta de lembrete</value>
+  </data>
+  <data name="TemplateField_Identity_remindera" xml:space="preserve">
+    <value>Resposta do lembrete</value>
+  </data>
+  <data name="TemplateField_Identity_email" xml:space="preserve">
+    <value>e-mail</value>
+  </data>
+  <data name="TemplateField_Identity_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_Identity_icq" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="TemplateField_Identity_skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="TemplateField_Identity_aim" xml:space="preserve">
+    <value>AOL/AIM</value>
+  </data>
+  <data name="TemplateField_Identity_yahoo" xml:space="preserve">
+    <value>Yahoo</value>
+  </data>
+  <data name="TemplateField_Identity_msn" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="TemplateField_Identity_forumsig" xml:space="preserve">
+    <value>Assinatura de Fórum</value>
+  </data>
+  <data name="TemplateField_Identity_address" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="TemplateField_Identity_address1" xml:space="preserve">
+    <value>Linha de endereço 1</value>
+  </data>
+  <data name="TemplateField_Identity_address2" xml:space="preserve">
+    <value>Linha de endereço 2</value>
+  </data>
+  <data name="TemplateField_Identity_city" xml:space="preserve">
+    <value>Cidade/Município/Subúrbio</value>
+  </data>
+  <data name="TemplateField_Identity_state" xml:space="preserve">
+    <value>Estado/Província</value>
+  </data>
+  <data name="TemplateField_Identity_zip" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="TemplateField_Identity_country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="TemplateField_Identity_location" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="TemplateField_Identity_phone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="TemplateField_Identity_defphone" xml:space="preserve">
+    <value>Telefone padrão</value>
+  </data>
+  <data name="TemplateField_Identity_homephone" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="TemplateField_Identity_cellphone" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="TemplateField_Identity_busphone" xml:space="preserve">
+    <value>Comercial</value>
+  </data>
+  <data name="TemplateField_Membership_org_name" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="TemplateField_Membership_phone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="TemplateField_Membership_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_Membership_member_name" xml:space="preserve">
+    <value>Nome do membro</value>
+  </data>
+  <data name="TemplateField_Membership_member_since" xml:space="preserve">
+    <value>Membro desde</value>
+  </data>
+  <data name="TemplateField_Membership_expiry_date" xml:space="preserve">
+    <value>Data de validade</value>
+  </data>
+  <data name="TemplateField_Membership_membership_no" xml:space="preserve">
+    <value>número de membro</value>
+  </data>
+  <data name="TemplateField_Membership_pin" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="TemplateField_Passport_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_Passport_fullname" xml:space="preserve">
+    <value>Nome completo</value>
+  </data>
+  <data name="TemplateField_Passport_number" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="TemplateField_Passport_birthdate" xml:space="preserve">
+    <value>Data de nascimento</value>
+  </data>
+  <data name="TemplateField_Passport_birthplace" xml:space="preserve">
+    <value>Naturalidade</value>
+  </data>
+  <data name="TemplateField_Passport_nationality" xml:space="preserve">
+    <value>Nacionalidade</value>
+  </data>
+  <data name="TemplateField_Passport_code" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="TemplateField_Passport_sex" xml:space="preserve">
+    <value>Sexo</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_country" xml:space="preserve">
+    <value>País emissor</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_authority" xml:space="preserve">
+    <value>Autoridade emissora</value>
+  </data>
+  <data name="TemplateField_Passport_issue_date" xml:space="preserve">
+    <value>Emitido em</value>
+  </data>
+  <data name="TemplateField_Passport_expiry_date" xml:space="preserve">
+    <value>Data de validade</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_name" xml:space="preserve">
+    <value>Nome completo</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_valid_from" xml:space="preserve">
+    <value>Válido de</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_expires" xml:space="preserve">
+    <value>Vencimento</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_game" xml:space="preserve">
+    <value>﻿Vida selvagem aprovada</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_quota" xml:space="preserve">
+    <value>Quota máxima</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_state" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="TemplateField_RewardProgram_company_name" xml:space="preserve">
+    <value>Nome da empresa</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_name" xml:space="preserve">
+    <value>Nome do membro</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_since" xml:space="preserve">
+    <value>Membro desde</value>
+  </data>
+  <data name="TemplateField_RewardProgram_membership_no" xml:space="preserve">
+    <value>número de membro</value>
+  </data>
+  <data name="TemplateField_RewardProgram_additional_no" xml:space="preserve">
+    <value>número de membro (adicional)</value>
+  </data>
+  <data name="TemplateField_RewardProgram_pin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="TemplateField_RewardProgram_customer_service_phone" xml:space="preserve">
+    <value>Telefone para suporte ao cliente</value>
+  </data>
+  <data name="TemplateField_RewardProgram_reservations_phone" xml:space="preserve">
+    <value>Telefone para reservas</value>
+  </data>
+  <data name="TemplateField_RewardProgram_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_Router_network_name" xml:space="preserve">
+    <value>Nome da rede</value>
+  </data>
+  <data name="TemplateField_Router_name" xml:space="preserve">
+    <value>Nome da estação base</value>
+  </data>
+  <data name="TemplateField_Router_password" xml:space="preserve">
+    <value>Senha da estação base</value>
+  </data>
+  <data name="TemplateField_Router_server" xml:space="preserve">
+    <value>Servidor / Endereço IP</value>
+  </data>
+  <data name="TemplateField_Router_airport_id" xml:space="preserve">
+    <value>ID do AirPort</value>
+  </data>
+  <data name="TemplateField_Router_wireless_security" xml:space="preserve">
+    <value>Segurança da rede sem fios</value>
+  </data>
+  <data name="TemplateField_Router_wireless_password" xml:space="preserve">
+    <value>Senha da rede sem fio</value>
+  </data>
+  <data name="TemplateField_Router_disk_password" xml:space="preserve">
+    <value>Senha de armazenamento anexada</value>
+  </data>
+  <data name="TemplateField_UnixServer_url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_UnixServer_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_url" xml:space="preserve">
+    <value>URL do console de administração</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_username" xml:space="preserve">
+    <value>Nome do usuário do console de administração</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_password" xml:space="preserve">
+    <value>Senha do console</value>
+  </data>
+  <data name="TemplateField_UnixServer_name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="TemplateField_UnixServer_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_url" xml:space="preserve">
+    <value>URL de suporte</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_phone" xml:space="preserve">
+    <value>Telefone de suporte</value>
+  </data>
+  <data name="TemplateField_SsnUS_name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="TemplateField_SsnUS_number" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="TemplateField_License_product_name" xml:space="preserve">
+    <value>Nome do produto</value>
+  </data>
+  <data name="TemplateField_License_product_version" xml:space="preserve">
+    <value>Versão</value>
+  </data>
+  <data name="TemplateField_License_reg_name" xml:space="preserve">
+    <value>Licenciado para</value>
+  </data>
+  <data name="TemplateField_License_reg_code" xml:space="preserve">
+    <value>chave da licença</value>
+  </data>
+  <data name="TemplateField_License_reg_email" xml:space="preserve">
+    <value>e-mail de registro</value>
+  </data>
+  <data name="TemplateField_License_company" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="TemplateField_License_download_link" xml:space="preserve">
+    <value>Página de transferência</value>
+  </data>
+  <data name="TemplateField_License_publisher_name" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="TemplateField_License_retail_price" xml:space="preserve">
+    <value>Preço de varejo</value>
+  </data>
+  <data name="TemplateField_License_publisher_website" xml:space="preserve">
+    <value>site</value>
+  </data>
+  <data name="TemplateField_License_support_email" xml:space="preserve">
+    <value>e-mail do suporte</value>
+  </data>
+  <data name="TemplateField_License_order_number" xml:space="preserve">
+    <value>Número do pedido</value>
+  </data>
+  <data name="TemplateField_License_order_date" xml:space="preserve">
+    <value>Data de compra</value>
+  </data>
+  <data name="TemplateField_License_order_total" xml:space="preserve">
+    <value>Total do pedido</value>
+  </data>
+  <data name="TemplateSection_Email_Contact_Information" xml:space="preserve">
+    <value>Informações de contato</value>
+  </data>
+  <data name="TemplateSection_FTP_Contact_Information" xml:space="preserve">
+    <value>Informações de contato</value>
+  </data>
+  <data name="TemplateSection_ISP_Contact_Information" xml:space="preserve">
+    <value>Informações de contato</value>
+  </data>
+  <data name="TemplateField_Email_pop_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_Email_pop_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_Email_pop_server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="TemplateField_Email_pop_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_Email_pop_port" xml:space="preserve">
+    <value>Número da porta</value>
+  </data>
+  <data name="TemplateField_Email_pop_authentication" xml:space="preserve">
+    <value>método de autenticação</value>
+  </data>
+  <data name="TemplateField_Email_smtp_username" xml:space="preserve">
+    <value>nome de usuário</value>
+  </data>
+  <data name="TemplateField_Email_smtp_password" xml:space="preserve">
+    <value>senha</value>
+  </data>
+  <data name="TemplateField_Email_smtp_server" xml:space="preserve">
+    <value>Servidor SMTP</value>
+  </data>
+  <data name="TemplateField_Email_smtp_type" xml:space="preserve">
+    <value>tipo</value>
+  </data>
+  <data name="TemplateField_Email_smtp_port" xml:space="preserve">
+    <value>Número da porta</value>
+  </data>
+  <data name="TemplateField_Email_smtp_authentication" xml:space="preserve">
+    <value>método de autenticação</value>
+  </data>
+  <data name="TemplateField_Email_provider" xml:space="preserve">
+    <value>Provedor</value>
+  </data>
+  <data name="TemplateField_Email_provider_website" xml:space="preserve">
+    <value>site do provedor</value>
+  </data>
+  <data name="TemplateField_Email_phone_tollfree" xml:space="preserve">
+    <value>Telefone (ligação gratuita)</value>
+  </data>
+  <data name="TemplateField_Email_phone_local" xml:space="preserve">
+    <value>Telefone (local)</value>
+  </data>
+  <data name="TemplateField_AmazonS3_path" xml:space="preserve">
+    <value>Caminho</value>
+  </data>
+  <data name="TemplateField_AmazonS3_email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="TemplateField_AmazonS3_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key_id" xml:space="preserve">
+    <value>Id da chave de acesso</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key" xml:space="preserve">
+    <value>Chave de acesso secreta</value>
+  </data>
+  <data name="TemplateField_FTP_server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="TemplateField_FTP_path" xml:space="preserve">
+    <value>Caminho</value>
+  </data>
+  <data name="TemplateField_FTP_username" xml:space="preserve">
+    <value>Nome de utilizador</value>
+  </data>
+  <data name="TemplateField_FTP_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_FTP_provider" xml:space="preserve">
+    <value>Fornecedor</value>
+  </data>
+  <data name="TemplateField_FTP_provider_website" xml:space="preserve">
+    <value>Site do fornecedor</value>
+  </data>
+  <data name="TemplateField_FTP_phone_tollfree" xml:space="preserve">
+    <value>Número de telefone (chamada gratuita)</value>
+  </data>
+  <data name="TemplateField_FTP_phone_local" xml:space="preserve">
+    <value>Número de telefone (Local)</value>
+  </data>
+  <data name="TemplateField_GenericAccount_username" xml:space="preserve">
+    <value>Nome de utilizador</value>
+  </data>
+  <data name="TemplateField_GenericAccount_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_account_type" xml:space="preserve">
+    <value>Tipo de conta</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_username" xml:space="preserve">
+    <value>Nome de utilizador / E-mail / ID</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_port" xml:space="preserve">
+    <value>Porta</value>
+  </data>
+  <data name="TemplateField_ISP_userid" xml:space="preserve">
+    <value>ID de utilizador</value>
+  </data>
+  <data name="TemplateField_ISP_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_ISP_pin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="TemplateField_ISP_dialup_number" xml:space="preserve">
+    <value>Número de acesso telefónico</value>
+  </data>
+  <data name="TemplateField_ISP_website" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="TemplateField_ISP_phone_local" xml:space="preserve">
+    <value>Telefone (local)</value>
+  </data>
+  <data name="TemplateField_ISP_phone_tollfree" xml:space="preserve">
+    <value>Telefone (chamada gratuita)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_hostname" xml:space="preserve">
+    <value>Nome de anfitrião (hostname)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_port" xml:space="preserve">
+    <value>Porta (3306)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_database" xml:space="preserve">
+    <value>Base de dados</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_username" xml:space="preserve">
+    <value>Nome de utilizador</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_DotMac_email" xml:space="preserve">
+    <value>E-mail (name@me.com)</value>
+  </data>
+  <data name="TemplateField_DotMac_member_name" xml:space="preserve">
+    <value>Membro</value>
+  </data>
+  <data name="TemplateField_DotMac_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_DotMac_idisk_storage" xml:space="preserve">
+    <value>Armazenamento iDisk disponível</value>
+  </data>
+  <data name="TemplateField_DotMac_renewal_date" xml:space="preserve">
+    <value>Data de renovação</value>
+  </data>
+  <data name="TemplateField_DotMac_activation_key" xml:space="preserve">
+    <value>Chave de ativação</value>
+  </data>
+  <data name="TemplateField_iTunes_username" xml:space="preserve">
+    <value>Apple ID (e-mail)</value>
+  </data>
+  <data name="TemplateField_iTunes_password" xml:space="preserve">
+    <value>Palavra-passe</value>
+  </data>
+  <data name="TemplateField_iTunes_question" xml:space="preserve">
+    <value>Pergunta de segurança</value>
+  </data>
+  <data name="TemplateField_iTunes_answer" xml:space="preserve">
+    <value>Resposta de segurança</value>
+  </data>
+  <data name="TemplateField_Email_pop_use_ssl" xml:space="preserve">
+    <value>Usa SSL</value>
+  </data>
+  <data name="TemplateField_Email_smtp_use_ssl" xml:space="preserve">
+    <value>Usa SSL</value>
+  </data>
 </root>

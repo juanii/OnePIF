@@ -22,7 +22,7 @@ namespace OnePIF.Records
 
             SecureContents secureContents = this.GetSecureContents();
             if (secureContents != null)
-                secureContents.PopulateEntry(pwEntry, pwDatabase, userPrefs);
+                secureContents.PopulateEntry(pwEntry, pwDatabase, userPrefs, this.typeName);
 
             OpenContents openContents = this.GetOpenContents();
             if (openContents != null)

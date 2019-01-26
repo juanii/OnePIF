@@ -1263,4 +1263,736 @@
   <data name="FolderName_iTunes" xml:space="preserve">
     <value>iTunes</value>
   </data>
+  <data name="TemplateSection_BankAccountUS_branchInfo" xml:space="preserve">
+    <value>分行信息</value>
+  </data>
+  <data name="TemplateSection_CreditCard_contactInfo" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="TemplateSection_CreditCard_details" xml:space="preserve">
+    <value>其他详情</value>
+  </data>
+  <data name="TemplateSection_EmailV2_SMTP" xml:space="preserve">
+    <value>SMTP</value>
+  </data>
+  <data name="TemplateSection_EmailV2_Contact_Information" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="TemplateSection_Identity_name" xml:space="preserve">
+    <value>身份标识</value>
+  </data>
+  <data name="TemplateSection_Identity_internet" xml:space="preserve">
+    <value>互联网详情</value>
+  </data>
+  <data name="TemplateSection_Identity_address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TemplateSection_RewardProgram_extra" xml:space="preserve">
+    <value>更多信息</value>
+  </data>
+  <data name="TemplateSection_UnixServer_admin_console" xml:space="preserve">
+    <value>管理控制台</value>
+  </data>
+  <data name="TemplateSection_UnixServer_hosting_provider_details" xml:space="preserve">
+    <value>主机托管服务商</value>
+  </data>
+  <data name="TemplateSection_License_customer" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="TemplateSection_License_publisher" xml:space="preserve">
+    <value>发布者</value>
+  </data>
+  <data name="TemplateSection_License_order" xml:space="preserve">
+    <value>订购</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_bankName" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_owner" xml:space="preserve">
+    <value>账户名称</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountType" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_routingNo" xml:space="preserve">
+    <value>银行代号</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_accountNo" xml:space="preserve">
+    <value>账号</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_swift" xml:space="preserve">
+    <value>SWIFT 代码</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_iban" xml:space="preserve">
+    <value>IBAN 编号</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchPhone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_branchAddress" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TemplateField_BankAccountUS_telephonePin" xml:space="preserve">
+    <value>PIN 码</value>
+  </data>
+  <data name="TemplateField_CreditCard_cardholder" xml:space="preserve">
+    <value>持卡人姓名</value>
+  </data>
+  <data name="TemplateField_CreditCard_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_CreditCard_ccnum" xml:space="preserve">
+    <value>号码</value>
+  </data>
+  <data name="TemplateField_CreditCard_cvv" xml:space="preserve">
+    <value>验证码</value>
+  </data>
+  <data name="TemplateField_CreditCard_expiry" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="TemplateField_CreditCard_validFrom" xml:space="preserve">
+    <value>生效日</value>
+  </data>
+  <data name="TemplateField_CreditCard_bank" xml:space="preserve">
+    <value>发卡行</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneLocal" xml:space="preserve">
+    <value>电话（本地）</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneTollFree" xml:space="preserve">
+    <value>电话（免费）</value>
+  </data>
+  <data name="TemplateField_CreditCard_phoneIntl" xml:space="preserve">
+    <value>电话（国际）</value>
+  </data>
+  <data name="TemplateField_CreditCard_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_CreditCard_pin" xml:space="preserve">
+    <value>PIN 码</value>
+  </data>
+  <data name="TemplateField_CreditCard_creditLimit" xml:space="preserve">
+    <value>信用额度</value>
+  </data>
+  <data name="TemplateField_CreditCard_cashLimit" xml:space="preserve">
+    <value>取款限额</value>
+  </data>
+  <data name="TemplateField_CreditCard_interest" xml:space="preserve">
+    <value>利率</value>
+  </data>
+  <data name="TemplateField_CreditCard_issuenumber" xml:space="preserve">
+    <value>发行编号</value>
+  </data>
+  <data name="TemplateField_Database_hostname" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="TemplateField_Database_port" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="TemplateField_Database_database" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="TemplateField_Database_database_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_Database_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_Database_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_Database_sid" xml:space="preserve">
+    <value>SID</value>
+  </data>
+  <data name="TemplateField_Database_alias" xml:space="preserve">
+    <value>别名</value>
+  </data>
+  <data name="TemplateField_Database_options" xml:space="preserve">
+    <value>连接选项</value>
+  </data>
+  <data name="TemplateField_DriversLicense_fullname" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="TemplateField_DriversLicense_address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TemplateField_DriversLicense_birthdate" xml:space="preserve">
+    <value>出生日期</value>
+  </data>
+  <data name="TemplateField_DriversLicense_sex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="TemplateField_DriversLicense_height" xml:space="preserve">
+    <value>身高</value>
+  </data>
+  <data name="TemplateField_DriversLicense_number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="TemplateField_DriversLicense_class" xml:space="preserve">
+    <value>准驾车型</value>
+  </data>
+  <data name="TemplateField_DriversLicense_conditions" xml:space="preserve">
+    <value>条件 / 限制</value>
+  </data>
+  <data name="TemplateField_DriversLicense_state" xml:space="preserve">
+    <value>州</value>
+  </data>
+  <data name="TemplateField_DriversLicense_country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="TemplateField_DriversLicense_expiry_date" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_port" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_security" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="TemplateField_EmailV2_pop_authentication" xml:space="preserve">
+    <value>身份验证方法</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_server" xml:space="preserve">
+    <value>SMTP 服务器</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_port" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_security" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="TemplateField_EmailV2_smtp_authentication" xml:space="preserve">
+    <value>身份验证方法</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider" xml:space="preserve">
+    <value>服务商</value>
+  </data>
+  <data name="TemplateField_EmailV2_provider_website" xml:space="preserve">
+    <value>服务商网站</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_tollfree" xml:space="preserve">
+    <value>电话（免费）</value>
+  </data>
+  <data name="TemplateField_EmailV2_phone_local" xml:space="preserve">
+    <value>电话（本地）</value>
+  </data>
+  <data name="TemplateField_Identity_firstname" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="TemplateField_Identity_initial" xml:space="preserve">
+    <value>姓名缩写</value>
+  </data>
+  <data name="TemplateField_Identity_lastname" xml:space="preserve">
+    <value>姓氏</value>
+  </data>
+  <data name="TemplateField_Identity_sex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="TemplateField_Identity_birthdate" xml:space="preserve">
+    <value>出生日期</value>
+  </data>
+  <data name="TemplateField_Identity_occupation" xml:space="preserve">
+    <value>职业</value>
+  </data>
+  <data name="TemplateField_Identity_company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="TemplateField_Identity_department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="TemplateField_Identity_jobtitle" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="TemplateField_Identity_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_Identity_reminderq" xml:space="preserve">
+    <value>提示问题</value>
+  </data>
+  <data name="TemplateField_Identity_remindera" xml:space="preserve">
+    <value>提示问题答案</value>
+  </data>
+  <data name="TemplateField_Identity_email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="TemplateField_Identity_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_Identity_icq" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="TemplateField_Identity_skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="TemplateField_Identity_aim" xml:space="preserve">
+    <value>AOL/AIM</value>
+  </data>
+  <data name="TemplateField_Identity_yahoo" xml:space="preserve">
+    <value>Yahoo</value>
+  </data>
+  <data name="TemplateField_Identity_msn" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="TemplateField_Identity_forumsig" xml:space="preserve">
+    <value>论坛签名</value>
+  </data>
+  <data name="TemplateField_Identity_address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="TemplateField_Identity_address1" xml:space="preserve">
+    <value>地址行 1</value>
+  </data>
+  <data name="TemplateField_Identity_address2" xml:space="preserve">
+    <value>地址行 2</value>
+  </data>
+  <data name="TemplateField_Identity_city" xml:space="preserve">
+    <value>市 / 镇 / 郊区</value>
+  </data>
+  <data name="TemplateField_Identity_state" xml:space="preserve">
+    <value>州 / 省</value>
+  </data>
+  <data name="TemplateField_Identity_zip" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="TemplateField_Identity_country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="TemplateField_Identity_location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="TemplateField_Identity_phone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="TemplateField_Identity_defphone" xml:space="preserve">
+    <value>默认电话</value>
+  </data>
+  <data name="TemplateField_Identity_homephone" xml:space="preserve">
+    <value>家庭</value>
+  </data>
+  <data name="TemplateField_Identity_cellphone" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="TemplateField_Identity_busphone" xml:space="preserve">
+    <value>办公</value>
+  </data>
+  <data name="TemplateField_Membership_org_name" xml:space="preserve">
+    <value>组织</value>
+  </data>
+  <data name="TemplateField_Membership_phone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="TemplateField_Membership_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_Membership_member_name" xml:space="preserve">
+    <value>会员姓名</value>
+  </data>
+  <data name="TemplateField_Membership_member_since" xml:space="preserve">
+    <value>入会日期</value>
+  </data>
+  <data name="TemplateField_Membership_expiry_date" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="TemplateField_Membership_membership_no" xml:space="preserve">
+    <value>会员编号</value>
+  </data>
+  <data name="TemplateField_Membership_pin" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_Passport_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_Passport_fullname" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="TemplateField_Passport_number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="TemplateField_Passport_birthdate" xml:space="preserve">
+    <value>出生日期</value>
+  </data>
+  <data name="TemplateField_Passport_birthplace" xml:space="preserve">
+    <value>出生地</value>
+  </data>
+  <data name="TemplateField_Passport_nationality" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="TemplateField_Passport_code" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="TemplateField_Passport_sex" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_country" xml:space="preserve">
+    <value>签发国家</value>
+  </data>
+  <data name="TemplateField_Passport_issuing_authority" xml:space="preserve">
+    <value>签发机关</value>
+  </data>
+  <data name="TemplateField_Passport_issue_date" xml:space="preserve">
+    <value>签发日期</value>
+  </data>
+  <data name="TemplateField_Passport_expiry_date" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_name" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_valid_from" xml:space="preserve">
+    <value>生效日</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_expires" xml:space="preserve">
+    <value>有效期</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_game" xml:space="preserve">
+    <value>批准的野生动物</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_quota" xml:space="preserve">
+    <value>最高配额</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_state" xml:space="preserve">
+    <value>州</value>
+  </data>
+  <data name="TemplateField_HuntingLicense_country" xml:space="preserve">
+    <value>国家</value>
+  </data>
+  <data name="TemplateField_RewardProgram_company_name" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_name" xml:space="preserve">
+    <value>会员姓名</value>
+  </data>
+  <data name="TemplateField_RewardProgram_member_since" xml:space="preserve">
+    <value>入会日期</value>
+  </data>
+  <data name="TemplateField_RewardProgram_membership_no" xml:space="preserve">
+    <value>会员编号</value>
+  </data>
+  <data name="TemplateField_RewardProgram_additional_no" xml:space="preserve">
+    <value>会员编号（附加）</value>
+  </data>
+  <data name="TemplateField_RewardProgram_pin" xml:space="preserve">
+    <value>PIN 码</value>
+  </data>
+  <data name="TemplateField_RewardProgram_customer_service_phone" xml:space="preserve">
+    <value>客服电话</value>
+  </data>
+  <data name="TemplateField_RewardProgram_reservations_phone" xml:space="preserve">
+    <value>预约电话</value>
+  </data>
+  <data name="TemplateField_RewardProgram_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_Router_network_name" xml:space="preserve">
+    <value>网络名称</value>
+  </data>
+  <data name="TemplateField_Router_name" xml:space="preserve">
+    <value>基站名称</value>
+  </data>
+  <data name="TemplateField_Router_password" xml:space="preserve">
+    <value>基站密码</value>
+  </data>
+  <data name="TemplateField_Router_server" xml:space="preserve">
+    <value>服务器 / IP 地址</value>
+  </data>
+  <data name="TemplateField_Router_airport_id" xml:space="preserve">
+    <value>AirPort ID</value>
+  </data>
+  <data name="TemplateField_Router_wireless_security" xml:space="preserve">
+    <value>无线安全</value>
+  </data>
+  <data name="TemplateField_Router_wireless_password" xml:space="preserve">
+    <value>无线网络密码</value>
+  </data>
+  <data name="TemplateField_Router_disk_password" xml:space="preserve">
+    <value>附加存储密码</value>
+  </data>
+  <data name="TemplateField_UnixServer_url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_UnixServer_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_url" xml:space="preserve">
+    <value>管理控制台 URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_username" xml:space="preserve">
+    <value>管理控制台用户名称</value>
+  </data>
+  <data name="TemplateField_UnixServer_admin_console_password" xml:space="preserve">
+    <value>控制台密码</value>
+  </data>
+  <data name="TemplateField_UnixServer_name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="TemplateField_UnixServer_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_url" xml:space="preserve">
+    <value>支持服务 URL</value>
+  </data>
+  <data name="TemplateField_UnixServer_support_contact_phone" xml:space="preserve">
+    <value>支持电话号码</value>
+  </data>
+  <data name="TemplateField_SsnUS_name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="TemplateField_SsnUS_number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="TemplateField_License_product_name" xml:space="preserve">
+    <value>产品名称</value>
+  </data>
+  <data name="TemplateField_License_product_version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="TemplateField_License_reg_name" xml:space="preserve">
+    <value>授权给</value>
+  </data>
+  <data name="TemplateField_License_reg_code" xml:space="preserve">
+    <value>许可证密钥</value>
+  </data>
+  <data name="TemplateField_License_reg_email" xml:space="preserve">
+    <value>注册电子邮件</value>
+  </data>
+  <data name="TemplateField_License_company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="TemplateField_License_download_link" xml:space="preserve">
+    <value>下载页</value>
+  </data>
+  <data name="TemplateField_License_publisher_name" xml:space="preserve">
+    <value>发布者</value>
+  </data>
+  <data name="TemplateField_License_retail_price" xml:space="preserve">
+    <value>零售价</value>
+  </data>
+  <data name="TemplateField_License_publisher_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_License_support_email" xml:space="preserve">
+    <value>支持电子邮件</value>
+  </data>
+  <data name="TemplateField_License_order_number" xml:space="preserve">
+    <value>订单号</value>
+  </data>
+  <data name="TemplateField_License_order_date" xml:space="preserve">
+    <value>购买日期</value>
+  </data>
+  <data name="TemplateField_License_order_total" xml:space="preserve">
+    <value>订单总计</value>
+  </data>
+  <data name="TemplateSection_Email_Contact_Information" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="TemplateSection_FTP_Contact_Information" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="TemplateSection_ISP_Contact_Information" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="TemplateField_Email_pop_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_Email_pop_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_Email_pop_server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="TemplateField_Email_pop_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_Email_pop_port" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="TemplateField_Email_pop_authentication" xml:space="preserve">
+    <value>身份验证方法</value>
+  </data>
+  <data name="TemplateField_Email_smtp_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_Email_smtp_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_Email_smtp_server" xml:space="preserve">
+    <value>SMTP 服务器</value>
+  </data>
+  <data name="TemplateField_Email_smtp_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="TemplateField_Email_smtp_port" xml:space="preserve">
+    <value>端口号</value>
+  </data>
+  <data name="TemplateField_Email_smtp_authentication" xml:space="preserve">
+    <value>身份验证方法</value>
+  </data>
+  <data name="TemplateField_Email_provider" xml:space="preserve">
+    <value>服务商</value>
+  </data>
+  <data name="TemplateField_Email_provider_website" xml:space="preserve">
+    <value>服务商网站</value>
+  </data>
+  <data name="TemplateField_Email_phone_tollfree" xml:space="preserve">
+    <value>电话（免费）</value>
+  </data>
+  <data name="TemplateField_Email_phone_local" xml:space="preserve">
+    <value>电话（本地）</value>
+  </data>
+  <data name="TemplateField_AmazonS3_path" xml:space="preserve">
+    <value>路径</value>
+  </data>
+  <data name="TemplateField_AmazonS3_email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="TemplateField_AmazonS3_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key_id" xml:space="preserve">
+    <value>访问密钥 ID</value>
+  </data>
+  <data name="TemplateField_AmazonS3_access_key" xml:space="preserve">
+    <value>安全访问密钥</value>
+  </data>
+  <data name="TemplateField_FTP_server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="TemplateField_FTP_path" xml:space="preserve">
+    <value>路径</value>
+  </data>
+  <data name="TemplateField_FTP_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_FTP_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_FTP_provider" xml:space="preserve">
+    <value>服务商</value>
+  </data>
+  <data name="TemplateField_FTP_provider_website" xml:space="preserve">
+    <value>服务商网站</value>
+  </data>
+  <data name="TemplateField_FTP_phone_tollfree" xml:space="preserve">
+    <value>电话号码（免费）</value>
+  </data>
+  <data name="TemplateField_FTP_phone_local" xml:space="preserve">
+    <value>电话号码（本地）</value>
+  </data>
+  <data name="TemplateField_GenericAccount_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_GenericAccount_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_account_type" xml:space="preserve">
+    <value>帐户类型</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_username" xml:space="preserve">
+    <value>用户名称/电子邮件/ID</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
+  <data name="TemplateField_InstantMessenger_port" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="TemplateField_ISP_userid" xml:space="preserve">
+    <value>用户 ID</value>
+  </data>
+  <data name="TemplateField_ISP_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_ISP_pin" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="TemplateField_ISP_dialup_number" xml:space="preserve">
+    <value>拨号接入号码</value>
+  </data>
+  <data name="TemplateField_ISP_website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="TemplateField_ISP_phone_local" xml:space="preserve">
+    <value>电话（本地）</value>
+  </data>
+  <data name="TemplateField_ISP_phone_tollfree" xml:space="preserve">
+    <value>电话（免费）</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_hostname" xml:space="preserve">
+    <value>主机名称</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_port" xml:space="preserve">
+    <value>端口 (3306)</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_database" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_username" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="TemplateField_MySQLConnection_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_DotMac_email" xml:space="preserve">
+    <value>电子邮件 (name@me.com)</value>
+  </data>
+  <data name="TemplateField_DotMac_member_name" xml:space="preserve">
+    <value>会员</value>
+  </data>
+  <data name="TemplateField_DotMac_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_DotMac_idisk_storage" xml:space="preserve">
+    <value>iDisk 的可用存储空间</value>
+  </data>
+  <data name="TemplateField_DotMac_renewal_date" xml:space="preserve">
+    <value>续订日期</value>
+  </data>
+  <data name="TemplateField_DotMac_activation_key" xml:space="preserve">
+    <value>激活码</value>
+  </data>
+  <data name="TemplateField_iTunes_username" xml:space="preserve">
+    <value>Apple ID（电子邮件）</value>
+  </data>
+  <data name="TemplateField_iTunes_password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="TemplateField_iTunes_question" xml:space="preserve">
+    <value>安全问题</value>
+  </data>
+  <data name="TemplateField_iTunes_answer" xml:space="preserve">
+    <value>安全问题答案</value>
+  </data>
+  <data name="TemplateField_Email_pop_use_ssl" xml:space="preserve">
+    <value>使用 SSL</value>
+  </data>
+  <data name="TemplateField_Email_smtp_use_ssl" xml:space="preserve">
+    <value>使用 SSL</value>
+  </data>
 </root>

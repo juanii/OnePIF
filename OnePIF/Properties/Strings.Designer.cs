@@ -3506,5 +3506,2201 @@ namespace OnePIF.Properties {
                 return ResourceManager.GetString("Tag_Favorite", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secret Access Key.
+        /// </summary>
+        internal static string TemplateField_AmazonS3_access_key {
+            get {
+                return ResourceManager.GetString("TemplateField_AmazonS3_access_key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Access Key Id.
+        /// </summary>
+        internal static string TemplateField_AmazonS3_access_key_id {
+            get {
+                return ResourceManager.GetString("TemplateField_AmazonS3_access_key_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string TemplateField_AmazonS3_email {
+            get {
+                return ResourceManager.GetString("TemplateField_AmazonS3_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_AmazonS3_password {
+            get {
+                return ResourceManager.GetString("TemplateField_AmazonS3_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path.
+        /// </summary>
+        internal static string TemplateField_AmazonS3_path {
+            get {
+                return ResourceManager.GetString("TemplateField_AmazonS3_path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to account number.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_accountNo {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_accountNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_accountType {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_accountType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bank name.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_bankName {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_bankName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to address.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_branchAddress {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_branchAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_branchPhone {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_branchPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IBAN.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_iban {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_iban", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name on account.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_owner {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_owner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to routing number.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_routingNo {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_routingNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SWIFT.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_swift {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_swift", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIN.
+        /// </summary>
+        internal static string TemplateField_BankAccountUS_telephonePin {
+            get {
+                return ResourceManager.GetString("TemplateField_BankAccountUS_telephonePin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to issuing bank.
+        /// </summary>
+        internal static string TemplateField_CreditCard_bank {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_bank", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cardholder name.
+        /// </summary>
+        internal static string TemplateField_CreditCard_cardholder {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_cardholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cash withdrawal limit.
+        /// </summary>
+        internal static string TemplateField_CreditCard_cashLimit {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_cashLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to number.
+        /// </summary>
+        internal static string TemplateField_CreditCard_ccnum {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_ccnum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to credit limit.
+        /// </summary>
+        internal static string TemplateField_CreditCard_creditLimit {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_creditLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to verification number.
+        /// </summary>
+        internal static string TemplateField_CreditCard_cvv {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_cvv", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to expiry date.
+        /// </summary>
+        internal static string TemplateField_CreditCard_expiry {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_expiry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to interest rate.
+        /// </summary>
+        internal static string TemplateField_CreditCard_interest {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_interest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to issue number.
+        /// </summary>
+        internal static string TemplateField_CreditCard_issuenumber {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_issuenumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (intl).
+        /// </summary>
+        internal static string TemplateField_CreditCard_phoneIntl {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_phoneIntl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (local).
+        /// </summary>
+        internal static string TemplateField_CreditCard_phoneLocal {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_phoneLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (toll free).
+        /// </summary>
+        internal static string TemplateField_CreditCard_phoneTollFree {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_phoneTollFree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIN.
+        /// </summary>
+        internal static string TemplateField_CreditCard_pin {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_CreditCard_type {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to valid from.
+        /// </summary>
+        internal static string TemplateField_CreditCard_validFrom {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_validFrom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_CreditCard_website {
+            get {
+                return ResourceManager.GetString("TemplateField_CreditCard_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to alias.
+        /// </summary>
+        internal static string TemplateField_Database_alias {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_alias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to database.
+        /// </summary>
+        internal static string TemplateField_Database_database {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_Database_database_type {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_database_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to server.
+        /// </summary>
+        internal static string TemplateField_Database_hostname {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_hostname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to connection options.
+        /// </summary>
+        internal static string TemplateField_Database_options {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_options", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_Database_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to port.
+        /// </summary>
+        internal static string TemplateField_Database_port {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SID.
+        /// </summary>
+        internal static string TemplateField_Database_sid {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_sid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_Database_username {
+            get {
+                return ResourceManager.GetString("TemplateField_Database_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Activation Key.
+        /// </summary>
+        internal static string TemplateField_DotMac_activation_key {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_activation_key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email (name@me.com).
+        /// </summary>
+        internal static string TemplateField_DotMac_email {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Available iDisk Storage.
+        /// </summary>
+        internal static string TemplateField_DotMac_idisk_storage {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_idisk_storage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Member.
+        /// </summary>
+        internal static string TemplateField_DotMac_member_name {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_member_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_DotMac_password {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Renewal Date.
+        /// </summary>
+        internal static string TemplateField_DotMac_renewal_date {
+            get {
+                return ResourceManager.GetString("TemplateField_DotMac_renewal_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to address.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_address {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to date of birth.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_birthdate {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_birthdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to license class.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_class {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_class", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to conditions / restrictions.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_conditions {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_conditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to country.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_country {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to expiry date.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_expiry_date {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_expiry_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to full name.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_fullname {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_fullname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to height.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_height {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to number.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_number {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sex.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_sex {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to state.
+        /// </summary>
+        internal static string TemplateField_DriversLicense_state {
+            get {
+                return ResourceManager.GetString("TemplateField_DriversLicense_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (local).
+        /// </summary>
+        internal static string TemplateField_Email_phone_local {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_phone_local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (toll free).
+        /// </summary>
+        internal static string TemplateField_Email_phone_tollfree {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_phone_tollfree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to auth method.
+        /// </summary>
+        internal static string TemplateField_Email_pop_authentication {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_authentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_Email_pop_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to port number.
+        /// </summary>
+        internal static string TemplateField_Email_pop_port {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to server.
+        /// </summary>
+        internal static string TemplateField_Email_pop_server {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_Email_pop_type {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uses SSL.
+        /// </summary>
+        internal static string TemplateField_Email_pop_use_ssl {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_use_ssl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_Email_pop_username {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_pop_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to provider.
+        /// </summary>
+        internal static string TemplateField_Email_provider {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_provider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to provider&apos;s website.
+        /// </summary>
+        internal static string TemplateField_Email_provider_website {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_provider_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to auth method.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_authentication {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_authentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to port number.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_port {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMTP server.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_server {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_type {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uses SSL.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_use_ssl {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_use_ssl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_Email_smtp_username {
+            get {
+                return ResourceManager.GetString("TemplateField_Email_smtp_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (local).
+        /// </summary>
+        internal static string TemplateField_EmailV2_phone_local {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_phone_local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone (toll free).
+        /// </summary>
+        internal static string TemplateField_EmailV2_phone_tollfree {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_phone_tollfree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to auth method.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_authentication {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_authentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_password {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to port number.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_port {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to security.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_security {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_security", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to server.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_server {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_type {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_EmailV2_pop_username {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_pop_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to provider.
+        /// </summary>
+        internal static string TemplateField_EmailV2_provider {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_provider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to provider&apos;s website.
+        /// </summary>
+        internal static string TemplateField_EmailV2_provider_website {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_provider_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to auth method.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_authentication {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_authentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_password {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to port number.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_port {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to security.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_security {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_security", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMTP server.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_server {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_type {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_EmailV2_smtp_username {
+            get {
+                return ResourceManager.GetString("TemplateField_EmailV2_smtp_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_FTP_password {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path.
+        /// </summary>
+        internal static string TemplateField_FTP_path {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number (Local).
+        /// </summary>
+        internal static string TemplateField_FTP_phone_local {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_phone_local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number (Toll Free).
+        /// </summary>
+        internal static string TemplateField_FTP_phone_tollfree {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_phone_tollfree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider.
+        /// </summary>
+        internal static string TemplateField_FTP_provider {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_provider", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Provider&apos;s Website.
+        /// </summary>
+        internal static string TemplateField_FTP_provider_website {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_provider_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Server.
+        /// </summary>
+        internal static string TemplateField_FTP_server {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name.
+        /// </summary>
+        internal static string TemplateField_FTP_username {
+            get {
+                return ResourceManager.GetString("TemplateField_FTP_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_GenericAccount_password {
+            get {
+                return ResourceManager.GetString("TemplateField_GenericAccount_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string TemplateField_GenericAccount_username {
+            get {
+                return ResourceManager.GetString("TemplateField_GenericAccount_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to country.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_country {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to expires.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_expires {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_expires", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to approved wildlife.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_game {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_game", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to full name.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_name {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to maximum quota.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_quota {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_quota", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to state.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_state {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to valid from.
+        /// </summary>
+        internal static string TemplateField_HuntingLicense_valid_from {
+            get {
+                return ResourceManager.GetString("TemplateField_HuntingLicense_valid_from", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to address.
+        /// </summary>
+        internal static string TemplateField_Identity_address {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to address line 1.
+        /// </summary>
+        internal static string TemplateField_Identity_address1 {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_address1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to address line 2.
+        /// </summary>
+        internal static string TemplateField_Identity_address2 {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_address2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AOL/AIM.
+        /// </summary>
+        internal static string TemplateField_Identity_aim {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_aim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to birth date.
+        /// </summary>
+        internal static string TemplateField_Identity_birthdate {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_birthdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to business.
+        /// </summary>
+        internal static string TemplateField_Identity_busphone {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_busphone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cell.
+        /// </summary>
+        internal static string TemplateField_Identity_cellphone {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_cellphone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to city/town/suburb.
+        /// </summary>
+        internal static string TemplateField_Identity_city {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_city", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to company.
+        /// </summary>
+        internal static string TemplateField_Identity_company {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_company", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to country.
+        /// </summary>
+        internal static string TemplateField_Identity_country {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to default phone.
+        /// </summary>
+        internal static string TemplateField_Identity_defphone {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_defphone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to department.
+        /// </summary>
+        internal static string TemplateField_Identity_department {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_department", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to email.
+        /// </summary>
+        internal static string TemplateField_Identity_email {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to first name.
+        /// </summary>
+        internal static string TemplateField_Identity_firstname {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_firstname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to forum signature.
+        /// </summary>
+        internal static string TemplateField_Identity_forumsig {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_forumsig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to home.
+        /// </summary>
+        internal static string TemplateField_Identity_homephone {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_homephone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ICQ.
+        /// </summary>
+        internal static string TemplateField_Identity_icq {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_icq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to initial.
+        /// </summary>
+        internal static string TemplateField_Identity_initial {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_initial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to job title.
+        /// </summary>
+        internal static string TemplateField_Identity_jobtitle {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_jobtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to last name.
+        /// </summary>
+        internal static string TemplateField_Identity_lastname {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_lastname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to location.
+        /// </summary>
+        internal static string TemplateField_Identity_location {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_location", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSN.
+        /// </summary>
+        internal static string TemplateField_Identity_msn {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_msn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to occupation.
+        /// </summary>
+        internal static string TemplateField_Identity_occupation {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_occupation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to telephone.
+        /// </summary>
+        internal static string TemplateField_Identity_phone {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reminder answer.
+        /// </summary>
+        internal static string TemplateField_Identity_remindera {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_remindera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reminder question.
+        /// </summary>
+        internal static string TemplateField_Identity_reminderq {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_reminderq", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sex.
+        /// </summary>
+        internal static string TemplateField_Identity_sex {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to skype.
+        /// </summary>
+        internal static string TemplateField_Identity_skype {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_skype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to state/province.
+        /// </summary>
+        internal static string TemplateField_Identity_state {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_state", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_Identity_username {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_Identity_website {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yahoo.
+        /// </summary>
+        internal static string TemplateField_Identity_yahoo {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_yahoo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to zip/postal code.
+        /// </summary>
+        internal static string TemplateField_Identity_zip {
+            get {
+                return ResourceManager.GetString("TemplateField_Identity_zip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account Type.
+        /// </summary>
+        internal static string TemplateField_InstantMessenger_account_type {
+            get {
+                return ResourceManager.GetString("TemplateField_InstantMessenger_account_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_InstantMessenger_password {
+            get {
+                return ResourceManager.GetString("TemplateField_InstantMessenger_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port.
+        /// </summary>
+        internal static string TemplateField_InstantMessenger_port {
+            get {
+                return ResourceManager.GetString("TemplateField_InstantMessenger_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Server.
+        /// </summary>
+        internal static string TemplateField_InstantMessenger_server {
+            get {
+                return ResourceManager.GetString("TemplateField_InstantMessenger_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name / Email / ID.
+        /// </summary>
+        internal static string TemplateField_InstantMessenger_username {
+            get {
+                return ResourceManager.GetString("TemplateField_InstantMessenger_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dialup Access Number.
+        /// </summary>
+        internal static string TemplateField_ISP_dialup_number {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_dialup_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_ISP_password {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone (Local).
+        /// </summary>
+        internal static string TemplateField_ISP_phone_local {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_phone_local", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone (Toll Free).
+        /// </summary>
+        internal static string TemplateField_ISP_phone_tollfree {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_phone_tollfree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIN.
+        /// </summary>
+        internal static string TemplateField_ISP_pin {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User ID.
+        /// </summary>
+        internal static string TemplateField_ISP_userid {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_userid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Website.
+        /// </summary>
+        internal static string TemplateField_ISP_website {
+            get {
+                return ResourceManager.GetString("TemplateField_ISP_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security Answer.
+        /// </summary>
+        internal static string TemplateField_iTunes_answer {
+            get {
+                return ResourceManager.GetString("TemplateField_iTunes_answer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_iTunes_password {
+            get {
+                return ResourceManager.GetString("TemplateField_iTunes_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security Question.
+        /// </summary>
+        internal static string TemplateField_iTunes_question {
+            get {
+                return ResourceManager.GetString("TemplateField_iTunes_question", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apple ID (email).
+        /// </summary>
+        internal static string TemplateField_iTunes_username {
+            get {
+                return ResourceManager.GetString("TemplateField_iTunes_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to company.
+        /// </summary>
+        internal static string TemplateField_License_company {
+            get {
+                return ResourceManager.GetString("TemplateField_License_company", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to download page.
+        /// </summary>
+        internal static string TemplateField_License_download_link {
+            get {
+                return ResourceManager.GetString("TemplateField_License_download_link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to purchase date.
+        /// </summary>
+        internal static string TemplateField_License_order_date {
+            get {
+                return ResourceManager.GetString("TemplateField_License_order_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to order number.
+        /// </summary>
+        internal static string TemplateField_License_order_number {
+            get {
+                return ResourceManager.GetString("TemplateField_License_order_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to order total.
+        /// </summary>
+        internal static string TemplateField_License_order_total {
+            get {
+                return ResourceManager.GetString("TemplateField_License_order_total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to product name.
+        /// </summary>
+        internal static string TemplateField_License_product_name {
+            get {
+                return ResourceManager.GetString("TemplateField_License_product_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to version.
+        /// </summary>
+        internal static string TemplateField_License_product_version {
+            get {
+                return ResourceManager.GetString("TemplateField_License_product_version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to publisher.
+        /// </summary>
+        internal static string TemplateField_License_publisher_name {
+            get {
+                return ResourceManager.GetString("TemplateField_License_publisher_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_License_publisher_website {
+            get {
+                return ResourceManager.GetString("TemplateField_License_publisher_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to license key.
+        /// </summary>
+        internal static string TemplateField_License_reg_code {
+            get {
+                return ResourceManager.GetString("TemplateField_License_reg_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to registered email.
+        /// </summary>
+        internal static string TemplateField_License_reg_email {
+            get {
+                return ResourceManager.GetString("TemplateField_License_reg_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to licensed to.
+        /// </summary>
+        internal static string TemplateField_License_reg_name {
+            get {
+                return ResourceManager.GetString("TemplateField_License_reg_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to retail price.
+        /// </summary>
+        internal static string TemplateField_License_retail_price {
+            get {
+                return ResourceManager.GetString("TemplateField_License_retail_price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to support email.
+        /// </summary>
+        internal static string TemplateField_License_support_email {
+            get {
+                return ResourceManager.GetString("TemplateField_License_support_email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to expiry date.
+        /// </summary>
+        internal static string TemplateField_Membership_expiry_date {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_expiry_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member name.
+        /// </summary>
+        internal static string TemplateField_Membership_member_name {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_member_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member since.
+        /// </summary>
+        internal static string TemplateField_Membership_member_since {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_member_since", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member ID.
+        /// </summary>
+        internal static string TemplateField_Membership_membership_no {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_membership_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to group.
+        /// </summary>
+        internal static string TemplateField_Membership_org_name {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_org_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to telephone.
+        /// </summary>
+        internal static string TemplateField_Membership_phone {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_Membership_pin {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_Membership_website {
+            get {
+                return ResourceManager.GetString("TemplateField_Membership_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Database.
+        /// </summary>
+        internal static string TemplateField_MySQLConnection_database {
+            get {
+                return ResourceManager.GetString("TemplateField_MySQLConnection_database", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hostname.
+        /// </summary>
+        internal static string TemplateField_MySQLConnection_hostname {
+            get {
+                return ResourceManager.GetString("TemplateField_MySQLConnection_hostname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string TemplateField_MySQLConnection_password {
+            get {
+                return ResourceManager.GetString("TemplateField_MySQLConnection_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port (3306).
+        /// </summary>
+        internal static string TemplateField_MySQLConnection_port {
+            get {
+                return ResourceManager.GetString("TemplateField_MySQLConnection_port", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string TemplateField_MySQLConnection_username {
+            get {
+                return ResourceManager.GetString("TemplateField_MySQLConnection_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to date of birth.
+        /// </summary>
+        internal static string TemplateField_Passport_birthdate {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_birthdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to place of birth.
+        /// </summary>
+        internal static string TemplateField_Passport_birthplace {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_birthplace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to code.
+        /// </summary>
+        internal static string TemplateField_Passport_code {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to expiry date.
+        /// </summary>
+        internal static string TemplateField_Passport_expiry_date {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_expiry_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to full name.
+        /// </summary>
+        internal static string TemplateField_Passport_fullname {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_fullname", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to issued on.
+        /// </summary>
+        internal static string TemplateField_Passport_issue_date {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_issue_date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to issuing authority.
+        /// </summary>
+        internal static string TemplateField_Passport_issuing_authority {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_issuing_authority", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to issuing country.
+        /// </summary>
+        internal static string TemplateField_Passport_issuing_country {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_issuing_country", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nationality.
+        /// </summary>
+        internal static string TemplateField_Passport_nationality {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_nationality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to number.
+        /// </summary>
+        internal static string TemplateField_Passport_number {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sex.
+        /// </summary>
+        internal static string TemplateField_Passport_sex {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_sex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to type.
+        /// </summary>
+        internal static string TemplateField_Passport_type {
+            get {
+                return ResourceManager.GetString("TemplateField_Passport_type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member ID (additional).
+        /// </summary>
+        internal static string TemplateField_RewardProgram_additional_no {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_additional_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to company name.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_company_name {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_company_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to customer service phone.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_customer_service_phone {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_customer_service_phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member name.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_member_name {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_member_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member since.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_member_since {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_member_since", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to member ID.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_membership_no {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_membership_no", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PIN.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_pin {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_pin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to phone for reservations.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_reservations_phone {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_reservations_phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_RewardProgram_website {
+            get {
+                return ResourceManager.GetString("TemplateField_RewardProgram_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AirPort ID.
+        /// </summary>
+        internal static string TemplateField_Router_airport_id {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_airport_id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to attached storage password.
+        /// </summary>
+        internal static string TemplateField_Router_disk_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_disk_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to base station name.
+        /// </summary>
+        internal static string TemplateField_Router_name {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to network name.
+        /// </summary>
+        internal static string TemplateField_Router_network_name {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_network_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to base station password.
+        /// </summary>
+        internal static string TemplateField_Router_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to server / IP address.
+        /// </summary>
+        internal static string TemplateField_Router_server {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_server", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wireless network password.
+        /// </summary>
+        internal static string TemplateField_Router_wireless_password {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_wireless_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wireless security.
+        /// </summary>
+        internal static string TemplateField_Router_wireless_security {
+            get {
+                return ResourceManager.GetString("TemplateField_Router_wireless_security", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name.
+        /// </summary>
+        internal static string TemplateField_SsnUS_name {
+            get {
+                return ResourceManager.GetString("TemplateField_SsnUS_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to number.
+        /// </summary>
+        internal static string TemplateField_SsnUS_number {
+            get {
+                return ResourceManager.GetString("TemplateField_SsnUS_number", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to console password.
+        /// </summary>
+        internal static string TemplateField_UnixServer_admin_console_password {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_admin_console_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to admin console URL.
+        /// </summary>
+        internal static string TemplateField_UnixServer_admin_console_url {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_admin_console_url", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to admin console username.
+        /// </summary>
+        internal static string TemplateField_UnixServer_admin_console_username {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_admin_console_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to name.
+        /// </summary>
+        internal static string TemplateField_UnixServer_name {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to password.
+        /// </summary>
+        internal static string TemplateField_UnixServer_password {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to support phone.
+        /// </summary>
+        internal static string TemplateField_UnixServer_support_contact_phone {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_support_contact_phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to support URL.
+        /// </summary>
+        internal static string TemplateField_UnixServer_support_contact_url {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_support_contact_url", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL.
+        /// </summary>
+        internal static string TemplateField_UnixServer_url {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_url", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string TemplateField_UnixServer_username {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_username", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to website.
+        /// </summary>
+        internal static string TemplateField_UnixServer_website {
+            get {
+                return ResourceManager.GetString("TemplateField_UnixServer_website", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch Information.
+        /// </summary>
+        internal static string TemplateSection_BankAccountUS_branchInfo {
+            get {
+                return ResourceManager.GetString("TemplateSection_BankAccountUS_branchInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact_Information.
+        /// </summary>
+        internal static string TemplateSection_CreditCard_contactInfo {
+            get {
+                return ResourceManager.GetString("TemplateSection_CreditCard_contactInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional Details.
+        /// </summary>
+        internal static string TemplateSection_CreditCard_details {
+            get {
+                return ResourceManager.GetString("TemplateSection_CreditCard_details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Information.
+        /// </summary>
+        internal static string TemplateSection_Email_Contact_Information {
+            get {
+                return ResourceManager.GetString("TemplateSection_Email_Contact_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Information.
+        /// </summary>
+        internal static string TemplateSection_EmailV2_Contact_Information {
+            get {
+                return ResourceManager.GetString("TemplateSection_EmailV2_Contact_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMTP.
+        /// </summary>
+        internal static string TemplateSection_EmailV2_SMTP {
+            get {
+                return ResourceManager.GetString("TemplateSection_EmailV2_SMTP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Information.
+        /// </summary>
+        internal static string TemplateSection_FTP_Contact_Information {
+            get {
+                return ResourceManager.GetString("TemplateSection_FTP_Contact_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string TemplateSection_Identity_address {
+            get {
+                return ResourceManager.GetString("TemplateSection_Identity_address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internet Details.
+        /// </summary>
+        internal static string TemplateSection_Identity_internet {
+            get {
+                return ResourceManager.GetString("TemplateSection_Identity_internet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Identification.
+        /// </summary>
+        internal static string TemplateSection_Identity_name {
+            get {
+                return ResourceManager.GetString("TemplateSection_Identity_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Information.
+        /// </summary>
+        internal static string TemplateSection_ISP_Contact_Information {
+            get {
+                return ResourceManager.GetString("TemplateSection_ISP_Contact_Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer.
+        /// </summary>
+        internal static string TemplateSection_License_customer {
+            get {
+                return ResourceManager.GetString("TemplateSection_License_customer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order.
+        /// </summary>
+        internal static string TemplateSection_License_order {
+            get {
+                return ResourceManager.GetString("TemplateSection_License_order", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Publisher.
+        /// </summary>
+        internal static string TemplateSection_License_publisher {
+            get {
+                return ResourceManager.GetString("TemplateSection_License_publisher", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More Information.
+        /// </summary>
+        internal static string TemplateSection_RewardProgram_extra {
+            get {
+                return ResourceManager.GetString("TemplateSection_RewardProgram_extra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Admin Console.
+        /// </summary>
+        internal static string TemplateSection_UnixServer_admin_console {
+            get {
+                return ResourceManager.GetString("TemplateSection_UnixServer_admin_console", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hosting Provider.
+        /// </summary>
+        internal static string TemplateSection_UnixServer_hosting_provider_details {
+            get {
+                return ResourceManager.GetString("TemplateSection_UnixServer_hosting_provider_details", resourceCulture);
+            }
+        }
     }
 }

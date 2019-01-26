@@ -49,6 +49,10 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Records\Attributes\AddressComponentAttribute.cs" />
+    <Compile Include="Records\Attributes\DateComponentAttribute.cs" />
+    <Compile Include="Records\Attributes\ItemFieldAttribute.cs" />
+    <Compile Include="Records\Attributes\MonthYearComponentAttribute.cs" />
     <Compile Include="Base32.cs" />
     <Compile Include="Dropdown List Types\EMailPOPAuthentication.cs" />
     <Compile Include="Dropdown List Types\EMailPOPType.cs" />
@@ -175,6 +179,7 @@
     <EmbeddedResource Include="Properties\CompactAddressFormat.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CompactAddressFormat.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\ExpandedAddressParts.resx">
       <Generator>ResXFileCodeGenerator</Generator>

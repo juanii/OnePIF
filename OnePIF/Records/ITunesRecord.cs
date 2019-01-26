@@ -9,12 +9,16 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region iTunes Data
+        [ItemField(SectionFieldType.@string)]
         public string username { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string question { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string answer { get; set; }
         #endregion
 #pragma warning restore IDE1006

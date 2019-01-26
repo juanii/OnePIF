@@ -9,14 +9,19 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region Amazon S3 Data
+        [ItemField(SectionFieldType.email)]
         public string email { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
 
+        [ItemField(SectionFieldType.concealed)] // WTF: Type string in new 1PIF format
         public string access_key_id { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string access_key { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string path { get; set; }
         #endregion
 #pragma warning restore IDE1006

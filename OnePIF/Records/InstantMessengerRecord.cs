@@ -9,15 +9,20 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region Instant Messenger Data
+        [ItemField(SectionFieldType.@string)]
         public string username { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
 
+        [ItemField(SectionFieldType.menu)]
         [JsonConverter(typeof(EnumConverter<InstantMessengerAccountType>))]
         public InstantMessengerAccountType account_type { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string server { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string port { get; set; }
         #endregion
 #pragma warning restore IDE1006

@@ -9,22 +9,30 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region FTP Data
+        [ItemField(SectionFieldType.@string)]
         public string server { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string path { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string username { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
         #endregion
 
         #region Contact Information
+        [ItemField(SectionFieldType.@string, sectionName = "Contact Information")]
         public string provider { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "Contact Information")]
         public string provider_website { get; set; }
 
+        [ItemField(SectionFieldType.phone, sectionName = "Contact Information")]
         public string phone_local { get; set; }
 
+        [ItemField(SectionFieldType.phone, sectionName = "Contact Information")]
         public string phone_tollfree { get; set; }
         #endregion
 #pragma warning restore IDE1006

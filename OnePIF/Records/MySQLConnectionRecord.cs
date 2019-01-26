@@ -9,14 +9,19 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region MySQL Connection Data
+        [ItemField(SectionFieldType.@string)]
         public string hostname { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string port { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string database { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string username { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
         #endregion
 #pragma warning restore IDE1006

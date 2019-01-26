@@ -1,4 +1,5 @@
 ﻿using KeePassLib;
+using OnePIF.Types;
 
 namespace OnePIF.Records
 {
@@ -6,28 +7,38 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region Server Data
+        [ItemField(SectionFieldType.@string)] // WTF: Not URL?
         public string url { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string username { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
         #endregion
 
         #region Admin Console
+        [ItemField(SectionFieldType.@string, sectionName = "admin_console")]
         public string admin_console_url { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "admin_console")]
         public string admin_console_username { get; set; }
 
+        [ItemField(SectionFieldType.concealed, sectionName = "admin_console")]
         public string admin_console_password { get; set; }
         #endregion
 
         #region Hosting Provider
+        [ItemField(SectionFieldType.@string, sectionName = "hosting_provider_details")]
         public string name { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "hosting_provider_details")]
         public string website { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "hosting_provider_details")]
         public string support_contact_url { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "hosting_provider_details")]
         public string support_contact_phone { get; set; }
         #endregion
 #pragma warning restore IDE1006

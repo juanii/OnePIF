@@ -1,4 +1,5 @@
 ﻿using KeePassLib;
+using OnePIF.Types;
 
 namespace OnePIF.Records
 {
@@ -6,29 +7,41 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region Reward Program Data
+        [ItemField(SectionFieldType.@string)]
         public string company_name { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string member_name { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string membership_no { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string pin { get; set; }
         #endregion
 
         #region More Information
 
+        [ItemField(SectionFieldType.@string, sectionName = "extra")]
         public string additional_no { get; set; }
 
         #region Member Since
+        [ItemField(SectionFieldType.monthYear, sectionName = "extra", fieldName = "member_since")]
+        [MonthYearComponent(MonthYearComponentAttribute.MonthYearPart.Year)]
         public string member_since_yy { get; set; }
 
+        [ItemField(SectionFieldType.monthYear, sectionName = "extra", fieldName = "member_since")]
+        [MonthYearComponent(MonthYearComponentAttribute.MonthYearPart.Month)]
         public string member_since_mm { get; set; }
         #endregion
 
+        [ItemField(SectionFieldType.@string, sectionName = "extra")]
         public string customer_service_phone { get; set; }
 
+        [ItemField(SectionFieldType.phone, sectionName = "extra")]
         public string reservations_phone { get; set; }
 
+        [ItemField(SectionFieldType.URL, sectionName = "extra")]
         public string website { get; set; }
         #endregion
 #pragma warning restore IDE1006

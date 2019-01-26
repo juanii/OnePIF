@@ -9,21 +9,29 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region Wireless Router Data
+        [ItemField(SectionFieldType.@string)]
         public string name { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string server { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string airport_id { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string network_name { get; set; }
 
+        [ItemField(SectionFieldType.menu)]
         [JsonConverter(typeof(EnumConverter<WirelessSecurity>))]
         public WirelessSecurity wireless_security { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string wireless_password { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string disk_password { get; set; }
         #endregion
 #pragma warning restore IDE1006

@@ -1,12 +1,15 @@
 ﻿using KeePassLib;
+using OnePIF.Types;
 
 namespace OnePIF.Records
 {
     public class SsnUsSecureContents : PasswordHistorySecureContents
     {
 #pragma warning disable IDE1006
+        [ItemField(SectionFieldType.@string)]
         public string name { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string number { get; set; }
 #pragma warning restore IDE1006
 

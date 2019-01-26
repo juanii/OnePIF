@@ -9,20 +9,27 @@ namespace OnePIF.Records
     {
 #pragma warning disable IDE1006
         #region ISP Data
+        [ItemField(SectionFieldType.@string)]
         public string userid { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string password { get; set; }
 
+        [ItemField(SectionFieldType.concealed)]
         public string pin { get; set; }
 
+        [ItemField(SectionFieldType.@string)]
         public string dialup_number { get; set; }
         #endregion
 
         #region Contact Information
+        [ItemField(SectionFieldType.@string, sectionName = "Contact Information")]
         public string website { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "Contact Information")] // WTF: Type String (subtype Phone)
         public string phone_local { get; set; }
 
+        [ItemField(SectionFieldType.@string, sectionName = "Contact Information")] // WTF: Type String (subtype Phone)
         public string phone_tollfree { get; set; }
         #endregion
 #pragma warning restore IDE1006

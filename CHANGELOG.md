@@ -4,7 +4,7 @@
 
 ### Added
 
-* Support for older 1pif file format without sections.
+* Support for older 1pif file format without sections (1Password 3 for Mac OS X).
 
 ### Fixed
 

@@ -34,5 +34,5 @@ This is a 1pif export of "Sample vault.agilekeychain" using 1Password 4.6.2.626 
 
 ## 1P7-macOS-Cloud.1pif
 
-This is a 1pif export of "Sample vault 7.opvault" using 1Password 7.2.4 for macOS after a roundtrip through 1Password.com. Item UUIDs are Base32-encoded.
+This is a 1pif export of "Sample vault 7.opvault" using 1Password 7.2.4 for macOS after a roundtrip through 1Password.com. Item UUIDs are Base32-encoded.  
 Contributed by: [@sectary-want-holly](https://github.com/sectary-want-holly/uploads)

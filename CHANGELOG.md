@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.0](https://github.com/juanii/OnePIF/releases/0.5.0) - 2019-01-26
+
+### Added
+
+* Support for older 1pif file format without sections.
+
+### Fixed
+
+* Some misspelled field names.
+
 ## [0.4.0](https://github.com/juanii/OnePIF/releases/0.4.0) - 2019-01-12
 
 ### Added

@@ -9,7 +9,7 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 ### Brief list of features
 
 * The plugin imports:
-  - Most item types available in 1Password 6: Logins, Secure Notes, Credit Cards, Identities, Passwords, Bank Accounts, Databases, Driver Licenses, Email Accounts, Memberships, Outdoor Licenses, Passports, Reward Programs, Servers, Social Security Numbers, Software Licenses, Wireless Routers, User-defined Folders.<sup id="a1">[1](#f1)</sup>
+  - Most item types available in 1Password 6 and 7: Logins, Secure Notes, Credit Cards, Identities, Passwords, Bank Accounts, Databases, Driver Licenses, Email Accounts, Memberships, Outdoor Licenses, Passports, Reward Programs, Servers, Social Security Numbers, Software Licenses, Wireless Routers, User-defined Folders.<sup id="a1">[1](#f1)</sup>
   - Legacy item types from 1Password 3: Email Account (v1), iTunes, MySQL Database, FTP Account, iCloud (a.k.a. MobileMe), Generic Account, Instant Messenger, Internet Provider, Amazon S3 (a.k.a. Amazon Web Services).
   - All template fields, web form fields and user-defined fields.
   - Previously used passwords list.
@@ -26,17 +26,17 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
 
 ### (Un)tested and (un)supported file formats and platforms
 
-* The plugin was tested using files created in 1Password 3 and 6 for macOS and 1Password 4 for Windows and exported by 1Password 6 and 7 for macOS as well as 1Password 4 for Windows. All item types (from the above list in previous section) and template fields were tested. Nevertheless the number of combinations for creating, updating, migrating and exporting items in different versions of 1Password creates a whole universe of possibilities, so you might still find errors while importing a file.
+* The plugin was tested using files created in, and exported from, 1Password 3, 6 and 7 for macOS and 1Password 4 for Windows. Nevertheless the number of combinations for creating, updating, migrating and exporting vaults in different versions of 1Password derives in a whole universe of possibilities, so you might still find errors while importing a file.
   - Very limited testing was performed with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
+* All item types (from the above list in previous section) and template fields were tested.
 * The plugin was tested with KeePass 2.40+ running on Windows and KeePass 2.38 running on Ubuntu.
 
 ### What's next
 
-I expect to keep fixing bugs, adding some features and broadening support for more variants of 1pif files. Here are some of the plans, in no particular order:
+I expect to keep fixing bugs and adding some features. Here are some of the plans, in no particular order:
 
 * General error handling.
 * Log/summary of import errors.
-* Support for older 1pif formats (without sections).
 
 ## Download and installation
 

@@ -2,11 +2,19 @@
 
 ## Sample vault.opvault
 
-This vault was created using 1Password 6.8.9 for macOS and exported in opvault format.
+This vault was created using 1Password 6.8.9 for macOS and exported in opvault format.  
+Password: `Sample vault`
+
+## Sample vault 7.opvault
+
+This vault was created using 1Password 7.2.4 for macOS and exported in opvault format.  
+Password: `password123!`  
+Contributed by: [@sectary-want-holly](https://github.com/sectary-want-holly/uploads)
 
 ## Sample vault.agilekeychain
 
-This vault was created using 1Password 3.8.22 for Mac OS X and exported in agilekeychain format.
+This vault was created using 1Password 3.8.22 for Mac OS X and exported in agilekeychain format.  
+Password: `Sample vault`
 
 ## 1P6-macOS.1pif
 
@@ -27,3 +35,4 @@ This is a 1pif export of "Sample vault.agilekeychain" using 1Password 4.6.2.626 
 ## 1P7-macOS-Cloud.1pif
 
 This is a 1pif export of "Sample vault 7.opvault" using 1Password 7.2.4 for macOS after a roundtrip through 1Password.com. Item UUIDs are Base32-encoded.
+Contributed by: [@sectary-want-holly](https://github.com/sectary-want-holly/uploads)

@@ -15,7 +15,7 @@ namespace OnePIF.Records
             Country
         }
 
-        public AddressPart addressPart { get; }
+        public AddressPart addressPart { get; set; }
 
         public AddressComponentAttribute(AddressPart addressPart)
         {

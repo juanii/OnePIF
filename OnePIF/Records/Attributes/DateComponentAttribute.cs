@@ -12,7 +12,7 @@ namespace OnePIF.Records
             Year
         }
 
-        public DatePart datePart { get; }
+        public DatePart datePart { get; set; }
 
         public DateComponentAttribute(DatePart datePart)
         {

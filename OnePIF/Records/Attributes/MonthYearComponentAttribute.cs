@@ -10,7 +10,7 @@ namespace OnePIF.Records
             Year
         }
 
-        public MonthYearPart monthYearPart { get; }
+        public MonthYearPart monthYearPart { get; set;  }
 
         public MonthYearComponentAttribute(MonthYearPart monthYearPart)
         {

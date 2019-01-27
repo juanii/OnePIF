@@ -23,3 +23,7 @@ This is a 1pif export of "Sample vault.agilekeychain" using 1Password 3.8.22 for
 ## 1P3-MacOSX-1P4-Windows.1pif
 
 This is a 1pif export of "Sample vault.agilekeychain" using 1Password 4.6.2.626 for Windows. The items were modified adding a "Dummy" custom section so they would be updated and exported using the newer 1pif format.
+
+## 1P7-macOS-Cloud.1pif
+
+This is a 1pif export of "Sample vault 7.opvault" using 1Password 7.2.4 for macOS after a roundtrip through 1Password.com. Item UUIDs are Base32-encoded.

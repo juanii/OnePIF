@@ -12,6 +12,6 @@ static internal class StringExt
         if (string.IsNullOrEmpty(str))
             return str;
 
-        return str.Replace("\r\n", rpl).Replace("\r", rpl).Replace("\n", rpl);
+        return str.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", rpl);
     }
 }

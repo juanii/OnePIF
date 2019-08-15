@@ -30,7 +30,6 @@ This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdee
   - Very limited testing was performed with 1Password for Families/Teams/Businesses vaults.<sup id="a3">[3](#f3)</sup>
 * All item types (from the above list in previous section) and template fields were tested.
 * The plugin was tested with KeePass 2.40+ running on Windows and KeePass 2.38 running on Ubuntu.
-  - As stated in the [KeePass 2.x Plugins page](https://keepass.info/help/v2/plugins.html) the package `mono-complete` might be required on some Linux systems for the PLGX file to compile.
 
 ### What's next
 
@@ -41,7 +40,7 @@ I expect to keep fixing bugs and adding some features. Here are some of the plan
 
 ## Download and installation
 
-You can get the latest release from the [Releases](https://github.com/juanii/OnePIF/releases/latest) page. To install, unpack the archive and copy its contents to the KeePass Plugins directory.
+You can get the latest release from the [Releases](https://github.com/juanii/OnePIF/releases/latest) page. To install, unpack the archive and copy its contents to the KeePass Plugins directory. As stated in the [KeePass 2.x Plugins page](https://keepass.info/help/v2/plugins.html) the package `mono-complete` might be required on some Linux systems for the PLGX file to compile.
 
 If you're using KeePass 2.08 or older, you'll have to build the DLL version of the plugin. See next section for instructions.
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.1](https://github.com/juanii/OnePIF/releases/0.5.1) - 2020-03-11
+
+### Fixed
+
+* Broken newline conversion in multiline fields.
+
 ## [0.5.0](https://github.com/juanii/OnePIF/releases/0.5.0) - 2019-01-26
 
 ### Added

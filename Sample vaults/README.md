@@ -1,4 +1,4 @@
-# Sample vauls for testing
+# Sample vaults for testing
 
 ## Sample vault.opvault
 

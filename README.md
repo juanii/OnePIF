@@ -1,6 +1,8 @@
 # OnePIF
 
-OnePIF is a [KeePass](https://keepass.info/) 2.x plugin to import 1Password Interchange Format (1pif) files.
+OnePIF is a [KeePass](https://keepass.info/) 2.x plugin to import 1Password Interchange Format (1PIF) files.
+
+This plugin is [OneVault](https://github.com/juanii/OneVault) sidekick. Check the [Pros and cons of using OPVault vs. 1PIF](#pros-and-cons) section to decide which plugin is right for you.
 
 This plugin was made using Dmitry Wolf's [1P2KeePass](https://github.com/diimdeep/1P2KeePass) as a guide and example. There are copy-pasted bits of 1P2KeePass code I was lazy to rewrite myself.
 
@@ -44,6 +46,20 @@ You can get the latest release from the [Releases](https://github.com/juanii/One
 
 If you're using KeePass 2.08 or older, you'll have to build the DLL version of the plugin. See next section for instructions.
 
+## <b id="pros-and-cons">Pros and cons of using OPVault vs. 1PIF</b>
+
+### Pros
+
+* OPVault is an [almost perfectly](https://discussions.agilebits.com/discussion/100882/suggestion-to-enhance-the-opvault-design-document) documented format. This makes it highly improbable to come across a file that will fail to be imported. If it ever happens, a bug in the plugin is probably to be blamed.
+  - 1PIF format is almost perfectly _undocumented_ and, to make things worse, there's a whole spectrum of different things one can find inside 1PIF files exported from different 1Password versions.
+* OPVault is encrypted at rest (i.e. while saved on a disk) and only minimal parts of it are in plain text so you can rest easy knowing your secrets are safe. Nevertheless, **the vault is decrypted in memory during the import process** and the plugin code is probably not as secure as 1Passwords' so please use it in safe environments.
+  - As you should already know from the big red legend while exporting them, 1PIF files are stored _completely_ in plain text, including all the secrets, so you must make sure to scrub really hard to remove any traces of the file after using it.
+
+### Cons
+
+* You can't directly export vaults from 1Password in OPVault format. The OPVault format is used for synchronization between different instances of the software. To get your hands over an OPVault bundle you must set your vault to be synced, locate and copy the resulting bundle.
+  - 1PIF files are easily obtained using the normal 1Password export function.
+
 ## Building and debugging
 
 ### Prerequisites
@@ -72,11 +88,13 @@ This software is provided as-is without any warranty of any kind. I take no resp
 
 **Vaults often contain very sensitive information. Thoroughly check imported data for completeness and correctess before deleting the original files.**
 
+---
+
 <b id="f1">1</b> Smart Folders are not supported since KeePass seems to lack a similar feature. [:leftwards_arrow_with_hook:](#a1)
 
 <b id="f2">2</b> Only icons saved as image formats supported by .NET `System.Drawing.Bitmap` class, namely: BMP, GIF, EXIF, JPEG, PNG and TIFF. [:leftwards_arrow_with_hook:](#a2)
 
-<b id="f3">3</b> Sample 1pif files completely or partially failing to be imported are welcome to expand support. **If they're from a real vault, don't forget to redact private information.** [:leftwards_arrow_with_hook:](#a3)
+<b id="f3">3</b> Sample 1PIF files completely or partially failing to be imported are welcome to expand support. **If they're from a real vault, don't forget to redact private information.** [:leftwards_arrow_with_hook:](#a3)
 
 <b id="f4">4</b> Currently the post-build event in the PackagePLGX project, the build output path and the reference to the KeePass executable in the OnePIF project are dependent on the KeePass installation path. [:leftwards_arrow_with_hook:](#a4)
 

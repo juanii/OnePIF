@@ -38,7 +38,7 @@ namespace OnePIF.Records
 
         protected override SectionFieldLocator GetPasswordFieldLocator() { return new SectionFieldLocator(string.Empty, "password"); }
 
-        protected override SectionFieldLocator GetURLFieldLocator() { return new SectionFieldLocator(string.Empty, "name"); }
+        protected override SectionFieldLocator GetURLFieldLocator() { return new SectionFieldLocator(string.Empty, "server"); }
     }
 
     public class RouterRecord : ItemRecord

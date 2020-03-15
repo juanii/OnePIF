@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.2](https://github.com/juanii/OnePIF/releases/0.5.2) - 2020-03-14
+
+### Fixed
+
+* Map router IP to URL field in Wireless Routers items.
+
 ## [0.5.1](https://github.com/juanii/OnePIF/releases/0.5.1) - 2020-03-11
 
 ### Fixed

@@ -44,7 +44,7 @@ I expect to keep fixing bugs and adding some features. Here are some of the plan
 
 You can get the latest release from the [Releases](https://github.com/juanii/OnePIF/releases/latest) page. To install, unpack the archive and copy its contents to the KeePass Plugins directory. As stated in the [KeePass 2.x Plugins page](https://keepass.info/help/v2/plugins.html) the package `mono-complete` might be required on some Linux systems for the PLGX file to compile.
 
-If you're using KeePass 2.08 or older, you'll have to build the DLL version of the plugin. See next section for instructions.
+If you're using KeePass 2.08 or older, you'll have to build the DLL version of the plugin. See the [Building and debugging](#building-and-debugging) section for instructions.
 
 ## <b id="pros-and-cons">Pros and cons of using OPVault vs. 1PIF</b>
 
@@ -60,7 +60,7 @@ If you're using KeePass 2.08 or older, you'll have to build the DLL version of t
 * You can't directly export vaults from 1Password in OPVault format. The OPVault format is used for synchronization between different instances of the software. To get your hands over an OPVault bundle you must set your vault to be synced, locate and copy the resulting bundle.
   - 1PIF files are easily obtained using the normal 1Password export function.
 
-## Building and debugging
+## <b id="building-and-debugging">Building and debugging</b>
 
 ### Prerequisites
 
